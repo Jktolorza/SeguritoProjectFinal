@@ -32,7 +32,7 @@ public class Cliente {
     private Date fechaRegistro;
 	@JoinColumn(name="usuario_nickname")
     @ManyToOne
-	private Usuario nickname;
+	private Usuario usuario;
     
 	public Cliente() {
 		super();
@@ -43,21 +43,21 @@ public class Cliente {
 		this.id_cliente = id_cliente;
 	}
 
-	public Cliente(String nombreEmpresa, String rut, Date fechaRegistro, Usuario nickname) {
+	public Cliente(String nombreEmpresa, String rut, Date fechaRegistro, Usuario usuario) {
 		super();
 		this.nombreEmpresa = nombreEmpresa;
 		this.rut = rut;
 		this.fechaRegistro = fechaRegistro;
-		this.nickname = nickname;
+		this.usuario = usuario;
 	}
 
-	public Cliente(int id_cliente, String nombreEmpresa, String rut, Date fechaRegistro, Usuario nickname) {
+	public Cliente(int id_cliente, String nombreEmpresa, String rut, Date fechaRegistro, Usuario usuario) {
 		super();
 		this.id_cliente = id_cliente;
 		this.nombreEmpresa = nombreEmpresa;
 		this.rut = rut;
 		this.fechaRegistro = fechaRegistro;
-		this.nickname = nickname;
+		this.usuario = usuario;
 	}
 
 	public int getId_cliente() {
@@ -92,18 +92,18 @@ public class Cliente {
 		this.fechaRegistro = fechaRegistro;
 	}
 
-	public Usuario getNickname() {
-		return nickname;
+	public Usuario getUsuario() {
+		return usuario;
 	}
 
-	public void setNickname(Usuario nickname) {
-		this.nickname = nickname;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 	@Override
 	public String toString() {
 		return "Cliente [id_cliente=" + id_cliente + ", nombreEmpresa=" + nombreEmpresa + ", rut=" + rut
-				+ ", fechaRegistro=" + fechaRegistro + ", nickname=" + nickname + "]";
+				+ ", fechaRegistro=" + fechaRegistro + ", usuario=" + usuario + "]";
 	}
 	
 	

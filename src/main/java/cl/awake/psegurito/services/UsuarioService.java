@@ -8,9 +8,9 @@ public interface UsuarioService {
 	
     Usuario getById(int id);
     List<Usuario> getAll();
-    void add(Usuario p);
+    void add(Usuario u);
     void edit(Usuario u);
     void delete(Usuario u);
     void delete(int id);
-
+    Usuario getByNickname(String nickname);
 }

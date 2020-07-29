@@ -3,10 +3,12 @@ package cl.awake.psegurito.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import cl.awake.psegurito.model.Administrador;
 import cl.awake.psegurito.model.AdministradorRepository;
 
+@Service
 public class AdministradorServiceImpl implements AdministradorService {
 
 	@Autowired

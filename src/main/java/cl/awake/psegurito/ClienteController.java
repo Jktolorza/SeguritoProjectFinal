@@ -1,6 +1,8 @@
 package cl.awake.psegurito;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import cl.awake.psegurito.model.Cliente;
+import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.services.ClienteService;
+import cl.awake.psegurito.services.UsuarioService;
 
 
 @Controller
@@ -18,6 +22,9 @@ public class ClienteController {
 
         @Autowired
         ClienteService cs;
+        
+        @Autowired
+        UsuarioService us;
         
         @RequestMapping("/listarCliente")
         public ModelAndView listarCliente() {
@@ -48,18 +55,27 @@ public class ClienteController {
         @RequestMapping("/eliminarCliente/{id}")
         public ModelAndView eliminarCliente(@PathVariable int id) {
         	cs.delete(id);
+        	Cliente c = cs.getById(id);
+        	Usuario u= us.getByNickname(c.getUsuario().getNickname());
+        	us.delete(u);
         	return new ModelAndView("redirect:/listarCliente");
         }
         
         @RequestMapping("/crearCliente")
         public ModelAndView crearCliente() {
         	 Cliente c = new Cliente();
-        	 return new ModelAndView("creaCliente","c", c);
+        	 Usuario u = new Usuario();
+        	 
+             Map<String, Object> model = new HashMap<String, Object>();
+             model.put("c", c);
+             model.put("u", u);
+        	 return new ModelAndView("creaCliente","model", model);
         }
         
         @RequestMapping(value="/guardarCliente", method = RequestMethod.POST)
-    	public ModelAndView guardarCliente(Cliente c) { 
-    		cs.add(c);
+    	public ModelAndView guardarCliente(Cliente c, Usuario u) { 
+        	us.add(u);
+        	cs.add(c);
     		return new ModelAndView("redirect:/listarCliente");
     	}
 }

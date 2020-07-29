@@ -3,10 +3,12 @@ package cl.awake.psegurito.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.model.UsuarioRepository;
 
+@Service
 public class UsuarioServiceImpl implements UsuarioService {
 
 	@Autowired
@@ -47,5 +49,10 @@ public class UsuarioServiceImpl implements UsuarioService {
 		// TODO Auto-generated method stub
         ur.delete(id);
 	}
-
+	
+	@Override
+	public Usuario getByNickname(String nickname) {
+		// TODO Auto-generated method stub
+		return ur.getByNickname(nickname);
+	}
 }
