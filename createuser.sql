@@ -1,7 +1,7 @@
 -- create new user
 alter session set "_ORACLE_SCRIPT"=true;
-CREATE USER seguritoproject IDENTIFIED BY seguritoproject;
+CREATE USER seguritoprojectfinal IDENTIFIED BY seguritoprojectfinal;
 
 -- grant priviledges
-GRANT CONNECT, RESOURCE, DBA TO seguritoproject;
+GRANT CONNECT, RESOURCE, DBA TO seguritoprojectfinal;
 
