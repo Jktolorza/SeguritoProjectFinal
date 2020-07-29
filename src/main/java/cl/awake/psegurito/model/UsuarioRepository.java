@@ -2,6 +2,6 @@ package cl.awake.psegurito.model;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface ProfesionalRepository extends CrudRepository<Profesional, Integer> {
+public interface UsuarioRepository extends CrudRepository<Usuario, Integer>{
 
 }
