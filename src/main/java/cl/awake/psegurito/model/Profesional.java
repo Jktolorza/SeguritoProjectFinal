@@ -25,7 +25,7 @@ public class Profesional {
     private String cargo;
 	@JoinColumn(name="usuario_nickname")
     @ManyToOne
-    private Usuario nickname;
+    private Usuario usuario;
     
 	public Profesional() {
 		super();
@@ -36,18 +36,18 @@ public class Profesional {
 		this.id_profesional = id_profesional;
 	}
 
-	public Profesional(String nombre, String apellido, String correo, String telefono, String cargo, Usuario nickname) {
+	public Profesional(String nombre, String apellido, String correo, String telefono, String cargo, Usuario usuario) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.correo = correo;
 		this.telefono = telefono;
 		this.cargo = cargo;
-		this.nickname = nickname;
+		this.usuario = usuario;
 	}
 
 	public Profesional(int id_profesional, String nombre, String apellido, String correo, String telefono, String cargo,
-			Usuario nickname) {
+			Usuario usuario) {
 		super();
 		this.id_profesional = id_profesional;
 		this.nombre = nombre;
@@ -55,7 +55,7 @@ public class Profesional {
 		this.correo = correo;
 		this.telefono = telefono;
 		this.cargo = cargo;
-		this.nickname = nickname;
+		this.usuario = usuario;
 	}
 
 	public int getId_profesional() {
@@ -106,12 +106,12 @@ public class Profesional {
 		this.cargo = cargo;
 	}
 
-	public Usuario getNickname() {
-		return nickname;
+	public Usuario getUsuario() {
+		return usuario;
 	}
 
-	public void setNickname(Usuario nickname) {
-		this.nickname = nickname;
+	public void setNickname(Usuario usuario) {
+		this.usuario = usuario;
 	}
 	
 	
