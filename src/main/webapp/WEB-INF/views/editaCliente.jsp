@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="container">
-	<c:set var="c" value="${c}"></c:set>
+	<c:set var="c" value="${model.c}"></c:set>
 	<h1 class="display-4">Editar Cliente</h1>
 	<br>
 	<form:form action="${pageContext.request.contextPath}/guardarEditCliente" method="post">
@@ -44,7 +44,15 @@
 						value="${c.getFechaRegistro()}" />
 				</div>
 			</div>
-			<br>
+			<hr>
+			<div class="row">
+				<div class="col-3">Nickname:</div>
+				<div class="col-7">
+					<input class="form-control" type="text" name="cliente.nickname"
+						value="${c.getUsuario().getNickname()}" disabled />
+				</div>
+			</div>
+			<hr>		
 			<div class="row">
 				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarCliente">Volver</a></div>
 				<div class="col-1"><input class="btn btn-success" type="submit" value="Guardar"></div>

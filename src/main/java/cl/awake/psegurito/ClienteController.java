@@ -42,21 +42,29 @@ public class ClienteController {
         
         @RequestMapping("/editarCliente/{id}")
         public ModelAndView editarCliente(@PathVariable int id) {
-        	 Cliente c = cs.getById(id);     	 
-             return new ModelAndView("editaCliente","c", c);
+        	 Cliente c = cs.getById(id);
+        	 Usuario u = us.getByNickname(c.getUsuario().getNickname());
+        	 
+             Map<String, Object> model = new HashMap<String, Object>();
+             model.put("c", c);
+             model.put("u", u);
+        	 
+             return new ModelAndView("editaCliente","model", model);
         }
         
         @RequestMapping(value="/guardarEditCliente", method = RequestMethod.POST)
     	public ModelAndView guardarEditCliente(Cliente c) {
     		cs.edit(c);
+        	Usuario u= us.getByNickname(c.getUsuario().getNickname());
+
     		return new ModelAndView("redirect:/listarCliente");
     	}
         
         @RequestMapping("/eliminarCliente/{id}")
         public ModelAndView eliminarCliente(@PathVariable int id) {
-        	cs.delete(id);
         	Cliente c = cs.getById(id);
         	Usuario u= us.getByNickname(c.getUsuario().getNickname());
+        	cs.delete(id);
         	us.delete(u);
         	return new ModelAndView("redirect:/listarCliente");
         }
