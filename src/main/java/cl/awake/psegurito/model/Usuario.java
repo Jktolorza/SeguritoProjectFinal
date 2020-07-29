@@ -1,12 +1,13 @@
 package cl.awake.psegurito.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="usuario")
 public class Usuario {
-	
+	@Id
 	private String nickname;
 	private String password;
 	private String rol;

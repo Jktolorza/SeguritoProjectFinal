@@ -20,7 +20,7 @@ public class Administrador {
 	private String nombre;
 	@JoinColumn(name="usuario_nickname")
     @ManyToOne
-	private String usuario_nickname;
+	private Usuario usuario;
 	
 	public Administrador() {
 		super();
@@ -31,17 +31,17 @@ public class Administrador {
 		this.id_administrador = id_administrador;
 	}
 
-	public Administrador(int id_administrador, String nombre, String usuario_nickname) {
+	public Administrador(int id_administrador, String nombre, Usuario usuario) {
 		super();
 		this.id_administrador = id_administrador;
 		this.nombre = nombre;
-		this.usuario_nickname = usuario_nickname;
+		this.usuario = usuario;
 	}
 
-	public Administrador(String nombre, String usuario_nickname) {
+	public Administrador(String nombre, Usuario usuario) {
 		super();
 		this.nombre = nombre;
-		this.usuario_nickname = usuario_nickname;
+		this.usuario = usuario;
 	}
 
 	public int getId_administrador() {
@@ -60,18 +60,18 @@ public class Administrador {
 		this.nombre = nombre;
 	}
 
-	public String getUsuario_nickname() {
-		return usuario_nickname;
+	public Usuario getUsuario() {
+		return usuario;
 	}
 
-	public void setUsuario_nickname(String usuario_nickname) {
-		this.usuario_nickname = usuario_nickname;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 	@Override
 	public String toString() {
-		return "Administrador [id_administrador=" + id_administrador + ", nombre=" + nombre + ", usuario_nickname="
-				+ usuario_nickname + "]";
+		return "Administrador [id_administrador=" + id_administrador + ", nombre=" + nombre + ", usuario="
+				+ usuario + "]";
 	}
 	
 }
