@@ -5,18 +5,19 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import cl.awake.psegurito.model.Asesoria;
+
 import cl.awake.psegurito.model.AsesoriaExtra;
 import cl.awake.psegurito.model.Cliente;
-import cl.awake.psegurito.model.Profesional;
 import cl.awake.psegurito.services.AsesoriaExtraService;
 import cl.awake.psegurito.services.ClienteService;
 
+@Controller
 public class AsesoriaExtraController {
 	
 	@Autowired
