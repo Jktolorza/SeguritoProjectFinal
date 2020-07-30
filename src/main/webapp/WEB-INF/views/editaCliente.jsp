@@ -49,10 +49,9 @@
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" disabled
+					<input id="nickname1" class="form-control" type="text" name="nickname" readonly
 						value="${c.getUsuario().getNickname()}" />
 				</div>
-					<input id="nickname2" class="form-control" type="hidden" name="usuario.nickname" value="" />
 			</div>
 			<hr>
 			<div class="row">
@@ -78,7 +77,7 @@
 			<hr>		
 			<div class="row">
 				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarCliente">Volver</a></div>
-				<div class="col-1"><input class="btn btn-success" onClick="process1()" type="submit" value="Guardar"></div>
+				<div class="col-1"><input class="btn btn-success" type="submit" value="Guardar"></div>
 				
 			</div>
 		</form:form>

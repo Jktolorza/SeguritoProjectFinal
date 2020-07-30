@@ -57,9 +57,9 @@ public class UsuarioServiceImpl implements UsuarioService {
 	}
 	
 	@Override
-	public void editUserNicknameById(String nickname, String password, String rol, int id_usuario) {
+	public void editUserByIdAndNickname(String nickname, String password, String rol, int id_usuario) {
 		// TODO Auto-generated method stub
-		ur.updateUserNicknameById(nickname, password, rol, id_usuario);
+		ur.updateUserByIdAndNickname(nickname, password, rol, id_usuario);
 	}
 	
 }
