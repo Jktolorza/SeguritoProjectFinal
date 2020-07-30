@@ -57,6 +57,7 @@
 		                        <a class="dropdown-item" href="crearCapacitacion" target="myFrame">Agendar Capacitacion</a>
 		                        <a class="dropdown-item" href="listarReporteAccidente" target="myFrame">Revisar Accidentes</a>
 		                        <a class="dropdown-item" href="listarFactura" target="myFrame">Revisar Facturacion de clientes</a>
+		                        <a class="dropdown-item" href="listarAsesoriaExtra" target="myFrame">Revisar Asesorias Extras </a>
 		                    </div>
 		                </li>
 		                <!-- Detalle Cliente -->
@@ -71,6 +72,7 @@
 		                        <a class="dropdown-item" href="listarCapacitacion" target="myFrame">Revisar Capacitaciones</a>
 		                        <a class="dropdown-item" href="crearReporteAccidente" target="myFrame">Reportar Accidente</a>
 		                        <a class="dropdown-item" href="listarFactura" target="myFrame">Facturacion</a>
+		                        <a class="dropdown-item" href="crearAsesoriaExtra" target="myFrame">Agregar Asesoria Extra</a>
 		                    </div>
 		                </li>
 		            </ul>
