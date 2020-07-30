@@ -6,7 +6,7 @@
 
 
 CREATE TABLE actividadmejora (
-    idactividadmejora           INTEGER NOT NULL,
+    id_actividadmejora           INTEGER NOT NULL,
     nombre                      NVARCHAR2(50),
     fechainicio                 DATE,
     fechatermino                DATE,
@@ -16,11 +16,12 @@ CREATE TABLE actividadmejora (
     cliente_id_cliente          INTEGER NOT NULL
 );
 
-ALTER TABLE actividadmejora ADD CONSTRAINT actividadmejora_pk PRIMARY KEY ( idactividadmejora );
+ALTER TABLE actividadmejora ADD CONSTRAINT actividadmejora_pk PRIMARY KEY ( id_actividadmejora );
 
 CREATE TABLE administrador (
     id_administrador    INTEGER NOT NULL,
     nombre              NVARCHAR2(50),
+    usuario_id_usuario  INTEGER NOT NULL,
     usuario_nickname    NVARCHAR2(50) NOT NULL
 );
 
@@ -70,6 +71,7 @@ CREATE TABLE cliente (
     nombreempresa       NVARCHAR2(50),
     rutempresa          NVARCHAR2(50),
     fecharegistro       DATE,
+    usuario_id_usuario  INTEGER NOT NULL,
     usuario_nickname    NVARCHAR2(50) NOT NULL
 );
 
@@ -114,6 +116,7 @@ CREATE TABLE profesional (
     correo              NVARCHAR2(50),
     telefono            INTEGER,
     cargo               NVARCHAR2(50),
+    usuario_id_usuario  INTEGER NOT NULL,
     usuario_nickname    NVARCHAR2(50) NOT NULL
 );
 
@@ -154,12 +157,13 @@ CREATE TABLE reporteglobal (
 ALTER TABLE reporteglobal ADD CONSTRAINT reporteglobal_pk PRIMARY KEY ( id_reporteglobal );
 
 CREATE TABLE usuario (
+    id_usuario INTEGER NOT NULL,
     nickname  NVARCHAR2(50) NOT NULL,
     password  NVARCHAR2(50),
     rol       NVARCHAR2(50)
 );
 
-ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( nickname );
+ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( nickname, id_usuario );
 
 CREATE TABLE visita (
     id_visita                   INTEGER NOT NULL,
@@ -179,8 +183,8 @@ ALTER TABLE actividadmejora
         REFERENCES profesional ( id_profesional );
 
 ALTER TABLE administrador
-    ADD CONSTRAINT administrador_usuario_fk FOREIGN KEY ( usuario_nickname )
-        REFERENCES usuario ( nickname );
+    ADD CONSTRAINT administrador_usuario_fk FOREIGN KEY ( usuario_nickname, usuario_id_usuario )
+        REFERENCES usuario ( nickname, id_usuario );
 
 ALTER TABLE asesoria
     ADD CONSTRAINT asesoria_cliente_fk FOREIGN KEY ( cliente_id_cliente )
@@ -207,8 +211,8 @@ ALTER TABLE checklist
         REFERENCES profesional ( id_profesional );
 
 ALTER TABLE cliente
-    ADD CONSTRAINT cliente_usuario_fk FOREIGN KEY ( usuario_nickname )
-        REFERENCES usuario ( nickname );
+    ADD CONSTRAINT cliente_usuario_fk FOREIGN KEY ( usuario_nickname, usuario_id_usuario )
+        REFERENCES usuario ( nickname, id_usuario );
 
 ALTER TABLE detallechecklist
     ADD CONSTRAINT detallechecklist_checklist_fk FOREIGN KEY ( checklist_id_checklist )
@@ -223,8 +227,8 @@ ALTER TABLE factura
         REFERENCES cliente ( id_cliente );
 
 ALTER TABLE profesional
-    ADD CONSTRAINT profesional_usuario_fk FOREIGN KEY ( usuario_nickname )
-        REFERENCES usuario ( nickname );
+    ADD CONSTRAINT profesional_usuario_fk FOREIGN KEY ( usuario_nickname, usuario_id_usuario )
+        REFERENCES usuario ( nickname, id_usuario );
 
 ALTER TABLE reporteaccidente
     ADD CONSTRAINT reporteaccidente_cliente_fk FOREIGN KEY ( cliente_id_cliente )
@@ -254,8 +258,8 @@ ALTER TABLE visita
     ADD CONSTRAINT visita_profesional_fk FOREIGN KEY ( profesional_id_profesional )
         REFERENCES profesional ( id_profesional );
 
-CREATE SEQUENCE idactividadmejora_seq START WITH 1;
-CREATE TRIGGER idactividadmejora_bi BEFORE INSERT ON actividadmejora FOR EACH ROW BEGIN SELECT idactividadmejora_seq.nextval INTO :new.idactividadmejora FROM dual; END;
+CREATE SEQUENCE id_actividadmejora_seq START WITH 1;
+CREATE TRIGGER id_actividadmejora_bi BEFORE INSERT ON actividadmejora FOR EACH ROW BEGIN SELECT id_actividadmejora_seq.nextval INTO :new.id_actividadmejora FROM dual; END;
 /
 CREATE SEQUENCE id_administrador_seq START WITH 1;
 CREATE TRIGGER id_administrador_bi BEFORE INSERT ON administrador FOR EACH ROW BEGIN SELECT id_administrador_seq.nextval INTO :new.id_administrador FROM dual; END;
@@ -299,6 +303,9 @@ CREATE TRIGGER  id_reporteglobal_bi BEFORE INSERT ON reporteglobal  FOR EACH ROW
 CREATE SEQUENCE id_visita_seq START WITH 1;
 CREATE TRIGGER  id_visita_bi BEFORE INSERT ON visita   FOR EACH ROW BEGIN SELECT  id_visita_seq.nextval INTO :new.id_visita   FROM dual; END;
 /
+CREATE SEQUENCE id_usuario_seq START WITH 1;
+CREATE TRIGGER  id_usuario_bi BEFORE INSERT ON usuario   FOR EACH ROW BEGIN SELECT  id_usuario_seq.nextval INTO :new.id_usuario   FROM dual; END;
+/
 
 --USUARIO
 INSERT INTO usuario(password,nickname, rol)
@@ -318,59 +325,59 @@ values ('6896FEB8E3499D6DC48E4DC5625B4020', 'clloncon','profesional');
 
 --CLIENTE
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Transportes S.A','77888999-9',TO_DATE('20/03/2020','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Transportes S.A','77888999-9',TO_DATE('20/03/2020','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Mineria La Plata','78999000-0',TO_DATE('15/01/2020','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Mineria La Plata','78999000-0',TO_DATE('15/01/2020','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Bodegas Plastic','88000333-9',TO_DATE('10/05/2019','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Bodegas Plastic','88000333-9',TO_DATE('10/05/2019','dd/mm/yyyy'), 'cliente',3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('O y R LTDA.','70654389-8',TO_DATE('24/08/2019','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('O y R LTDA.','70654389-8',TO_DATE('24/08/2019','dd/mm/yyyy'), 'cliente',3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Constructora Central','76604493-1',TO_DATE('30/09/2019','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Constructora Central','76604493-1',TO_DATE('30/09/2019','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Envasados Gonzalez','75600500-2',TO_DATE('03/02/2019','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Envasados Gonzalez','75600500-2',TO_DATE('03/02/2019','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Baxter','77564321-9',TO_DATE('02/04/2020','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Baxter','77564321-9',TO_DATE('02/04/2020','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('General Motors','79560489-4',TO_DATE('07/05/2020','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('General Motors','79560489-4',TO_DATE('07/05/2020','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Grupo Armour','78005338-1',TO_DATE('19/10/2019','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Grupo Armour','78005338-1',TO_DATE('19/10/2019','dd/mm/yyyy'), 'cliente', 3);
 
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname)
-values ('Quintino Express','76534765-2',TO_DATE('05/12/2019','dd/mm/yyyy'), 'cliente');
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Quintino Express','76534765-2',TO_DATE('05/12/2019','dd/mm/yyyy'), 'cliente', 3);
 
 
 --PROFESIONAL
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Jose','Mendoza','josemendoza@segurito.cl','977512400','Prevencionista de riesgo en terreno', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Jose','Mendoza','josemendoza@segurito.cl','977512400','Prevencionista de riesgo en terreno', 'profesional', 1);
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Lorena','Nunez','lorenanunez@segurito.cl','988877699','Coordinadora de calidad de vida laboral', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Lorena','Nunez','lorenanunez@segurito.cl','988877699','Coordinadora de calidad de vida laboral', 'profesional', 1);
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Cesar','Araneda','cesararaneda@segurito.cl','999800555','Jefe dpto. prevencion de riesgos laborales', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Cesar','Araneda','cesararaneda@segurito.cl','999800555','Jefe dpto. prevencion de riesgos laborales', 'profesional', 1);
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Rodrigo','Vasquez','rodrigovasquez@segurito.cl','900033378','Prevencionista de riesgo en terreno', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Rodrigo','Vasquez','rodrigovasquez@segurito.cl','900033378','Prevencionista de riesgo en terreno', 'profesional', 1);
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Alicia','Martinez','aliciamartinez@segurito.cl','977744455','Asesora en Prevencion de Riesgos', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Alicia','Martinez','aliciamartinez@segurito.cl','977744455','Asesora en Prevencion de Riesgos', 'profesional', 1);
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Catalina','Rojas','catalinarojas@segurito.cl','966644433','Asesora en Prevencion de Riesgos', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Catalina','Rojas','catalinarojas@segurito.cl','966644433','Asesora en Prevencion de Riesgos', 'profesional', 1);
 
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname)
-values ('Daniel','Carrasco','danielcarrasco@segurito.cl','988900043','Prevencionista de riesgo en terreno', 'profesional');
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Daniel','Carrasco','danielcarrasco@segurito.cl','988900043','Prevencionista de riesgo en terreno', 'profesional', 1);
 
 --ACTIVIDADES MEJORA
 

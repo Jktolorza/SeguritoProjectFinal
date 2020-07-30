@@ -22,6 +22,7 @@ public class ActividadMejora {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQUENCE1")
     @SequenceGenerator(name="SEQUENCE1", sequenceName="IDACTIVIDADMEJORA_SEQ", allocationSize=1)
 	private int idactividadmejora;
+	
 	private String nombre;
 	
 	@Temporal(value=TemporalType.DATE)
@@ -142,9 +143,6 @@ public class ActividadMejora {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
-	
-	
-	
 	
 	
 }

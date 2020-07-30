@@ -13,4 +13,5 @@ public interface UsuarioService {
     void delete(Usuario u);
     void delete(int id);
     Usuario getByNickname(String nickname);
+    void editUserNicknameById(String nickname, String password, String rol, int id_usuario);
 }

@@ -53,9 +53,14 @@ public class ClienteController {
         }
         
         @RequestMapping(value="/guardarEditCliente", method = RequestMethod.POST)
-    	public ModelAndView guardarEditCliente(Cliente c) {
-    		cs.edit(c);
-        	Usuario u= us.getByNickname(c.getUsuario().getNickname());
+    	public ModelAndView guardarEditCliente(Cliente c, Usuario u) {
+
+        	c.setUsuario(u);
+        	System.out.println(c.toString());
+        	cs.edit(c);
+        	System.out.println(u.toString());
+        	us.editUserNicknameById(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
+
 
     		return new ModelAndView("redirect:/listarCliente");
     	}
@@ -64,6 +69,7 @@ public class ClienteController {
         public ModelAndView eliminarCliente(@PathVariable int id) {
         	Cliente c = cs.getById(id);
         	Usuario u= us.getByNickname(c.getUsuario().getNickname());
+        	System.out.println(u.toString());
         	cs.delete(id);
         	us.delete(u);
         	return new ModelAndView("redirect:/listarCliente");
@@ -82,7 +88,11 @@ public class ClienteController {
         
         @RequestMapping(value="/guardarCliente", method = RequestMethod.POST)
     	public ModelAndView guardarCliente(Cliente c, Usuario u) { 
+//        	System.out.println(u.toString());
         	us.add(u);
+        	Usuario u1 = us.getByNickname(u.getNickname());
+        	c.setUsuario(u1);
+//        	System.out.println(c.toString());
         	cs.add(c);
     		return new ModelAndView("redirect:/listarCliente");
     	}

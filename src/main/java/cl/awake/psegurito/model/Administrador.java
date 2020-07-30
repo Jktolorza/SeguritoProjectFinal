@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -18,8 +19,11 @@ public class Administrador {
 	@SequenceGenerator(name="SEQUENCE1", sequenceName="ID_ADMINISTRADOR_SEQ", allocationSize=1)
 	private int id_administrador;
 	private String nombre;
-	@JoinColumn(name="usuario_nickname")
     @ManyToOne
+    @JoinColumns({
+        @JoinColumn(name="usuario_id_usuario"),
+        @JoinColumn(name="usuario_nickname"),
+    })
 	private Usuario usuario;
 	
 	public Administrador() {

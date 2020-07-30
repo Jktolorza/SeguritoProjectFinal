@@ -3,10 +3,12 @@ package cl.awake.psegurito.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import cl.awake.psegurito.model.ActividadMejora;
 import cl.awake.psegurito.model.ActividadMejoraRepository;
 
+@Service
 public class ActividadMejoraServicelmpl implements ActividadMejoraService {
 
 	@Autowired
