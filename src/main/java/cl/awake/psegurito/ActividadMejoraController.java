@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import cl.awake.psegurito.model.ActividadMejora;
+import cl.awake.psegurito.model.Cliente;
+import cl.awake.psegurito.model.Profesional;
 import cl.awake.psegurito.services.ActividadMejoraService;
 import cl.awake.psegurito.services.ClienteService;
 import cl.awake.psegurito.services.ProfesionalService;
-import cl.awake.psegurito.model.Cliente;
-import cl.awake.psegurito.model.Profesional;
+
 
 
 @Controller
