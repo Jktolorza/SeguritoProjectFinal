@@ -20,8 +20,8 @@ public class ActividadMejora {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQUENCE1")
-    @SequenceGenerator(name="SEQUENCE1", sequenceName="IDACTIVIDADMEJORA_SEQ", allocationSize=1)
-	private int idactividadmejora;
+    @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_ACTIVIDADMEJORA_SEQ", allocationSize=1)
+	private int id_actividadmejora;
 	
 	private String nombre;
 	
@@ -51,10 +51,10 @@ public class ActividadMejora {
 	}
 
 
-	public ActividadMejora(int idactividadmejora, String nombre, Date fechaInicio, Date fechaTermino, String estado,
+	public ActividadMejora(int id_actividadmejora, String nombre, Date fechaInicio, Date fechaTermino, String estado,
 			String detalle, Profesional profesional, Cliente cliente) {
 		super();
-		this.idactividadmejora = idactividadmejora;
+		this.id_actividadmejora = id_actividadmejora;
 		this.nombre = nombre;
 		this.fechaInicio = fechaInicio;
 		this.fechaTermino = fechaTermino;
@@ -66,12 +66,12 @@ public class ActividadMejora {
 
 
 	public int getIdactividadmejora() {
-		return idactividadmejora;
+		return id_actividadmejora;
 	}
 
 
-	public void setIdactividadmejora(int idactividadmejora) {
-		this.idactividadmejora = idactividadmejora;
+	public void setIdactividadmejora(int id_actividadmejora) {
+		this.id_actividadmejora = id_actividadmejora;
 	}
 
 
