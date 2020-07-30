@@ -63,10 +63,9 @@
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" disabled
+					<input id="nickname1" class="form-control" type="text" name="nickname" readonly
 						value="${p.getUsuario().getNickname()}" />
 				</div>
-					<input id="nickname2" class="form-control" type="hidden" name="usuario.nickname" value="" />
 			</div>
 			<hr>
 			<div class="row">
@@ -97,6 +96,5 @@
 			</div>
 		</form:form>
 </div>
-
 </body>
 </html>

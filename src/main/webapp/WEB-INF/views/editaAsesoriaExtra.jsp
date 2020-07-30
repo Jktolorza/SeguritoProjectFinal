@@ -6,67 +6,61 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Agregar Asesoria</title>
+<title>Editar Asesoria Extra</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 	crossorigin="anonymous">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="https://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.css">	
+	<link rel="stylesheet" href="https://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.css">
 </head>
 <body>
 <div class="container">
-	<c:set var="as" value="${model.as}"></c:set>
-	<h1 class="display-4">Agregar Asesoria</h1>
-		<hr>
-	
-	<form:form action="${pageContext.request.contextPath}/guardarAsesoria" method="post">
+	<c:set var="ase" value="${model.ase}"></c:set>
+	<h1 class="display-4">Editar Asesoria Extra</h1>
+	<br>
+	<form:form action="${pageContext.request.contextPath}/guardarEditAsesoriaExtra" method="post">
+			<input type="hidden" name="id_asesoriaextra" value="${model.ase.getId_asesoriaextra()}">
 			<div class="row">
 				<div class="col-3">Fecha y hora:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechayhora" id="datetimepicker"/>
+					<input class="form-control" type="text" name="fechayhora" id="datetimepicker"
+						value="${model.ase.getFechayhora()}" />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Motivo:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="motivo"/>
+					<input class="form-control" type="text" name="motivo"
+						value="${model.ase.getMotivo()}" />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Detalle:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="detalle"/>
+					<input class="form-control" type="text" name="detalle"
+						value="${model.ase.getDetalle()}" />
 				</div>
 			</div>
 			<hr>
-			<div class="row">
-				<div class="col-3">Profesional:</div>
-				<div class="col-7">
-					<select name="profesional.id_profesional" class="form-control form-control">
-								<c:forEach items="${model.listap}" var="profesional">
-									<option value="${profesional.getId_profesional()}">${profesional.getNombre()}
-										${profesional.getApellido()} </option>
-								</c:forEach>
-							</select>
-				</div>
-			</div>
-			<hr>
+
 			<div class="row">
 				<div class="col-3">Cliente:</div>
 				<div class="col-7">
 					<select name="cliente.id_cliente" class="form-control form-control">
-								<c:forEach items="${model.listac}" var="cliente">
-									<option value="${cliente.getId_cliente()}">${cliente.getNombreEmpresa()} </option>
-								</c:forEach>
-							</select>
+							<c:forEach items="${model.listac}" var="cliente">
+								<option value="${cliente.getId_cliente()}"
+									${model.ase.getCliente().getId_cliente()==cliente.getId_cliente() ? 'selected' : '' }>
+									${cliente.getNombreEmpresa()} </option>
+							</c:forEach>
+						</select>
 				</div>
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarAsesoria">Listado</a></div>
+				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarAsesoriaExtra">Volver</a></div>
 				<div class="col-1"><input class="btn btn-success"  type="submit" value="Guardar"></div>
 				
 			</div>

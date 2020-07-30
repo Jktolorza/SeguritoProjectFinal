@@ -52,7 +52,7 @@ public class ProfesionalController {
     	p.setUsuario(u);
  		ps.edit(p);
      	//Usuario u = us.getByNickname(p.getUsuario().getNickname());
- 		us.editUserNicknameById(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
+ 		us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
  		return new ModelAndView("redirect:/listarProfesional");
  	}
      

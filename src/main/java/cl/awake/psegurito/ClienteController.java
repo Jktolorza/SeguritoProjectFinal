@@ -56,10 +56,10 @@ public class ClienteController {
     	public ModelAndView guardarEditCliente(Cliente c, Usuario u) {
 
         	c.setUsuario(u);
-        	//System.out.println(c.toString());
+        	System.out.println(u.toString());
         	cs.edit(c);
-        	//System.out.println(u.toString());
-        	us.editUserNicknameById(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
+        	System.out.println(c.toString());
+        	us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
 
 
     		return new ModelAndView("redirect:/listarCliente");

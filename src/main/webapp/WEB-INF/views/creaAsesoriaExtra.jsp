@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Agregar Asesoria</title>
+<title>Agregar Asesoria Extra</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -16,11 +16,11 @@
 </head>
 <body>
 <div class="container">
-	<c:set var="as" value="${model.as}"></c:set>
-	<h1 class="display-4">Agregar Asesoria</h1>
+	<c:set var="ase" value="${model.ase}"></c:set>
+	<h1 class="display-4">Agregar Asesoria Extra</h1>
 		<hr>
 	
-	<form:form action="${pageContext.request.contextPath}/guardarAsesoria" method="post">
+	<form:form action="${pageContext.request.contextPath}/guardarAsesoriaExtra" method="post">
 			<div class="row">
 				<div class="col-3">Fecha y hora:</div>
 				<div class="col-7">
@@ -43,18 +43,6 @@
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-3">Profesional:</div>
-				<div class="col-7">
-					<select name="profesional.id_profesional" class="form-control form-control">
-								<c:forEach items="${model.listap}" var="profesional">
-									<option value="${profesional.getId_profesional()}">${profesional.getNombre()}
-										${profesional.getApellido()} </option>
-								</c:forEach>
-							</select>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
 				<div class="col-3">Cliente:</div>
 				<div class="col-7">
 					<select name="cliente.id_cliente" class="form-control form-control">
@@ -66,7 +54,7 @@
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarAsesoria">Listado</a></div>
+				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarAsesoriaExtra">Listado</a></div>
 				<div class="col-1"><input class="btn btn-success"  type="submit" value="Guardar"></div>
 				
 			</div>
