@@ -83,7 +83,7 @@
 			</div>
 		</form:form>
 </div>
-			<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="https://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.js"></script>
 				<script>
@@ -91,11 +91,7 @@
 				$('#datetimepicker').datepicker({
 					dateFormat: 'yy-mm-dd',
 				});
-			});
-			 function process1() {
-				 document.getElementById("nickname2").value = (document.getElementById("nickname1").value);
-				}
-			
+			});			
 		</script>
 </body>
 </html>

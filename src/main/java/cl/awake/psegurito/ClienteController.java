@@ -56,9 +56,9 @@ public class ClienteController {
     	public ModelAndView guardarEditCliente(Cliente c, Usuario u) {
 
         	c.setUsuario(u);
-        	System.out.println(c.toString());
+        	//System.out.println(c.toString());
         	cs.edit(c);
-        	System.out.println(u.toString());
+        	//System.out.println(u.toString());
         	us.editUserNicknameById(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
 
 

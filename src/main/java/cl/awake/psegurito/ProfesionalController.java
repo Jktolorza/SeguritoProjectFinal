@@ -48,9 +48,11 @@ public class ProfesionalController {
     }
     
     @RequestMapping(value="/guardarEditProfesional", method = RequestMethod.POST)
- 	public ModelAndView guardarEditProfesional(Profesional p) {
+ 	public ModelAndView guardarEditProfesional(Profesional p, Usuario u) {
+    	p.setUsuario(u);
  		ps.edit(p);
-     	Usuario u = us.getByNickname(p.getUsuario().getNickname());
+     	//Usuario u = us.getByNickname(p.getUsuario().getNickname());
+ 		us.editUserNicknameById(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
  		return new ModelAndView("redirect:/listarProfesional");
  	}
      
@@ -75,8 +77,11 @@ public class ProfesionalController {
     
     @RequestMapping(value="/guardarProfesional", method = RequestMethod.POST)
 	public ModelAndView guardarProfesional(Profesional p, Usuario u) { 
-    	ps.add(p);
     	us.add(u);
+    	Usuario u1 = us.getByNickname(u.getNickname());
+    	p.setUsuario(u1);
+    	//System.out.println(p.toString());
+    	ps.add(p);
 		return new ModelAndView("redirect:/listarProfesional");
 	}
 }

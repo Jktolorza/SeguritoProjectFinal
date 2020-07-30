@@ -25,7 +25,7 @@ public class Profesional {
     private String correo;
     private String telefono;
     private String cargo;
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @ManyToOne
     @JoinColumns({
         @JoinColumn(name="usuario_id_usuario"),
         @JoinColumn(name="usuario_nickname"),
@@ -127,11 +127,11 @@ public class Profesional {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-	
-	
-    
-	
-    
-    
-}
+
+	@Override
+	public String toString() {
+		return "Profesional [id_profesional=" + id_profesional + ", nombre=" + nombre + ", apellido=" + apellido
+				+ ", correo=" + correo + ", telefono=" + telefono + ", cargo=" + cargo + ", usuario=" + usuario + "]";
+	}
+	}
  

@@ -14,10 +14,10 @@
 </head>
 <body>
 <div class="container">
-	<c:set var="p" value="${p}"></c:set>
+	<c:set var="p" value="${model.p}"></c:set>
+	<c:set var="u" value="${model.u}"></c:set>
 	<h1 class="display-4">Editar Profesional</h1>
 	<br>
-	
 	<form:form action="${pageContext.request.contextPath}/guardarEditProfesional" method="post">
 			<input type="hidden" name="id_profesional" value="${p.getId_profesional()}">
 			<div class="row">
@@ -57,6 +57,36 @@
 				<div class="col-7">
 					<input class="form-control" type="text" name="cargo"
 						value="${p.getCargo()}" />
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-3">Nickname:</div>
+				<div class="col-7">
+					<input id="nickname1" class="form-control" type="text" name="nickname" disabled
+						value="${p.getUsuario().getNickname()}" />
+				</div>
+					<input id="nickname2" class="form-control" type="hidden" name="usuario.nickname" value="" />
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-3">Password:</div>
+				<div class="col-7">
+					<input class="form-control" type="password" name="password"
+						value="${u.getPassword()}" />
+				</div>
+			</div>
+			<hr>
+			<input class="form-control" type="hidden" name="id_usuario" value="${u.getId_usuario()}" />
+						<div class="row">
+				<div class="col-3">Rol:</div>
+				<div class="col-7">
+					<select name="rol" class="form-control">
+  						 <option value="administrador" ${u.getRol()=='administrador' ? 'selected' : '' }>Administrador</option> 
+ 						 <option value="cliente" ${u.getRol()=='cliente' ? 'selected' : '' }>Cliente</option>
+ 						 <option value="profesional" ${u.getRol()=='profesional' ? 'selected' : '' }>Profesional</option>
+					</select>
+
 				</div>
 			</div>
 			<hr>
