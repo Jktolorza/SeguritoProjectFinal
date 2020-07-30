@@ -30,7 +30,7 @@ public class DetalleFacturaController {
     @RequestMapping("/listarDetalleFactura")
     public ModelAndView listarDetalleFactura() {
              List<DetalleFactura> lista = dfs.getAll();
-            return new ModelAndView("listarDetalleFactura","lista", lista); 
+            return new ModelAndView("listaDetalleFactura","lista", lista); 
             
     }
     @RequestMapping("/mostrarDetalleFactura/{id_factura}")

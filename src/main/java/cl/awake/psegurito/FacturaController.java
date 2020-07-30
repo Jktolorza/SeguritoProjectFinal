@@ -32,7 +32,7 @@ public class FacturaController {
     @RequestMapping("/listarFactura")
     public ModelAndView listarFactura() {
             List<Factura> lista = fs.getAll();
-            return new ModelAndView("listarFactura","lista", lista); 
+            return new ModelAndView("listaFactura","lista", lista); 
             
     }
     @RequestMapping("/mostrarFactura/{id}")
