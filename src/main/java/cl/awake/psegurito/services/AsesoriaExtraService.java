@@ -9,9 +9,9 @@ import cl.awake.psegurito.model.AsesoriaExtra;
 public interface AsesoriaExtraService {
 	 AsesoriaExtra getById(int id);
      List<AsesoriaExtra> getAll();
-     void add(AsesoriaExtra asex);
-     void edit(AsesoriaExtra asex);
-     void delete(AsesoriaExtra asex);
+     void add(AsesoriaExtra ase);
+     void edit(AsesoriaExtra ase);
+     void delete(AsesoriaExtra ase);
      void delete(int id);
 	
 
