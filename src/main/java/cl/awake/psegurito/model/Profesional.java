@@ -58,6 +58,15 @@ public class Profesional {
 		this.usuario = usuario;
 	}
 
+	public Profesional(String nombre, String apellido, String correo, String telefono, String cargo) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.correo = correo;
+		this.telefono = telefono;
+		this.cargo = cargo;
+	}
+
 	public int getId_profesional() {
 		return id_profesional;
 	}

@@ -39,19 +39,19 @@ public class ProfesionalController {
     
     @RequestMapping("/editarProfesional/{id}")
     public ModelAndView editarProfesional(@PathVariable int id) {
-    	 Profesional p = ps.getById(id);
-    	 Usuario u = us.getByNickname(p.getUsuario().getNickname());
-         Map<String, Object> model = new HashMap<String, Object>();
-         model.put("p", p);
-         model.put("u", u);
-         return new ModelAndView("editaProfesional","model", model);
+    	Profesional p = ps.getById(id);
+    	Usuario u = us.getByNickname(p.getUsuario().getNickname());
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("p", p);
+        model.put("u", u);
+        return new ModelAndView("editaProfesional","model", model);
     }
     
     @RequestMapping(value="/guardarEditProfesional", method = RequestMethod.POST)
  	public ModelAndView guardarEditProfesional(Profesional p) {
  		ps.edit(p);
      	Usuario u = us.getByNickname(p.getUsuario().getNickname());
- 		return new ModelAndView("redirect:/listaProfesional");
+ 		return new ModelAndView("redirect:/listarProfesional");
  	}
      
     @RequestMapping("/eliminarProfesional/{id}")
@@ -60,23 +60,23 @@ public class ProfesionalController {
     	Usuario u= us.getByNickname(p.getUsuario().getNickname());
     	ps.delete(id);
     	us.delete(u);
-    	return new ModelAndView("redirect:/listaProfesional");
+    	return new ModelAndView("redirect:/listarProfesional");
     }
     
     @RequestMapping("/crearProfesional")
     public ModelAndView crearProfesional() {
-    	 Profesional p = new Profesional();
-    	 Usuario u = new Usuario();
-         Map<String, Object> model = new HashMap<String, Object>();
-         model.put("p", p);
-         model.put("u", u);
-    	 return new ModelAndView("creaProfesional","model", model);
+    	Profesional p = new Profesional();
+    	Usuario u = new Usuario();
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("p", p);
+        model.put("u", u);
+    	return new ModelAndView("creaProfesional","model", model);
     }
     
     @RequestMapping(value="/guardarProfesional", method = RequestMethod.POST)
 	public ModelAndView guardarProfesional(Profesional p, Usuario u) { 
     	ps.add(p);
     	us.add(u);
-		return new ModelAndView("redirect:/listaProfesional");
+		return new ModelAndView("redirect:/listarProfesional");
 	}
 }
