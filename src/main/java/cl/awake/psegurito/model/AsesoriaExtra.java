@@ -3,29 +3,23 @@ package cl.awake.psegurito.model;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+//Atributos
 
 @Entity
-@Table(name="asesoria")
-public class Asesoria {
-	 //Variables//
-    @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQUENCE1")
-    @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_ASESORIA_SEQ", allocationSize=1)
-	private int id_asesoria;
-    
-    //Ojo con el date
+@Table(name="asesoriaextra")
+public class AsesoriaExtra {
+	
+	private int id_asesoriaextra; 
+	
+	//Fecha convertida a fecha en formato de la BD
     @Temporal(value=TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
 	private Date fechayhora;
@@ -33,35 +27,31 @@ public class Asesoria {
 	private String detalle;
 	
 	
-	@JoinColumn(name="profesional_id_profesional")
-	@ManyToOne
-	private Profesional profesional;
-	
-	
 	@JoinColumn(name="cliente_id_cliente")
 	@ManyToOne
 	private Cliente cliente;
 	
-	public Asesoria() {
+	//Contructor Vacio 
+	public AsesoriaExtra() {
 		
 	}
-	
-	public Asesoria(int id_asesoria, Date fechayhora, String motivo, String detalle,
-			Profesional profesional, Cliente cliente) {
-		this.id_asesoria = id_asesoria;
+
+	//Contructor con todos los parametros
+	public AsesoriaExtra(int id_asesoriaextra, Date fechayhora, String motivo, String detalle, Cliente cliente) {
+		this.id_asesoriaextra = id_asesoriaextra;
 		this.fechayhora = fechayhora;
 		this.motivo = motivo;
 		this.detalle = detalle;
-		this.profesional = profesional;
 		this.cliente = cliente;
 	}
+	//Getter And Setter
 
-	public int getId_asesoria() {
-		return id_asesoria;
+	public int getId_asesoriaextra() {
+		return id_asesoriaextra;
 	}
 
-	public void setId_asesoria(int id_asesoria) {
-		this.id_asesoria = id_asesoria;
+	public void setId_asesoriaextra(int id_asesoriaextra) {
+		this.id_asesoriaextra = id_asesoriaextra;
 	}
 
 	public Date getFechayhora() {
@@ -88,15 +78,6 @@ public class Asesoria {
 		this.detalle = detalle;
 	}
 
-
-	public Profesional getProfesional() {
-		return profesional;
-	}
-
-	public void setProfesional(Profesional profesional) {
-		this.profesional = profesional;
-	}
-
 	public Cliente getCliente() {
 		return cliente;
 	}
@@ -104,6 +85,6 @@ public class Asesoria {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
-	
+		
 
 }

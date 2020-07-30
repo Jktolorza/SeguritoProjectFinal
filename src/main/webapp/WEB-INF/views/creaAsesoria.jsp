@@ -75,7 +75,7 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="https://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.js"></script>
-				<script>s
+				<script>
 			$(function () {
 				$('#datetimepicker').datetimepicker({
 					dateFormat: 'yy-mm-dd',
