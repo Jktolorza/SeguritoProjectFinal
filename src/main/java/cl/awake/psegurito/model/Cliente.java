@@ -2,12 +2,14 @@ package cl.awake.psegurito.model;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -29,9 +31,13 @@ public class Cliente {
     private String rut;
     @Temporal(value=TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date fechaRegistro;
-	@JoinColumn(name="usuario_nickname")
+    private Date fechaRegistro;   
     @ManyToOne
+    @JoinColumns({
+        @JoinColumn(name="usuario_id_usuario"),
+        @JoinColumn(name="usuario_nickname"),
+    })
+ //   @JoinColumn(name="usuario_id_usuario")
 	private Usuario usuario;
     
 	public Cliente() {

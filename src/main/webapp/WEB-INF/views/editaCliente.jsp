@@ -17,6 +17,7 @@
 <body>
 <div class="container">
 	<c:set var="c" value="${model.c}"></c:set>
+	<c:set var="u" value="${model.u}"></c:set>
 	<h1 class="display-4">Editar Cliente</h1>
 	<br>
 	<form:form action="${pageContext.request.contextPath}/guardarEditCliente" method="post">
@@ -48,14 +49,36 @@
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="cliente.nickname"
-						value="${c.getUsuario().getNickname()}" disabled />
+					<input id="nickname1" class="form-control" type="text" name="nickname" disabled
+						value="${c.getUsuario().getNickname()}" />
+				</div>
+					<input id="nickname2" class="form-control" type="hidden" name="usuario.nickname" value="" />
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-3">Password:</div>
+				<div class="col-7">
+					<input class="form-control" type="password" name="password"
+						value="${u.getPassword()}" />
+				</div>
+			</div>
+			<hr>
+			<input class="form-control" type="hidden" name="id_usuario" value="${u.getId_usuario()}" />
+						<div class="row">
+				<div class="col-3">Rol:</div>
+				<div class="col-7">
+					<select name="rol" class="form-control">
+  						 <option value="administrador" ${u.getRol()=='administrador' ? 'selected' : '' }>Administrador</option> 
+ 						 <option value="cliente" ${u.getRol()=='cliente' ? 'selected' : '' }>Cliente</option>
+ 						 <option value="profesional" ${u.getRol()=='profesional' ? 'selected' : '' }>Profesional</option>
+					</select>
+
 				</div>
 			</div>
 			<hr>		
 			<div class="row">
 				<div class="col-1"><a class="btn btn-secondary" href="${pageContext.request.contextPath}/listarCliente">Volver</a></div>
-				<div class="col-1"><input class="btn btn-success" type="submit" value="Guardar"></div>
+				<div class="col-1"><input class="btn btn-success" onClick="process1()" type="submit" value="Guardar"></div>
 				
 			</div>
 		</form:form>
@@ -69,6 +92,10 @@
 					dateFormat: 'yy-mm-dd',
 				});
 			});
+			 function process1() {
+				 document.getElementById("nickname2").value = (document.getElementById("nickname1").value);
+				}
+			
 		</script>
 </body>
 </html>

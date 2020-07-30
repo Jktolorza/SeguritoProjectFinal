@@ -56,4 +56,10 @@ public class UsuarioServiceImpl implements UsuarioService {
 		return ur.getByNickname(nickname);
 	}
 	
+	@Override
+	public void editUserNicknameById(String nickname, String password, String rol, int id_usuario) {
+		// TODO Auto-generated method stub
+		ur.updateUserNicknameById(nickname, password, rol, id_usuario);
+	}
+	
 }

@@ -47,11 +47,10 @@
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" onKeyUp="process1()"/>
+					<input id="nickname1" class="form-control" type="text" name="nickname"/>
 				</div>
 			</div>
 			<hr>
-					<input id="nickname2" class="form-control" type="hidden" name="usuario.nickname" value=""/>
 			<div class="row">
 			<div class="col-3">Rol:</div>
 				<div class="col-7">
@@ -84,12 +83,7 @@
 				$('#datetimepicker').datepicker({
 					dateFormat: 'yy-mm-dd',
 				});
-			});
-			
-			 function process1() {
-				 document.getElementById("nickname2").value = (document.getElementById("nickname1").value);
-				}
-			
+			});			
 		</script>
 </body>
 </body>
