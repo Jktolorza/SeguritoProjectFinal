@@ -30,4 +30,3 @@ DROP TABLE profesional;
 DROP SEQUENCE  id_profesional_seq;
 DROP TABLE usuario;
 DROP SEQUENCE  id_usuario_seq;
-
