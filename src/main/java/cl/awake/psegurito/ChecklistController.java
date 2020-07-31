@@ -29,7 +29,7 @@ public class ChecklistController {
 	@RequestMapping("/listarChecklist")
 	public ModelAndView listarChecklist() {
 		List<Checklist> lista = chs.getAll();
-		System.out.println(lista.get(0).toString());
+		//System.out.println(lista.get(0).toString());
 		return new ModelAndView("listaChecklist","lista",lista);
 	}
 	

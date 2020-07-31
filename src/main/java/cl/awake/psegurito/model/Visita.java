@@ -24,9 +24,9 @@ public class Visita {
     @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_VISITA_SEQ", allocationSize=1)
         private int id_visita;
         
-    @Temporal(value=TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH24:mi")
-        private Date fechavisita;
+    @Temporal(value=TemporalType.TIMESTAMP)
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+     private Date fechavisita;
     
     private int  numerovisita;
     
