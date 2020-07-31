@@ -18,6 +18,7 @@
 <div class="container">
 
 	<c:set var="ch" value="${model.ch}"></c:set>
+	<c:set var="v" value="${model.listav}"></c:set>
 	<h1 class="display-4">Agregar Checklist</h1>
 		<hr>
 		
@@ -34,7 +35,13 @@
 			<div class="row">
 				<div class="col-3">Visita:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="visita"/>
+						<select name="visita.id_visita" class="form-control form-control">
+							<c:forEach items="${model.listav}" var="visita">
+								<option value="${visita.getId_visita()}"
+									${model.f.getVisita().getId_visita()==visita.getId_visita() ? 'selected' : '' }>
+									fecha visita: ${visita.getFechavisita()} numero visita: ${visita.getNumerovisita()} profesional:${visita.getProfesional().getNombre()} ${visita.getProfesional().getApellido()} cliente:${visita.getCliente().getNombreEmpresa()}   </option>
+							</c:forEach>
+						</select>
 				</div>
 			</div>
 			<hr>

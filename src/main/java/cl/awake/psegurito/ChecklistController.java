@@ -29,7 +29,6 @@ public class ChecklistController {
 	@RequestMapping("/listarChecklist")
 	public ModelAndView listarChecklist() {
 		List<Checklist> lista = chs.getAll();
-		//System.out.println(lista.get(0).toString());
 		return new ModelAndView("listaChecklist","lista",lista);
 	}
 	
@@ -55,7 +54,7 @@ public class ChecklistController {
 		return new ModelAndView("redirect:/listarChecklist");
 	}
 	
-	@RequestMapping("/elimarChecklist/{id}")
+	@RequestMapping("/eliminarChecklist/{id}")
 	public ModelAndView eliminarChecklist(@PathVariable int id) {
 		chs.delete(id);
 		return new ModelAndView("redirect:/listarChecklist");

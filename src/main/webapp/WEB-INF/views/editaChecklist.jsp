@@ -17,12 +17,13 @@
 <body>
 <div class="container">
 	<c:set var="ch" value="${model.ch}"></c:set>
+	<c:set var="v" value="${model.listav}"></c:set>
 	<h1 class="btn btn-success" class="display-4">Editar Checklist</h1>
 	<br>
 	
 	
 	<form:form action="${pageContext.request.contextPath}/guardarEditChecklist" method="post">
-			<input type="hidden" name="id_checklist" value="${model.f.getId_checklist()}">
+			<input type="hidden" name="id_checklist" value="${model.ch.getId_checklist()}">
 			<div class="row">
 				<div class="col-3">Version:</div>
 				<div class="col-7">
@@ -34,8 +35,13 @@
 			<div class="row">
 				<div class="col-3">Visita:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="visita" 
-						value="${model.ch.getVisita()}" />
+						<select name="visita.id_visita" class="form-control form-control">
+							<c:forEach items="${model.listav}" var="visita">
+								<option value="${visita.getId_visita()}"
+									${model.f.getVisita().getId_visita()==visita.getId_visita() ? 'selected' : '' }>
+									fecha visita: ${visita.getFechavisita()} numero visita: ${visita.getNumerovisita()} profesional:${visita.getProfesional().getNombre()} ${visita.getProfesional().getApellido()} cliente:${visita.getCliente().getNombreEmpresa()}   </option>
+							</c:forEach>
+						</select>
 				</div>
 			</div>
 			<hr>
