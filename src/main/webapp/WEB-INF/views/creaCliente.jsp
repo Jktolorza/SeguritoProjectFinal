@@ -55,9 +55,9 @@
 				<div class="col-3">Rol:</div>
 				<div class="col-7">
 					<select name="rol" class="form-control">
-						<option value="administrador">Administrador</option>
-						<option value="cliente" selected>Cliente</option>
-						<option value="profesional">Profesional</option>
+						<option value="ROLE_ADMINISTRADOR">Administrador</option>
+						<option value="ROLE_CLIENTE" selected>Cliente</option>
+						<option value="ROLE_PROFESIONAL">Profesional</option>
 					</select>
 				</div>
 			</div>

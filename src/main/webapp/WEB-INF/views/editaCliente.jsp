@@ -64,10 +64,10 @@
 				<div class="col-3">Rol:</div>
 				<div class="col-7">
 					<select name="rol" class="form-control">
-						<option value="administrador" ${u.getRol()=='administrador' ? 'selected' : '' }>Administrador
+						<option value="ROLE_ADMINISTRADOR" ${u.getRol()=='administrador' ? 'selected' : '' }>Administrador
 						</option>
-						<option value="cliente" ${u.getRol()=='cliente' ? 'selected' : '' }>Cliente</option>
-						<option value="profesional" ${u.getRol()=='profesional' ? 'selected' : '' }>Profesional</option>
+						<option value="ROLE_CLIENTE" ${u.getRol()=='cliente' ? 'selected' : '' }>Cliente</option>
+						<option value="ROLE_PROFESIONAL" ${u.getRol()=='profesional' ? 'selected' : '' }>Profesional</option>
 					</select>
 
 				</div>

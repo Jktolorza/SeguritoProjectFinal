@@ -13,8 +13,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import cl.awake.psegurito.model.Checklist;
 import cl.awake.psegurito.model.Profesional;
+import cl.awake.psegurito.model.Visita;
 import cl.awake.psegurito.services.ChecklistService;
 import cl.awake.psegurito.services.ProfesionalService;
+import cl.awake.psegurito.services.VisitaService;
 
 @Controller
 public class ChecklistController {
