@@ -59,6 +59,7 @@
 							clientes</a>
 						<a class="dropdown-item" href="listarAsesoriaExtra" target="myFrame">Revisar Asesorias Extras
 						</a>
+						<a class="dropdown-item" href="listarChecklist" target="myFrame">Revisar Checklist</a>
 					</div>
 				</li>
 				<!-- Detalle Cliente -->
