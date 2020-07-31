@@ -22,6 +22,7 @@
 					    <th>Version</th>
 					    <th>Profesional</th>
 					    <th>Cliente</th>
+					    <th>Numero de Visita</th>
                        
 				</tr>
 							</thead>
@@ -30,8 +31,9 @@
 				<tr>
 					<th scope="row"><a href="${pageContext.request.contextPath}/mostrarDetalleChecklist/${check.getId_checklist()}">${check.getId_checklist()}</a></th>
 					<td>${check.getVersion()}</td>
-					<td>${check.getVisita().getProfesional().getNombre()}</td>
+					<td>${check.getVisita().getProfesional().getNombre()} ${ check.getVisita().getProfesional().getApellido()}</td>
 					<td>${check.getVisita().getCliente().getNombreEmpresa()}</td>
+					<td>${check.getVisita().getNumerovisita()}</td>
 					<td><a class="btn btn-primary"  href="${pageContext.request.contextPath}/editarChecklist/${check.getId_checklist()}">Editar </a>  <a class="btn btn-danger" href="${pageContext.request.contextPath}/eliminarChecklist/${check.getId_checklist()}">Borrar</a></td>
 			</c:forEach>
 			</tbody>
