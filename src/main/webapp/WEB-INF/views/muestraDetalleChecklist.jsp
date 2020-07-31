@@ -35,7 +35,8 @@
 			</tbody>
 			
 		</table>
-		<p><a class="btn btn-primary" href="../crearDetalleChecklist/${model.id_checklist}">Crear Detalle Factura</a></p>
+		<p><a class="btn btn-primary" href="../crearDetalleChecklist/${model.id_checklist}">Crear Detalle Checklist</a></p>
+		<p><a class="btn btn-danger" href="../listarChecklist">Volver al Checklist</a></p>
 	</div>
 </body>
 </html>

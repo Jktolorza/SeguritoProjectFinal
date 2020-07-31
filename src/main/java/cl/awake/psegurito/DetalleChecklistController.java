@@ -57,11 +57,11 @@ public class DetalleChecklistController {
 		public ModelAndView guardarEditDetalleChecklist(DetalleChecklist dch, RedirectAttributes redirectAttrs) {
 			dchs.edit(dch);
 			
-			//modificar factura tb
-			Checklist ch = new Checklist();
-			ch=chs.getById(dch.getChecklist().getId_checklist());
-			ch.setItems(dchs.findAllByIdChecklist(dch.getChecklist().getId_checklist()));
-	    	chs.edit(ch);
+//			//modificar factura tb
+//			Checklist ch = new Checklist();
+//			ch=chs.getById(dch.getChecklist().getId_checklist());
+//			ch.setItems(dchs.findAllByIdChecklist(dch.getChecklist().getId_checklist()));
+//	    	chs.edit(ch);
 			
 			
 			redirectAttrs.addAttribute("id_checklist", dch.getChecklist().getId_checklist());
@@ -73,11 +73,11 @@ public class DetalleChecklistController {
 	    public ModelAndView eliminarDetalleChecklist(@PathVariable int id, @PathVariable int id_checklist, RedirectAttributes redirectAttrs) {
 	    	dchs.delete(id);
 	    	
-			//modificar factura tb
-	    	Checklist ch = new Checklist();
-			ch=chs.getById(id_checklist);
-			ch.setItems(dchs.findAllByIdChecklist(id_checklist));
-	     	chs.edit(ch);
+
+//	    	Checklist ch = new Checklist();
+////			ch=chs.getById(id_checklist);
+////			ch.setItems(dchs.findAllByIdChecklist(id_checklist));
+//	     	chs.edit(ch);
 	    	
 	    	redirectAttrs.addAttribute("id_checklist", id_checklist);
 	    	return new ModelAndView("redirect:/mostrarDetalleChecklist/{id_checklist}.do");
@@ -100,11 +100,11 @@ public class DetalleChecklistController {
 		public ModelAndView guardarDetalleChecklist(DetalleChecklist dch, RedirectAttributes redirectAttrs) {
 			dchs.add(dch);
 			
-			//modificar factura tb
-			Checklist ch = new Checklist();
-			ch=chs.getById(dch.getChecklist().getId_checklist());
-			ch.setItems(dchs.findAllByIdChecklist(dch.getChecklist().getId_checklist()));
-	      	chs.edit(ch);
+
+//			Checklist ch = new Checklist();
+////			ch=chs.getById(dch.getChecklist().getId_checklist());
+////			ch.setItems(dchs.findAllByIdChecklist(dch.getChecklist().getId_checklist()));
+//	      	chs.edit(ch);
 	      	
 			redirectAttrs.addAttribute("id_checklist", dch.getChecklist().getId_checklist());
 	    	return new ModelAndView("redirect:/mostrarDetalleChecklist/{id_checklist}.do");

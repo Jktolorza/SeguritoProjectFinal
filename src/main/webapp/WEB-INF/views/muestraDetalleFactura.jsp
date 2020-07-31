@@ -38,6 +38,7 @@
 			
 		</table>
 		<p><a class="btn btn-primary" href="../crearDetalleFactura/${model.id_factura}">Crear Detalle Factura</a></p>
+		<p><a class="btn btn-danger" href="../listarFactura">Volver a las facturas</a></p>
 	</div>
 </body>
 </html>
