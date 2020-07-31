@@ -438,14 +438,14 @@ INSERT INTO detallefactura(nombre,precio, cantidad, factura_id_factura)
 values ('capacitacion', 400000,2,'2');
 
 --VISITA
-INSERT INTO visita(fechavisita, numerovisita, profesiona_id_profesional, cliente_id_cliente)
-values(TO_DATE('02/05/2020 11:00','dd/mm/yyyy HH24:mi'),'1','1','1');
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('02/05/2020 11:00','dd/mm/yyyy HH24:mi'),1,1,1);
 
 --CHECKLIST
 INSERT INTO checklist(version, visita_id_visita)
-values ('1','1');
+values (1,1);
 
 --DETALLE CHECKLIST
-INSERT INTO detallechecklist(detalle, estado, checklist_id_checklist)
-values ('Uso de zapatos de seguridad','No incorporado','1');
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',1);
 

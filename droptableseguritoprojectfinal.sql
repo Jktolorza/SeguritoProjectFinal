@@ -8,7 +8,6 @@ DROP TABLE asesoriaextra;
 DROP SEQUENCE id_asesoriaextra_seq;
 DROP TABLE capacitacion;
 DROP SEQUENCE  id_capacitacion_seq;
-
 DROP TABLE reporteaccidente;
 DROP SEQUENCE  id_reporteaccidente_seq;
 DROP TABLE reportecliente;
