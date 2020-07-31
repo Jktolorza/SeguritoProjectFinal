@@ -160,7 +160,7 @@ ALTER TABLE reporteglobal ADD CONSTRAINT reporteglobal_pk PRIMARY KEY ( id_repor
 CREATE TABLE usuario (
     id_usuario INTEGER NOT NULL,
     nickname  NVARCHAR2(50) NOT NULL,
-    password  NVARCHAR2(50),
+    password  NVARCHAR2(100),
     rol       NVARCHAR2(50)
 );
 
@@ -310,19 +310,21 @@ CREATE TRIGGER  id_usuario_bi BEFORE INSERT ON usuario   FOR EACH ROW BEGIN SELE
 
 --USUARIO
 INSERT INTO usuario(password,nickname, rol)
-values ('5C3D63ED342437F2C603E5360181C1B5', 'profesional','profesional');
+values ('$2a$10$vhEGzaZMgJclASEdfRO3Be3ynPHsrt.XXKMYsFD3j6aAlBkbp1T.K', 'profesional','ROLE_PROFESIONAL');
 INSERT INTO usuario(password,nickname, rol)
-values ('91F5167C34C400758115C2A6826EC2E3', 'administrador','administrador');
+values ('$2a$10$RpwEAhQUjkNwijvtG91Iku57FEWmhPepDxhcLEC.fZTbAyYVkCsWe', 'administrador','ROLE_ADMINISTRADOR');
 INSERT INTO usuario(password,nickname, rol)
-values ('4983A0AB83ED86E0E7213C8783940193', 'cliente','cliente');
+values ('$2a$10$vTvacYsuAiEs4o/sgxmyiueSKi3I57p9cEztCMJtmNPDmjZlW2q92', 'cliente','ROLE_CLIENTE');
 INSERT INTO usuario(password,nickname, rol)
-values ('E0C826B1C1532015B386ADDB63147C5E', 'mlillo','profesional');
+values ('$2a$10$ElrGfmIAfIGILpB6SngahupNu2tbtrZn4ihcw609dOaZEeP.fCQCy', 'mlillo','ROLE_PROFESIONAL');
 INSERT INTO usuario(password,nickname, rol)
-values ('143D42165DFAA0E4870B787D8D0CB125', 'mflores','profesional');
+values ('$2a$10$bqplfy/rXuHeKzX29U.PIeGpwi48yJyGP2V3yXpcoNBWRpDamaZCS', 'mflores','ROLE_PROFESIONAL');
 INSERT INTO usuario(password,nickname, rol)
-values ('048056AD6EFCA97D0B4CFF5F0114BB09', 'jtolorza','profesional');
+values ('$2a$10$Dc4bEfo0vvXzC6DpPM1Ncuxso1jlBHtfAa8VzrsajtRADA7NuE.Ye', 'jtolorza','ROLE_PROFESIONAL');
 INSERT INTO usuario(password,nickname, rol)
-values ('6896FEB8E3499D6DC48E4DC5625B4020', 'clloncon','profesional');
+values ('$2a$10$/jUyRyk6clGwagdmm7QMOuMc7esj0FH/pYin3wvf891Q/V.YpkNr.', 'clloncon','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$P1XxIboELkfCBpos.2W.EOaTUe54CPSbY/tq13dmDWpewtpsRObaO', 'abarroso','ROLE_PROFESIONAL');
 
 --CLIENTE
 
