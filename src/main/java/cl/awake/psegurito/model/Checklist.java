@@ -19,6 +19,8 @@ public class Checklist {
     @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_CHECKLIST_SEQ", allocationSize=1)
 	private int id_checklist;
 	
+	private String version;
+	
 	@JoinColumn(name="visita_id_visita")
 	@ManyToOne
 	private Visita visita;
@@ -31,18 +33,42 @@ public class Checklist {
 		super();
 	}
 
-	public Checklist(int id_checklist, Visita visita, List<DetalleChecklist> items) {
+	
+	public Checklist(int id_checklist, String version, Visita visita, List<DetalleChecklist> items) {
 		super();
 		this.id_checklist = id_checklist;
+		this.version = version;
 		this.visita = visita;
 		this.items = items;
 	}
 
-	public Checklist(Visita visita, List<DetalleChecklist> items) {
+
+
+	public Checklist(int id_checklist) {
 		super();
-		this.visita = visita;
-		this.items = items;
+		this.id_checklist = id_checklist;
 	}
+
+	
+	
+	public String getVersion() {
+		return version;
+	}
+
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+
+	public Visita getVisita() {
+		return visita;
+	}
+
+	public void setVisita(Visita visita) {
+		this.visita = visita;
+	}
+
 
 	public int getId_checklist() {
 		return id_checklist;
@@ -56,9 +82,7 @@ public class Checklist {
 		return visita;
 	}
 
-	public void setCliente(Visita visita) {
-		this.visita = visita;
-	}
+	
 
 	public List<DetalleChecklist> getItems() {
 		return items;
@@ -66,6 +90,12 @@ public class Checklist {
 
 	public void setItems(List<DetalleChecklist> items) {
 		this.items = items;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Checklist [id_checklist=" + id_checklist + ", visita=" + visita + ", items=" + items + "]";
 	}
 	
 	

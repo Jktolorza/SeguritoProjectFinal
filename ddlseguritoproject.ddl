@@ -61,7 +61,8 @@ ALTER TABLE capacitacion ADD CONSTRAINT capacitacion_pk PRIMARY KEY ( id_capacit
 
 CREATE TABLE checklist (
     id_checklist                INTEGER NOT NULL,
-    profesional_id_profesional  INTEGER NOT NULL
+    version                     NVARCHAR2(50),
+    visita_id_visita            INTEGER NOT NULL
 );
 
 ALTER TABLE checklist ADD CONSTRAINT checklist_pk PRIMARY KEY ( id_checklist );
@@ -207,8 +208,8 @@ ALTER TABLE capacitacion
         REFERENCES profesional ( id_profesional );
 
 ALTER TABLE checklist
-    ADD CONSTRAINT checklist_profesional_fk FOREIGN KEY ( profesional_id_profesional )
-        REFERENCES profesional ( id_profesional );
+    ADD CONSTRAINT checklist_visita_fk FOREIGN KEY ( visita_id_visita )
+        REFERENCES visita ( id_visita );
 
 ALTER TABLE cliente
     ADD CONSTRAINT cliente_usuario_fk FOREIGN KEY ( usuario_nickname, usuario_id_usuario )
