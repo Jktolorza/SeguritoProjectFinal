@@ -40,7 +40,7 @@
 			<div class="row">
 				<div class="col-3">Fecha Registro:</div>
 				<div class="col-7">
-					<input class="form-control" type="date" name="fechaRegistro" id="datetimepicker" />
+					<input class="form-control" type="text" name="fechaRegistro" id="datetimepicker" />
 				</div>
 			</div>
 			<hr>

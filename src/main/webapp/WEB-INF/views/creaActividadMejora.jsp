@@ -32,14 +32,14 @@
 			<div class="row">
 				<div class="col-3">Fecha Inicio:</div>
 				<div class="col-7">
-					<input class="form-control" type="date" name="fechaInicio" id="datetimepicker" />
+					<input class="form-control" type="text" name="fechaInicio" id="datetimepicker" />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Fecha Termino:</div>
 				<div class="col-7">
-					<input class="form-control" type="date" name="fechaTermino" id="datetimepicker2" />
+					<input class="form-control" type="text" name="fechaTermino" id="datetimepicker2" />
 				</div>
 			</div>
 			<hr>
