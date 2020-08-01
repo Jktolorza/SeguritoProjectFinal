@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,23 +45,29 @@ public class ClienteController {
         @RequestMapping("/editarCliente/{id}")
         public ModelAndView editarCliente(@PathVariable int id) {
         	 Cliente c = cs.getById(id);
-        	 Usuario u = us.getByNickname(c.getUsuario().getNickname());
+        	// Usuario u = us.getByNickname(c.getUsuario().getNickname());
         	 
              Map<String, Object> model = new HashMap<String, Object>();
              model.put("c", c);
-             model.put("u", u);
+           //  model.put("u", u);
         	 
              return new ModelAndView("editaCliente","model", model);
         }
         
         @RequestMapping(value="/guardarEditCliente", method = RequestMethod.POST)
-    	public ModelAndView guardarEditCliente(Cliente c, Usuario u) {
+    	public ModelAndView guardarEditCliente(Cliente c) {
 
-        	c.setUsuario(u);
-        	System.out.println(u.toString());
+        //	c.setUsuario(u);
+        	//System.out.println(u.toString());
         	cs.edit(c);
-        	System.out.println(c.toString());
-        	us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
+//        	System.out.println(c.toString());
+        	
+//        	//encriptando el nuevo password
+//        	PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(); 
+//        	String password = u.getPassword();
+//        	u.setPassword(passwordEncoder.encode(password));
+        	
+//        	us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
 
 
     		return new ModelAndView("redirect:/listarCliente");
@@ -89,6 +97,13 @@ public class ClienteController {
         @RequestMapping(value="/guardarCliente", method = RequestMethod.POST)
     	public ModelAndView guardarCliente(Cliente c, Usuario u) { 
 //        	System.out.println(u.toString());
+        	
+        	//encriptando el nuevo password
+        	PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(); 
+        	String password = u.getPassword();
+        	u.setPassword(passwordEncoder.encode(password));
+        	
+        	
         	us.add(u);
         	Usuario u1 = us.getByNickname(u.getNickname());
         	c.setUsuario(u1);

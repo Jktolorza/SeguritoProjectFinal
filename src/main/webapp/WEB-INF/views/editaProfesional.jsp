@@ -15,7 +15,7 @@
 <body>
 	<div class="container">
 		<c:set var="p" value="${model.p}"></c:set>
-		<c:set var="u" value="${model.u}"></c:set>
+<%-- 		<c:set var="u" value="${model.u}"></c:set> --%>
 		<h1 class="display-4">Editar Profesional</h1>
 		<br>
 		<form:form action="${pageContext.request.contextPath}/guardarEditProfesional" method="post">
@@ -44,7 +44,7 @@
 			<div class="row">
 				<div class="col-3">Telefono:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="telefono" value="${p.getTelefono()}" />
+					<input class="form-control" type="number" name="telefono" value="${p.getTelefono()}" />
 				</div>
 			</div>
 			<hr>
@@ -58,32 +58,33 @@
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" readonly
+					<input id="nickname1" class="form-control" type="text" name="usuario.nickname" readonly
 						value="${p.getUsuario().getNickname()}" />
 				</div>
 			</div>
 			<hr>
-			<div class="row">
-				<div class="col-3">Password:</div>
-				<div class="col-7">
-					<input class="form-control" type="password" name="password" value="${u.getPassword()}" />
-				</div>
-			</div>
-			<hr>
-			<input class="form-control" type="hidden" name="id_usuario" value="${u.getId_usuario()}" />
-			<div class="row">
-				<div class="col-3">Rol:</div>
-				<div class="col-7">
-					<select name="rol" class="form-control">
-						<option value="ROLE_ADMINISTRADOR" ${u.getRol()=='administrador' ? 'selected' : '' }>Administrador
-						</option>
-						<option value="ROLE_CLIENTE" ${u.getRol()=='cliente' ? 'selected' : '' }>Cliente</option>
-						<option value="ROLE_PROFESIONAL" ${u.getRol()=='profesional' ? 'selected' : '' }>Profesional</option>
-					</select>
+			<input class="form-control" type="hidden" name="usuario.id_usuario" value="${p.getUsuario().getId_usuario()}" />
+<!-- 			<div class="row"> -->
+<!-- 				<div class="col-3">Password:</div> -->
+<!-- 				<div class="col-7"> -->
+<%-- 					<input class="form-control" type="password" name="password" value="${u.getPassword()}" /> --%>
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 			<hr> -->
+<%-- 			<input class="form-control" type="hidden" name="id_usuario" value="${u.getId_usuario()}" /> --%>
+<!-- 			<div class="row"> -->
+<!-- 				<div class="col-3">Rol:</div> -->
+<!-- 				<div class="col-7"> -->
+<!-- 					<select name="rol" class="form-control"> -->
+<%-- 						<option value="ROLE_ADMINISTRADOR" ${u.getRol()=='administrador' ? 'selected' : '' }>Administrador --%>
+<!-- 						</option> -->
+<%-- 						<option value="ROLE_CLIENTE" ${u.getRol()=='cliente' ? 'selected' : '' }>Cliente</option> --%>
+<%-- 						<option value="ROLE_PROFESIONAL" ${u.getRol()=='profesional' ? 'selected' : '' }>Profesional</option> --%>
+<!-- 					</select> -->
 
-				</div>
-			</div>
-			<hr>
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 			<hr> -->
 			<div class="row">
 				<div class="col-1"><a class="btn btn-secondary"
 						href="${pageContext.request.contextPath}/listarProfesional">Volver</a></div>

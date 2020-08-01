@@ -52,7 +52,7 @@
 			<div class="row">
 				<div class="col-3">Telefono:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="telefono" required />
+					<input class="form-control" type="number" name="telefono" required />
 				</div>
 			</div>
 			<hr>

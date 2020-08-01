@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,19 +42,20 @@ public class ProfesionalController {
     @RequestMapping("/editarProfesional/{id}")
     public ModelAndView editarProfesional(@PathVariable int id) {
     	Profesional p = ps.getById(id);
-    	Usuario u = us.getByNickname(p.getUsuario().getNickname());
+//    	Usuario u = us.getByNickname(p.getUsuario().getNickname());
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("p", p);
-        model.put("u", u);
+//        model.put("u", u);
         return new ModelAndView("editaProfesional","model", model);
     }
     
     @RequestMapping(value="/guardarEditProfesional", method = RequestMethod.POST)
- 	public ModelAndView guardarEditProfesional(Profesional p, Usuario u) {
-    	p.setUsuario(u);
+ 	public ModelAndView guardarEditProfesional(Profesional p) {
+//    	p.setUsuario(u);
  		ps.edit(p);
      	//Usuario u = us.getByNickname(p.getUsuario().getNickname());
- 		us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
+ 		
+// 		us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
  		return new ModelAndView("redirect:/listarProfesional");
  	}
      
@@ -77,6 +80,12 @@ public class ProfesionalController {
     
     @RequestMapping(value="/guardarProfesional", method = RequestMethod.POST)
 	public ModelAndView guardarProfesional(Profesional p, Usuario u) { 
+    	
+ 		//encriptando el nuevo password
+    	PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(); 
+    	String password = u.getPassword();
+    	u.setPassword(passwordEncoder.encode(password));
+    	
     	us.add(u);
     	Usuario u1 = us.getByNickname(u.getNickname());
     	p.setUsuario(u1);
