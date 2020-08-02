@@ -47,7 +47,10 @@
                                     <a class="dropdown-item" href="listarProfesional" target="myFrame">Listar Profesional</a>
                                     <a class="dropdown-item" href="listarCliente" target="myFrame">Listar Cliente</a>
                                     <a class="dropdown-item" href="crearCliente" target="myFrame">Crear Cliente</a>
+                                    <a class="dropdown-item" href="listarAdministrador" target="myFrame">Listar Administrador</a>
+                                    <a class="dropdown-item" href="crearAdministrador" target="myFrame">Crear Administrador</a>
                                     <a class="dropdown-item" href="crearFactura" target="myFrame">Facturacion Clientes</a>
+                                    <a class="dropdown-item" href="listarUsuario" target="myFrame">Gestion de usuarios</a>
                                 </div>
                             </li>
 

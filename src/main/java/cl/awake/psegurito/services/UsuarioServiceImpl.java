@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cl.awake.psegurito.model.Usuario;
+import cl.awake.psegurito.model.UsuarioId;
 import cl.awake.psegurito.model.UsuarioRepository;
 
 @Service
@@ -14,10 +15,16 @@ public class UsuarioServiceImpl implements UsuarioService {
 	@Autowired
 	UsuarioRepository ur;
 	
+//	@Override
+//	public Usuario getById(int id) {
+//		// TODO Auto-generated method stub
+//		return ur.findOne(id);
+//	}
+	
 	@Override
-	public Usuario getById(int id) {
+	public Usuario getById(UsuarioId usuarioid) {
 		// TODO Auto-generated method stub
-		return ur.findOne(id);
+		return ur.findOne(usuarioid);
 	}
 
 	@Override
@@ -44,12 +51,12 @@ public class UsuarioServiceImpl implements UsuarioService {
 		ur.delete(u);
 	}
 
-	@Override
-	public void delete(int id) {
-		// TODO Auto-generated method stub
-        ur.delete(id);
-	}
-	
+//	@Override
+//	public void delete(int id) {
+//		// TODO Auto-generated method stub
+//        ur.delete(id);
+//	}
+//	
 	@Override
 	public Usuario getByNickname(String nickname) {
 		// TODO Auto-generated method stub

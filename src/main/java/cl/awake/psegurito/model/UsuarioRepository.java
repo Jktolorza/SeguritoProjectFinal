@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Service
-public interface UsuarioRepository extends CrudRepository<Usuario, Integer>{
+public interface UsuarioRepository extends CrudRepository<Usuario, UsuarioId>{
 	@Query(value="Select * from usuario u where u.nickname=?1", nativeQuery=true)
 	 Usuario getByNickname(String nickname);
 	@Modifying
