@@ -1,5 +1,6 @@
 package cl.awake.psegurito;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -72,14 +73,13 @@ public class ClienteController {
 
     		return new ModelAndView("redirect:/listarCliente");
     	}
-        
         @RequestMapping("/eliminarCliente/{id}")
         public ModelAndView eliminarCliente(@PathVariable int id) {
         	Cliente c = cs.getById(id);
         	Usuario u= us.getByNickname(c.getUsuario().getNickname());
         	System.out.println(u.toString());
         	cs.delete(id);
-        	us.delete(u);
+			us.delete(u);
         	return new ModelAndView("redirect:/listarCliente");
         }
         

@@ -1,5 +1,6 @@
 package cl.awake.psegurito.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class Usuario {
     @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_USUARIO_SEQ", allocationSize=1)
 	private int id_usuario;
 	@Id
+	@Column(unique=true)
 	private String nickname;
 	private String password;
 	private String rol;

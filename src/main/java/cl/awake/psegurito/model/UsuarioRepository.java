@@ -7,11 +7,12 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Transactional
+
 @Service
 public interface UsuarioRepository extends CrudRepository<Usuario, UsuarioId>{
 	@Query(value="Select * from usuario u where u.nickname=?1", nativeQuery=true)
 	 Usuario getByNickname(String nickname);
+	@Transactional
 	@Modifying
 	@Query(value="Update usuario u set  u.password= :password, u.rol= :rol where u.id_usuario= :id_usuario and u.nickname= :nickname", nativeQuery=true)
 	 void updateUserByIdAndNickname(

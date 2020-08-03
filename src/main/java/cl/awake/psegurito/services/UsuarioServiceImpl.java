@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.model.UsuarioId;
@@ -32,7 +34,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 		// TODO Auto-generated method stub
 		return (List<Usuario>) ur.findAll();
 	}
-
+	
 	@Override
 	public void add(Usuario u) {
 		// TODO Auto-generated method stub
