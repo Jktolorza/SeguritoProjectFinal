@@ -23,35 +23,35 @@
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombre" value="${p.getNombre()}" />
+					<input class="form-control" type="text" name="nombre" value="${p.getNombre()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Apellido:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="apellido" value="${p.getApellido()}" />
+					<input class="form-control" type="text" name="apellido" value="${p.getApellido()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Correo:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="correo" value="${p.getCorreo()}" />
+					<input class="form-control" type="text" name="correo" value="${p.getCorreo()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Telefono:</div>
 				<div class="col-7">
-					<input class="form-control" type="number" name="telefono" value="${p.getTelefono()}" />
+					<input class="form-control" type="number" name="telefono" value="${p.getTelefono()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Cargo:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="cargo" value="${p.getCargo()}" />
+					<input class="form-control" type="text" name="cargo" value="${p.getCargo()}"  required/>
 				</div>
 			</div>
 			<hr>
@@ -59,7 +59,7 @@
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
 					<input id="nickname1" class="form-control" type="text" name="usuario.nickname" readonly
-						value="${p.getUsuario().getNickname()}" />
+						value="${p.getUsuario().getNickname()}" required />
 				</div>
 			</div>
 			<hr>

@@ -28,28 +28,28 @@
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombreEmpresa" />
+					<input class="form-control" type="text" name="nombreEmpresa" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Rut:</div>
-				<div class="col-7">
-					<input class="form-control" type="text" name="rut" />
+				<div class="col-7"> 
+					<input class="form-control" type="text" name="rut" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Fecha Registro:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechaRegistro" id="datetimepicker" />
+					<input class="form-control" type="text" name="fechaRegistro" id="datetimepicker" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" />
+					<input id="nickname1" class="form-control" type="text" name="nickname" required/>
 				</div>
 			</div>
 			<hr>

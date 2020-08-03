@@ -29,13 +29,16 @@ public class Cliente {
 	private int id_cliente;
 
 	/** Nombre de la empresa {@link Cliente} */
+	@Column( nullable = false)
 	private String nombreEmpresa;
 
 	/** Rut de la empresa {@link Cliente} */
-	@Column(name = "rutempresa")
+	
+	@Column(name = "rutempresa", nullable = false,length = 15)
 	private String rut;
 
 	/** Fecha en que ocurrio³ el registro {@link Cliente} */
+	@Column( nullable = false)
 	@Temporal(value = TemporalType.DATE)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date fechaRegistro;

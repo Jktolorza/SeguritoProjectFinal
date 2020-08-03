@@ -21,19 +21,19 @@
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-3">
-					<input class="form-control" type="text" name="nombre"/>
+					<input class="form-control" type="text" name="nombre" required/>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-3">Precio:</div>
 				<div class="col-3">
-					<input class="form-control" type="number" name="precio"/>
+					<input class="form-control" type="number" name="precio" required/>
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-3">Cantidad:</div>
 				<div class="col-3">
-					<input class="form-control" type="number" name="cantidad" max=999999999/>
+					<input class="form-control" type="number" name="cantidad" max=999999999 required/>
 				</div>
 			</div>
 			<div class="row">

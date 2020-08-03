@@ -27,7 +27,7 @@
 				<div class="col-3">Fecha de Cobro:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechadecobro" id="datetimepicker"
-						value="${model.f.getFechadecobro()}" />
+						value="${model.f.getFechadecobro()}" required />
 				</div>
 			</div>
 			<hr>
@@ -35,7 +35,7 @@
 				<div class="col-3">Fecha Vencimiento:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechaVencimiento" id="datetimepicker2"
-						value="${model.f.getFechaVencimiento()}" />
+						value="${model.f.getFechaVencimiento()}" required />
 				</div>
 			</div>
 			<hr>

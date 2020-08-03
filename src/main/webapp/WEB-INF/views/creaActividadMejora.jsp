@@ -12,6 +12,7 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="https://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.css">
+
 </head>
 
 <body>
@@ -25,35 +26,35 @@
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombre" />
+					<input class="form-control" type="text" name="nombre" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Fecha Inicio:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechaInicio" id="datetimepicker" />
+					<input class="form-control" type="text" name="fechaInicio" id="datetimepicker" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Fecha Termino:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechaTermino" id="datetimepicker2" />
+					<input class="form-control" type="text" name="fechaTermino" id="datetimepicker2" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Estado:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="estado" />
+					<input class="form-control" type="text" name="estado" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Detalle:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="detalle" />
+					<input class="form-control" type="text" name="detalle"  required />			
 				</div>
 			</div>
 			<hr>
@@ -103,6 +104,7 @@
 			});
 		});
 	</script>
+
 </body>
 
 </html>

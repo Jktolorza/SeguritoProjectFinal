@@ -21,13 +21,13 @@
 			<div class="row">
 				<div class="col-3">Descripcion:</div>
 				<div class="col-3">
-					<input class="form-control" type="text" name="descripcion"/>
+					<input class="form-control" type="text" name="descripcion" required/>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-3">Estado:</div>
 				<div class="col-3">
-					<input class="form-control" type="text" name="estado"/>
+					<input class="form-control" type="text" name="estado" required/>
 				</div>
 			</div>
 			<div class="row">

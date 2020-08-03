@@ -20,26 +20,26 @@
 		<h1 class="display-4">Editar Asesoria</h1>
 		<br>
 		<form:form action="${pageContext.request.contextPath}/guardarEditAsesoria" method="post">
-			<input type="hidden" name="id_asesoria" value="${model.as.getId_asesoria()}">
+			<input type="hidden" name="id_asesoria" value="${model.as.getId_asesoria()}" required>
 			<div class="row">
 				<div class="col-3">Fecha y hora:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechayhora" id="datetimepicker"
-						value="${model.as.getFechayhora()}" />
+						value="${model.as.getFechayhora()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Motivo:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="motivo" value="${model.as.getMotivo()}" />
+					<input class="form-control" type="text" name="motivo" value="${model.as.getMotivo()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Detalle:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="detalle" value="${model.as.getDetalle()}" />
+					<input class="form-control" type="text" name="detalle" value="${model.as.getDetalle()}" required />
 				</div>
 			</div>
 			<hr>

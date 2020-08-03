@@ -23,12 +23,12 @@
 	
 	
 	<form:form action="${pageContext.request.contextPath}/guardarEditChecklist" method="post">
-			<input type="hidden" name="id_checklist" value="${model.ch.getId_checklist()}">
+			<input type="hidden" name="id_checklist" value="${model.ch.getId_checklist()}" required>
 			<div class="row">
 				<div class="col-3">Version:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="version"
-						value="${model.ch.getVersion()}" />
+						value="${model.ch.getVersion()}" required />
 				</div>
 			</div>
 			<hr>

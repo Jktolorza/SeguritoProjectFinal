@@ -26,28 +26,28 @@
             <div class="row">
                 <div class="col-3">Fecha:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="fecha" id="datetimepicker" />
+                    <input class="form-control" type="text" name="fecha" id="datetimepicker" required />
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-3">Direccion:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="direccion"/>
+                    <input class="form-control" type="text" name="direccion" required/>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-3">Labor:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="labor"/>
+                    <input class="form-control" type="text" name="labor" required/>
                 </div>
             </div>
             <hr>
              <div class="row">
                 <div class="col-3">Descripcion:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="descripcion"/>
+                    <input class="form-control" type="text" name="descripcion" required/>
                 </div>
             </div>
             <hr>

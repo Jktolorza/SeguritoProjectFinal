@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="col-3">Version:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="version"/>
+					<input class="form-control" type="text" name="version" required/>
 				</div>
 			</div>
 			<hr>

@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombre" value="${a.getNombre()}" />
+					<input class="form-control" type="text" name="nombre" value="${a.getNombre()}" required />
 				</div>
 			</div>
 			<hr>
@@ -30,7 +30,7 @@
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
 					<input id="nickname1" class="form-control" type="text" name="usuario.nickname" readonly
-						value="${a.getUsuario().getNickname()}" />
+						value="${a.getUsuario().getNickname()}" required />
 				</div>
 			</div>
 			<hr>

@@ -23,12 +23,12 @@
 			<c:out value = "${message}"/>
 		</c:if>
 
-		<form:form action="${pageContext.request.contextPath}/guardarProfesional" method="post">
+		<form:form action="${pageContext.request.contextPath}/guardarProfesional" method="post" >
 
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombre" />
+					<input class="form-control" type="text" name="nombre" required />
 				</div>
 			</div>
 			<hr>
@@ -68,7 +68,7 @@
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" />
+					<input id="nickname1" class="form-control" type="text" name="nickname" required />
 				</div>
 			</div>
 			<hr>
@@ -86,7 +86,7 @@
 			<div class="row">
 				<div class="col-3">Password:</div>
 				<div class="col-7">
-					<input class="form-control" type="password" name="password" />
+					<input class="form-control" type="password" name="password" required />
 				</div>
 			</div>
 			<hr>

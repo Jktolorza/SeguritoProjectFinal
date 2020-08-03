@@ -27,7 +27,7 @@
                 <div class="col-3">Fecha:</div>
                 <div class="col-7">
                     <input class="form-control" type="text" name="fecha" id="datetimepicker"
-                        value="${rep.getFecha()}" />
+                        value="${rep.getFecha()}" required />
                 </div>
             </div>
             <hr>
@@ -35,7 +35,7 @@
                 <div class="col-3">Direccion:</div>
                 <div class="col-7">
                     <input class="form-control" type="text" name="direccion" 
-                        value="${rep.getDireccion()}" />
+                        value="${rep.getDireccion()}" required />
                 </div>
             </div>
             <hr>
@@ -43,7 +43,7 @@
                 <div class="col-3">Labor:</div>
                 <div class="col-7">
                     <input class="form-control" type="text" name="labor" 
-                        value="${rep.getLabor()}" />
+                        value="${rep.getLabor()}" required />
                 </div>
             </div>
             <hr>
@@ -51,7 +51,7 @@
                 <div class="col-3">Descripcion:</div>
                 <div class="col-7">
                     <input class="form-control" type="text" name="descripcion"
-                        value="${rep.getDescripcion()}" />
+                        value="${rep.getDescripcion()}" required />
                 </div>
             </div>
             <hr>

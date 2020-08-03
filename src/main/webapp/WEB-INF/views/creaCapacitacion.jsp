@@ -25,21 +25,21 @@
             <div class="row">
                 <div class="col-3">Fecha y hora:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="fechayhora" id="datetimepicker" />
+                    <input class="form-control" type="text" name="fechayhora" id="datetimepicker" required />
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-3">Tema:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="tema" />
+                    <input class="form-control" type="text" name="tema" required />
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-3">Contenido:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="contenido" />
+                    <input class="form-control" type="text" name="contenido" required />
                 </div>
             </div>
             <hr>
