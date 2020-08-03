@@ -20,7 +20,9 @@
 		<c:set var="u" value="${model.u}"></c:set>
 		<h1 class="display-4">Agregar Cliente</h1>
 		<hr>
-
+		<c:if test="${message != 'f'}">
+			<c:out value = "${message}"/>
+		</c:if>
 
 		<form:form action="${pageContext.request.contextPath}/guardarCliente" method="post">
 			<div class="row">

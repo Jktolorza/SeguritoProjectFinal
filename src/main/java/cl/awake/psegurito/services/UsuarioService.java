@@ -16,4 +16,5 @@ public interface UsuarioService {
 //    void delete(int id);
     Usuario getByNickname(String nickname);
     void editUserByIdAndNickname(String nickname, String password, String rol, int id_usuario);
+    Long countByNickname(String nickname);
 }

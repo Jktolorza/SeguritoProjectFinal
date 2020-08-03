@@ -11,10 +11,11 @@
 </head>
 
 <body>
+<c:set var = "message" value = "f"/>
 	<div class="container">
 		<h1 class="display-4">Listado de administrador</h1>
 		<br>
-		<p><a href="crearAdministrador" class="btn btn-success">Crear administrador</a></p>
+		<p><a href="crearAdministrador/${message}" class="btn btn-success">Crear administrador</a></p>
 
 		<table class="table">
 			<thead class="thead_dark">

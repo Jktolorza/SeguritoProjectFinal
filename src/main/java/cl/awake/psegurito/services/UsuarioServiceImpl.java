@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.model.UsuarioId;
@@ -70,5 +68,8 @@ public class UsuarioServiceImpl implements UsuarioService {
 		// TODO Auto-generated method stub
 		ur.updateUserByIdAndNickname(nickname, password, rol, id_usuario);
 	}
-	
+	@Override
+	public Long countByNickname(String nickname) {
+		return ur.countByNickname(nickname);
+	}
 }
