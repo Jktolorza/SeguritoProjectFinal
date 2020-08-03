@@ -45,8 +45,7 @@ public class UsuarioController {
 	@RequestMapping(value = "/guardarEditUsuario", method = RequestMethod.POST)
 	public ModelAndView guardarEditUsuario(Usuario u, @RequestParam String oldPassword,
 			RedirectAttributes redirectAttrs) {
-		// validar si el nuevo nick no esta duplicado
-		if (us.countByNickname(u.getNickname()) == 0) {
+
 
 			// validar password viejo
 			Usuario u1 = new Usuario();
@@ -66,13 +65,7 @@ public class UsuarioController {
 				redirectAttrs.addAttribute("message", mensaje);
 				return new ModelAndView("redirect:/editarUsuario/{id}/{nickname}/{message}.do");
 			}
-		} else {
-			String mensaje = "el nickname ya existe en la base de datos";
-			redirectAttrs.addAttribute("id", u.getId_usuario());
-			redirectAttrs.addAttribute("nickname", u.getNickname());
-			redirectAttrs.addAttribute("message", mensaje);
-			return new ModelAndView("redirect:/editarUsuario/{id}/{nickname}/{message}.do");
-		}
+
 
 	}
 }
