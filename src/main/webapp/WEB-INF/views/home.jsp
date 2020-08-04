@@ -47,6 +47,7 @@
                                     <a class="dropdown-item" href="crearProfesional/${message}" target="myFrame">Crear Profesional</a>
                                     <a class="dropdown-item" href="listarProfesional" target="myFrame">Listar Profesional</a>
                                     <a class="dropdown-item" href="listarCliente" target="myFrame">Listar Cliente</a>
+                                    <a class="dropdown-item" href="listadoclientespost" target="myFrame">Listar Cliente API REST</a>
                                     <a class="dropdown-item" href="crearCliente/${message}" target="myFrame">Crear Cliente</a>
                                     <a class="dropdown-item" href="listarAdministrador" target="myFrame">Listar Administrador</a>
                                     <a class="dropdown-item" href="crearAdministrador/${message}" target="myFrame">Crear Administrador</a>
