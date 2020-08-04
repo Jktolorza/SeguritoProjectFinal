@@ -1,6 +1,8 @@
 package cl.awake.psegurito.model;
 
 import java.util.Date;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,22 +20,33 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name="actividadmejora")
 public class ActividadMejora {
 
+	/** Identificador numerico  {@link Actividad Mejora} */
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQUENCE1")
     @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_ACTIVIDADMEJORA_SEQ", allocationSize=1)
 	private int id_actividadmejora;
 	
+	/** Nombre descritivo de la mejora  {@link Actividad Mejora} */
+	@Column( nullable = false)
 	private String nombre;
 	
+	/** Fecha de inicio de la mejora {@link Actividad Mejora} */
+	@Column( nullable = false)
 	@Temporal(value=TemporalType.DATE)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date fechaInicio;
 	
+	/** Fecha de termino de la mejora {@link Actividad Mejora} */
+	@Column( nullable = false)
 	@Temporal(value=TemporalType.DATE)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date fechaTermino;
 	
+	/** Estado de la mejora(activa, terminada, entre otras){@link Actividad Mejora} */
+	@Column( nullable = false)
 	private String estado;
+	
+	@Column( nullable = false)
 	private String detalle;
 	
 	@JoinColumn(name="profesional_id_profesional")
@@ -143,6 +156,15 @@ public class ActividadMejora {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+
+
+	@Override
+	public String toString() {
+		return "ActividadMejora [id_actividadmejora=" + id_actividadmejora + ", nombre=" + nombre + ", fechaInicio="
+				+ fechaInicio + ", fechaTermino=" + fechaTermino + ", estado=" + estado + ", detalle=" + detalle
+				+ ", profesional=" + profesional + ", cliente=" + cliente + "]";
+	}
+	
 	
 	
 }

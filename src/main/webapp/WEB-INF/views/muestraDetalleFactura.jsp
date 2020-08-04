@@ -32,12 +32,13 @@
 					<td>${detallefact.getPrecio()}</td>
 					<td>${detallefact.getCantidad()}</td>
 					<td>${detallefact.getFactura().getId_factura()}</td>
-					<td><a class="btn btn-primary" href="${pageContext.request.contextPath}/editarDetalleFactura/${detallefact.getId_detallefactura()}">Editar </a>  <a class="btn btn-danger" href="${pageContext.request.contextPath}/eliminarDetalleFactura/${detallefact.getId_detallefactura()}">Borrar</a></td>
+					<td><a class="btn btn-primary" href="${pageContext.request.contextPath}/editarDetalleFactura/${detallefact.getId_detallefactura()}">Editar </a>  <a class="btn btn-danger" href="${pageContext.request.contextPath}/eliminarDetalleFactura/${detallefact.getId_detallefactura()}/${model.id_factura}">Borrar</a></td>
 			</c:forEach>
 			</tbody>
 			
 		</table>
 		<p><a class="btn btn-primary" href="../crearDetalleFactura/${model.id_factura}">Crear Detalle Factura</a></p>
+		<p><a class="btn btn-danger" href="../listarFactura">Volver a las facturas</a></p>
 	</div>
 </body>
 </html>

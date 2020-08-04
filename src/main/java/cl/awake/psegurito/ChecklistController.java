@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import cl.awake.psegurito.model.Checklist;
-import cl.awake.psegurito.model.Profesional;
+import cl.awake.psegurito.model.Visita;
 import cl.awake.psegurito.services.ChecklistService;
-import cl.awake.psegurito.services.ProfesionalService;
+import cl.awake.psegurito.services.VisitaService;
 
 @Controller
 public class ChecklistController {
@@ -29,7 +29,7 @@ public class ChecklistController {
 	@RequestMapping("/listarChecklist")
 	public ModelAndView listarChecklist() {
 		List<Checklist> lista = chs.getAll();
-		return new ModelAndView("listarChecklist","lista",lista);
+		return new ModelAndView("listaChecklist","lista",lista);
 	}
 	
 	@RequestMapping("/mostrarChecklist/{id}")
@@ -54,7 +54,7 @@ public class ChecklistController {
 		return new ModelAndView("redirect:/listarChecklist");
 	}
 	
-	@RequestMapping("/elimarChecklist/{id}")
+	@RequestMapping("/eliminarChecklist/{id}")
 	public ModelAndView eliminarChecklist(@PathVariable int id) {
 		chs.delete(id);
 		return new ModelAndView("redirect:/listarChecklist");

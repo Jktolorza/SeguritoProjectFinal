@@ -1,6 +1,6 @@
 package cl.awake.psegurito.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,9 +24,11 @@ public class Visita {
     @SequenceGenerator(name="SEQUENCE1", sequenceName="ID_VISITA_SEQ", allocationSize=1)
         private int id_visita;
         
-    @Temporal(value=TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-        private Date fechavisita;
+    @Temporal(value=TemporalType.TIMESTAMP)
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+     private Date fechavisita;
+    
+    private int  numerovisita;
     
     @JoinColumn(name="profesional_id_profesional")
     @ManyToOne
@@ -42,16 +44,28 @@ public class Visita {
     }
 
 
-    public Visita(int id_visita, Date fechavisita, Profesional profesional, Cliente cliente) {
+    public Visita(int id_visita, Date fechavisita, int  numerovisita, Profesional profesional, Cliente cliente) {
         super();
         this.id_visita = id_visita;
         this.fechavisita = fechavisita;
+        this. numerovisita =  numerovisita;
         this.profesional = profesional;
         this.cliente = cliente;
     }
 
+    
+    
+    public int getNumerovisita() {
+		return numerovisita;
+	}
 
-    public int getId_visita() {
+
+	public void setNumerovisita(int numerovisita) {
+		this.numerovisita = numerovisita;
+	}
+
+
+	public int getId_visita() {
         return id_visita;
     }
 

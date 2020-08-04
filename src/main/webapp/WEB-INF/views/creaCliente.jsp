@@ -20,34 +20,36 @@
 		<c:set var="u" value="${model.u}"></c:set>
 		<h1 class="display-4">Agregar Cliente</h1>
 		<hr>
-
+		<c:if test="${message != 'f'}">
+			<c:out value = "${message}"/>
+		</c:if>
 
 		<form:form action="${pageContext.request.contextPath}/guardarCliente" method="post">
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombreEmpresa" />
+					<input class="form-control" type="text" name="nombreEmpresa" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Rut:</div>
-				<div class="col-7">
-					<input class="form-control" type="text" name="rut" />
+				<div class="col-7"> 
+					<input class="form-control" type="text" name="rut" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Fecha Registro:</div>
 				<div class="col-7">
-					<input class="form-control" type="date" name="fechaRegistro" id="datetimepicker" />
+					<input class="form-control" type="text" name="fechaRegistro" id="datetimepicker" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
-					<input id="nickname1" class="form-control" type="text" name="nickname" />
+					<input id="nickname1" class="form-control" type="text" name="nickname" required/>
 				</div>
 			</div>
 			<hr>
@@ -55,9 +57,9 @@
 				<div class="col-3">Rol:</div>
 				<div class="col-7">
 					<select name="rol" class="form-control">
-						<option value="administrador">Administrador</option>
-						<option value="cliente" selected>Cliente</option>
-						<option value="profesional">Profesional</option>
+						<option value="ROLE_ADMINISTRADOR">Administrador</option>
+						<option value="ROLE_CLIENTE" selected>Cliente</option>
+						<option value="ROLE_PROFESIONAL">Profesional</option>
 					</select>
 				</div>
 			</div>

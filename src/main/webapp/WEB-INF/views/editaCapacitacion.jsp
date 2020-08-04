@@ -20,26 +20,26 @@
         <h1 class="display-4">Editar Capacitacion</h1>
         <br>
         <form:form action="${pageContext.request.contextPath}/guardarEditCapacitacion" method="post">
-            <input type="hidden" name="id_capacitacion" value="${model.cap.getId_capacitacion()}">
+            <input type="hidden" name="id_capacitacion" value="${model.cap.getId_capacitacion()}" required>
             <div class="row">
                 <div class="col-3">Fecha y hora:</div>
                 <div class="col-7">
                     <input class="form-control" type="text" name="fechayhora" id="datetimepicker"
-                        value="${model.cap.getFechayhora()}" />
+                        value="${model.cap.getFechayhora()}" required />
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-3">Tema:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="tema" value="${model.cap.getTema()}" />
+                    <input class="form-control" type="text" name="tema" value="${model.cap.getTema()}" required />
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-3">Contenido:</div>
                 <div class="col-7">
-                    <input class="form-control" type="text" name="contenido" value="${model.cap.getContenido()}" />
+                    <input class="form-control" type="text" name="contenido" value="${model.cap.getContenido()}" required />
                 </div>
             </div>
             <hr>

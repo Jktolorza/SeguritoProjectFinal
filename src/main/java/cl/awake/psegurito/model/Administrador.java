@@ -1,5 +1,6 @@
 package cl.awake.psegurito.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,6 +19,8 @@ public class Administrador {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQUENCE1")
 	@SequenceGenerator(name="SEQUENCE1", sequenceName="ID_ADMINISTRADOR_SEQ", allocationSize=1)
 	private int id_administrador;
+	
+	@Column( nullable = false)
 	private String nombre;
     @ManyToOne
     @JoinColumns({

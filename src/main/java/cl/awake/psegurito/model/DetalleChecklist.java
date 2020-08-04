@@ -19,7 +19,7 @@ public class DetalleChecklist {
 	private int id_detallechecklist;
 	
 	private String descripcion;
-	private String Estado;
+	private String estado;
 	
 	@JoinColumn(name="checklist_id_checklist")
 	@ManyToOne
@@ -33,14 +33,14 @@ public class DetalleChecklist {
 		super();
 		this.id_detallechecklist = id_detallechecklist;
 		this.descripcion = descripcion;
-		Estado = estado;
+		this.estado = estado;
 		this.checklist = checklist;
 	}
 
 	public DetalleChecklist(String descripcion, String estado, Checklist checklist) {
 		super();
 		this.descripcion = descripcion;
-		Estado = estado;
+		this.estado = estado;
 		this.checklist = checklist;
 	}
 
@@ -66,11 +66,11 @@ public class DetalleChecklist {
 	}
 
 	public String getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(String estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
 	public Checklist getChecklist() {
@@ -84,8 +84,10 @@ public class DetalleChecklist {
 	@Override
 	public String toString() {
 		return "DetalleChecklist [id_detallechecklist=" + id_detallechecklist + ", descripcion=" + descripcion
-				+ ", Estado=" + Estado + ", checklist=" + checklist + "]";
+				+ ", estado=" + estado + ", checklist=" + checklist + "]";
 	}
+
+	
 	
 	
 	

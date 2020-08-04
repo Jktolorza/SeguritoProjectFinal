@@ -27,21 +27,21 @@
 			<div class="row">
 				<div class="col-3">Fecha de Cobro:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechadecobro" id="datetimepicker"/>
+					<input class="form-control" type="text" name="fechadecobro" id="datetimepicker" required/>
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Fecha Vencimiento:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechaVencimiento" id="datetimepicker2"/>
+					<input class="form-control" type="text" name="fechaVencimiento" id="datetimepicker2" required/>
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 			<div class="col-3">Extras:</div>
 				<div class="col-7">
-					<input class="form-control" type="number" name="extras" max=999999999/>
+					<input class="form-control" type="number" name="extras" max=999999999 required/>
 				</div>
 			</div>
 			<hr>
