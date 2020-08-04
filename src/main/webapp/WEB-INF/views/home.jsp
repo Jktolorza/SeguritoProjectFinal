@@ -54,7 +54,6 @@
 							mejorar</a>
 						<a class="dropdown-item" href="crearAsesoria" target="myFrame">Agendar Asesoria</a>
 						<a class="dropdown-item" href="crearCapacitacion" target="myFrame">Agendar Capacitacion</a>
-						<a class="dropdown-item" href="crearVisita" target="myFrame">Agendar Visita</a>
 						<a class="dropdown-item" href="listarReporteAccidente" target="myFrame">Revisar Accidentes</a>
 						<a class="dropdown-item" href="listarFactura" target="myFrame">Revisar Facturacion de
 							clientes</a>
@@ -72,7 +71,6 @@
 						<a class="dropdown-item" href="listarActividadMejora" target="myFrame">Actividades a mejorar</a>
 						<a class="dropdown-item" href="listarAsesoria" target="myFrame">Revisar Asesorias</a>
 						<a class="dropdown-item" href="listarCapacitacion" target="myFrame">Revisar Capacitaciones</a>
-						<a class="dropdown-item" href="listarVisita" target="myFrame">Revisar Visitas</a>
 						<a class="dropdown-item" href="crearReporteAccidente" target="myFrame">Reportar Accidente</a>
 						<a class="dropdown-item" href="listarFactura" target="myFrame">Facturacion</a>
 						<a class="dropdown-item" href="crearAsesoriaExtra" target="myFrame">Agregar Asesoria Extra</a>
