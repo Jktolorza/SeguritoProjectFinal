@@ -14,8 +14,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import cl.awake.psegurito.model.AsesoriaExtra;
 import cl.awake.psegurito.model.Cliente;
+import cl.awake.psegurito.model.Profesional;
 import cl.awake.psegurito.services.AsesoriaExtraService;
 import cl.awake.psegurito.services.ClienteService;
+import cl.awake.psegurito.services.ProfesionalService;
 
 @Controller
 public class AsesoriaExtraController {
@@ -25,6 +27,9 @@ public class AsesoriaExtraController {
 	
 	@Autowired
 	AsesoriaExtraService asex; 
+	
+	 @Autowired
+    ProfesionalService ps;
 
     @RequestMapping("/listarAsesoriaExtra")
     public ModelAndView listarAsesoriaExtra() {
@@ -41,10 +46,12 @@ public class AsesoriaExtraController {
     
     @RequestMapping("/editarAsesoriaExtra/{id}")
     public ModelAndView editarAsesoriaExtra(@PathVariable int id) {
-    	AsesoriaExtra ase = asex.getById(id);    	
+    	AsesoriaExtra ase = asex.getById(id); 
+    	List<Profesional> listap = ps.getAll();
     	List<Cliente> listac = cs.getAll();
     	Map<String, Object> model = new HashMap<String, Object>();
-        model.put("ase", ase);        
+        model.put("ase", ase);   
+        model.put("listap", listap);
         model.put("listac", listac);
         return new ModelAndView("editaAsesoriaExtra","model", model); 
     }
@@ -66,9 +73,10 @@ public class AsesoriaExtraController {
 
     	AsesoriaExtra ase = new AsesoriaExtra();    	
     	List<Cliente> listac = cs.getAll();
-    	
+    	List<Profesional> listap = ps.getAll();
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("ase", ase);
+        model.put("listap", listap);
         model.put("listac", listac);
         
         return new ModelAndView("creaAsesoriaExtra","model", model); 

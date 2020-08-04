@@ -37,6 +37,7 @@
 					<div class="col-3">Fecha y hora:</div>
 					<div class="col">${as.getFechayhora()}</div>
 				</div>
+				
 				<div class="row">
 					<div class="col-3">Detalle:</div>
 					<div class="col">${as.getDetalle()}</div>

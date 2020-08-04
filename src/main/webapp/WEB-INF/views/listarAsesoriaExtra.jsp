@@ -23,7 +23,7 @@
 					<th>Motivo</th>
 					<th>Detalle</th>
 					<th>Cliente</th>
-
+					<th>Profesional</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -36,6 +36,7 @@
 						<td>${asesoex.getMotivo()}</td>
 						<td>${asesoex.getDetalle()}</td>
 						<td>${asesoex.getCliente().getNombreEmpresa()}</td>
+						<td>${aseso.getProfesional().getNombre()} ${asesoex.getProfesional().getApellido()}</td>
 						<td><a class="btn btn-primary"
 								href="${pageContext.request.contextPath}/editarAsesoriaExtra/${asesoex.getId_asesoriaextra()}">Editar
 							</a> <a class="btn btn-danger"

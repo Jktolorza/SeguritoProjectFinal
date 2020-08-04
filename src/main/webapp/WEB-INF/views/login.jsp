@@ -46,6 +46,7 @@
             <input type="password" name="password" placeholder="Ingrese Password">
     
             <input type="submit" value="Entrar" class="btn float-right login_btn">
+            
 
 			
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />	

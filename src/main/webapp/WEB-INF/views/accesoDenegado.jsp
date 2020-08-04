@@ -15,12 +15,12 @@
 	
 	<div id="notfound">
 		<div class="notfound">
-			<div class="notfound-404">
+			<div class="notfound-403">
 				<h1>Oops!</h1>
 			</div>
 			<h2>PSegurito murio</h2>
 			<p>Estamos trabajando para solucional su error.</p>
-			<a href="<c:url value="/" /> ">Dentrate pa dentro</a>
+			<a href="<c:url value="/" /> ">Vuelva al menu</a>
 		</div>
 	</div>
 	

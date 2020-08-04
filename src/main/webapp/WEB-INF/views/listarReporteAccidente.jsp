@@ -24,6 +24,7 @@
                         <th>Labor</th>
                         <th>Descripcion</th>
                         <th>Cliente</th>
+                        <th>Profesional</th>
                 </tr>
                   </thead>
             <tbody>
@@ -35,6 +36,7 @@
                     <td>${reporte.getLabor()}</td>
                     <td>${reporte.getDescripcion()}</td>
                     <td>${reporte.getCliente().getNombreEmpresa()}</td>
+                    <td>${aseso.getProfesional().getNombre()} ${reporte.getProfesional().getApellido()}</td>
                     <td><a class="btn btn-primary" href="${pageContext.request.contextPath}/editarReporteAccidente/${reporte.getId_reporteaccidente()}">Editar </a>  <a class="btn btn-danger"  href="${pageContext.request.contextPath}/eliminarReporteAccidente/${reporte.getId_reporteaccidente()}">Borrar</a></td>
             </c:forEach>
             </tbody>

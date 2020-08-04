@@ -33,6 +33,9 @@ public class AsesoriaExtra {
 	private String motivo;
 	private String detalle;
 	
+	@JoinColumn(name="profesional_id_profesional")
+	@ManyToOne
+	private Profesional profesional;
 	
 	@JoinColumn(name="cliente_id_cliente")
 	@ManyToOne
@@ -44,12 +47,13 @@ public class AsesoriaExtra {
 	}
 
 	//Contructor con todos los parametros
-	public AsesoriaExtra(int id_asesoriaextra, Date fechayhora, String motivo, String detalle, Cliente cliente) {
+	public AsesoriaExtra(int id_asesoriaextra, Date fechayhora, String motivo, String detalle, Cliente cliente,Profesional profesional) {
 		this.id_asesoriaextra = id_asesoriaextra;
 		this.fechayhora = fechayhora;
 		this.motivo = motivo;
 		this.detalle = detalle;
 		this.cliente = cliente;
+		this.profesional = profesional;
 	}
 	//Getter And Setter
 
@@ -91,6 +95,13 @@ public class AsesoriaExtra {
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+	public Profesional getProfesional() {
+		return profesional;
+	}
+
+	public void setProfesional(Profesional profesional) {
+		this.profesional = profesional;
 	}
 		
 
