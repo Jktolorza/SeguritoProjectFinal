@@ -33,7 +33,7 @@ public class ClienteRestController {
 
 	@RequestMapping(value = "/clilist", method = RequestMethod.PUT, headers = "Accept=application/json")
 	public void updateCliente(@RequestBody Cliente cliente) {
-		cs.add(cliente);
+		cs.edit(cliente);
 	}
 
 	@RequestMapping(value = "/clidetalle/{id}", method = RequestMethod.GET, headers = "Accept=application/json")

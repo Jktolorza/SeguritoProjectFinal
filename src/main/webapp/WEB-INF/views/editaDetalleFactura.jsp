@@ -23,21 +23,21 @@
 				<div class="col-3">Nombre:</div>
 				<div class="col-3">
 					<input class="form-control" type="text" name="nombre"
-						value="${model.df.getNombre()}" />
+						value="${model.df.getNombre()}" required />
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-3">Precio:</div>
 				<div class="col-3">
 					<input class="form-control" type="number" name="precio"
-						value="${model.df.getPrecio()}" />
+						value="${model.df.getPrecio()}" required />
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-3">Cantidad:</div>
 				<div class="col-3">
 					<input class="form-control" type="number" name="cantidad"
-						value="${model.df.getCantidad()}" />
+						value="${model.df.getCantidad()}" required />
 				</div>
 			</div>
 

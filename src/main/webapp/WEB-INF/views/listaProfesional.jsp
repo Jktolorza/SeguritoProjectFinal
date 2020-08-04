@@ -11,10 +11,11 @@
 </head>
 
 <body>
+<c:set var = "message" value = "f"/>
 	<div class="container">
 		<h1 class="display-4">Listado de profesionales</h1>
 		<br>
-		<p><a href="crearProfesional" class="btn btn-success">Crear profesional</a></p>
+		<p><a href="crearProfesional/${message}" class="btn btn-success">Crear profesional</a></p>
 
 		<table class="table">
 			<thead class="thead_dark">

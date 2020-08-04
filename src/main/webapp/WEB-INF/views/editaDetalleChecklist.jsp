@@ -23,14 +23,14 @@
 				<div class="col-3">Descripcion:</div>
 				<div class="col-3">
 					<input class="form-control" type="text" name="descripcion"
-						value="${model.dch.getDescripcion()}" />
+						value="${model.dch.getDescripcion()}" required />
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-3">Estado:</div>
 				<div class="col-3">
 					<input class="form-control" type="text" name="estado"
-						value="${model.dch.getEstado()}" />
+						value="${model.dch.getEstado()}" required />
 				</div>
 			</div>
 

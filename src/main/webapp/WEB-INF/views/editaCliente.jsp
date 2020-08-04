@@ -21,18 +21,18 @@
 		<h1 class="display-4">Editar Cliente</h1>
 		<br>
 		<form:form action="${pageContext.request.contextPath}/guardarEditCliente" method="post">
-			<input type="hidden" name="id_cliente" value="${c.getId_cliente()}">
+			<input type="hidden" name="id_cliente" value="${c.getId_cliente()}" required>
 			<div class="row">
 				<div class="col-3">Nombre:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="nombreEmpresa" value="${c.getNombreEmpresa()}" />
+					<input class="form-control" type="text" name="nombreEmpresa" value="${c.getNombreEmpresa()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Rut:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="rut" value="${c.getRut()}" />
+					<input class="form-control" type="text" name="rut" value="${c.getRut()}" required />
 				</div>
 			</div>
 			<hr>
@@ -40,7 +40,7 @@
 				<div class="col-3">Fecha Registro:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechaRegistro" id="datetimepicker"
-						value="${c.getFechaRegistro()}" />
+						value="${c.getFechaRegistro()}" required />
 				</div>
 			</div>
 			<hr>
@@ -48,7 +48,7 @@
 				<div class="col-3">Nickname:</div>
 				<div class="col-7">
 					<input id="nickname1" class="form-control" type="text" name="usuario.nickname" readonly
-						value="${c.getUsuario().getNickname()}" />
+						value="${c.getUsuario().getNickname()}"  />
 				</div>
 			</div>
 			<hr>

@@ -51,7 +51,7 @@ public class ActividadMejoraController {
 		// metodo obtener todo
 		List<ActividadMejora> lista = acs.getAll();
 		// Retorno la lista de actividades a mejorar
-		return new ModelAndView("listarActividadMejora", "lista", lista);
+		return new ModelAndView("listarActividadesMejora", "lista", lista);
 	}
 
 	// Mostrar Actividades de mejora

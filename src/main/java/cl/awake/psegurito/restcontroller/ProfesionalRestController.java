@@ -32,7 +32,7 @@ public class ProfesionalRestController {
 
 	@RequestMapping(value = "/prolist", method = RequestMethod.PUT, headers = "Accept=application/json")
 	public void updateCliente(@RequestBody Profesional profesional) {
-		ps.add(profesional);
+		ps.edit(profesional);
 	}
 
 	@RequestMapping(value = "/prodetalle/{id}", method = RequestMethod.GET, headers = "Accept=application/json")

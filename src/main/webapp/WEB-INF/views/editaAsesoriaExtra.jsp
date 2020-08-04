@@ -20,26 +20,26 @@
 		<h1 class="display-4">Editar Asesoria Extra</h1>
 		<br>
 		<form:form action="${pageContext.request.contextPath}/guardarEditAsesoriaExtra" method="post">
-			<input type="hidden" name="id_asesoriaextra" value="${model.ase.getId_asesoriaextra()}">
+			<input type="hidden" name="id_asesoriaextra" value="${model.ase.getId_asesoriaextra()}" required>
 			<div class="row">
 				<div class="col-3">Fecha y hora:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechayhora" id="datetimepicker"
-						value="${model.ase.getFechayhora()}" />
+						value="${model.ase.getFechayhora()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Motivo:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="motivo" value="${model.ase.getMotivo()}" />
+					<input class="form-control" type="text" name="motivo" value="${model.ase.getMotivo()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Detalle:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="detalle" value="${model.ase.getDetalle()}" />
+					<input class="form-control" type="text" name="detalle" value="${model.ase.getDetalle()}" required />
 				</div>
 			</div>
 			<hr>

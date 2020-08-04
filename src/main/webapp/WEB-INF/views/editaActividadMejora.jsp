@@ -34,7 +34,7 @@
 				<div class="col-3">Fecha Inicio:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechaInicio" id="datetimepicker"
-						value="${model.ac.getFechaInicio()}" />
+						value="${model.ac.getFechaInicio()}" required />
 				</div>
 			</div>
 			<hr>
@@ -42,21 +42,21 @@
 				<div class="col-3">Fecha Termino:</div>
 				<div class="col-7">
 					<input class="form-control" type="text" name="fechaTermino" id="datetimepicker2"
-						value="${model.ac.getFechaTermino()}" />
+						value="${model.ac.getFechaTermino()}" required />
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Estado:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="estado" value="${model.ac.getEstado()}" />
+					<input class="form-control" type="text" name="estado" value="${model.ac.getEstado()}"  required/>
 				</div>
 			</div>
 			<hr>
 			<div class="row">
 				<div class="col-3">Detalle:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="detalle" value="${model.ac.getDetalle()}" />
+					<input class="form-control" type="text" name="detalle" value="${model.ac.getDetalle()}"  required/>
 				</div>
 			</div>
 			<hr>

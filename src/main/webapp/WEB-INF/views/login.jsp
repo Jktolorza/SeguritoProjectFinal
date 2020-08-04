@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,151 +11,60 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous" />
-		<!--Bootsrap 4 CDN-->
+	<!--Bootsrap 4 CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <!--Fontawesome CDN-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<style type="text/css">
-
-
-@import url('https://fonts.googleapis.com/css?family=Numans');
-
-html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
-}
-
-.container{
-height: 100%;
-align-content: center;
-}
-
-.card{
-height: 570px;
-margin-top: auto;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
-}
-
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color: #FFC312;
-}
-
-.social_icon span:hover{
-color: white;
-cursor: pointer;
-}
-
-.card-header h3{
-color: white;
-}
-
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
-}
-
-.input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
-}
-
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
-}
-
-.remember{
-color: white;
-}
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
-
-.login_btn{
-color: black;
-background-color: #FFC312;
-width: 100px;
-}
-
-.login_btn:hover{
-color: black;
-background-color: white;
-}
-
-.links{
-color: white;
-}
-
-.links a{
-margin-left: 4px;
-}
 	
-	
-	</style>
+	<!-- Hoja de estilo -->
+    <link rel="stylesheet" href="<core:url value="/res/css/stylelog.css" />">
+
 </head>
 <body>
-<div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>PSegurito</h3>
-			</div>
 
+
+    <div class="login-box">
+    <img  class="avatar" src="<core:url value="/res/css/avatar.png" />">
+        <h1>PSegurito</h1>     
+         <div class="alert alert-primary" role="alert">	
 				<%
 					String error = (String) request.getAttribute("error");
-				if (error != null && error.equals("true")) {
-					out.println("<h4 style=\"color:red\">Invalid login credentials. Please try again!!</h4>");
+						if (error != null && error.equals("true")) {							
+						out.println("Credenciales no validas, Intente nuevamente!!");
 				}
 				%>
+			</div>
+        
+        
+        
+           <form name="loginForm" action="<c:url value="login" />" method="POST">
+            <p>Nickname</p>
+            <input type="text" name="username" placeholder="Ingrese Nickname">
+            
+            <p>Contraseña</p>
+            <input type="password" name="password" placeholder="Ingrese Password">
+    
+            <input type="submit" value="Entrar" class="btn float-right login_btn">
 
-				<div class="card-body">
-				<form name="loginForm" action="<c:url value="login" />" method="POST">
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="text" class="form-control" name="username" placeholder="username">
-						
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="password" class="form-control" name="password" placeholder="password">
-					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Recordar
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Entrar" class="btn float-right login_btn">
-						<input name="reset" type="reset" /> 
-						<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-									<p style= "color:red;">Registro de claves<br>
-									Usuario:cliente -- pass:cliente<br>
-									Usuario:profesional -- pass:profesional<br>
-									Usuario:administrador -- pass:administrador<br></p>
-					</div>
-				</form>
-		</div>
-	</div>
-</div>
+			
+			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />	
+
+            
+            </form>   
+            
+<!-- Modal -->
+
+<!-- Modal -->
+
+        </div>
+        <script type="text/javascript">
+
+        </script>
+        
+
+
+
 
 
 	<!-- Jss boostrap -->
@@ -172,6 +81,6 @@ margin-left: 4px;
 		crossorigin="anonymous"></script>
 		
 		
-
+	<marquee style="color: white;" class="info" behaviour=alternate scrolldelay=100%>Ayuda de password, si desea entrar como: usuario admininistror-administrador, Cliente-cliente,Profesional,profesional</marquee>	
 </body>
 </html>
