@@ -27,8 +27,7 @@ public class Visita {
     @Temporal(value=TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
      private Date fechavisita;
-    
-    private int  numerovisita;
+    private int numerovisita;
     
     @JoinColumn(name="profesional_id_profesional")
     @ManyToOne
@@ -44,11 +43,11 @@ public class Visita {
     }
 
 
-    public Visita(int id_visita, Date fechavisita, int  numerovisita, Profesional profesional, Cliente cliente) {
+    public Visita(int id_visita, Date fechavisita, int numerovisita, Profesional profesional, Cliente cliente) {
         super();
         this.id_visita = id_visita;
         this.fechavisita = fechavisita;
-        this. numerovisita =  numerovisita;
+        this.numerovisita =  numerovisita;
         this.profesional = profesional;
         this.cliente = cliente;
     }

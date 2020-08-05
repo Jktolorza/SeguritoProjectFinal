@@ -71,6 +71,7 @@
                                     <a class="dropdown-item" href="listarFactura" target="myFrame">Revisar Facturacion de clientes</a>
                                     <a class="dropdown-item" href="listarAsesoriaExtra" target="myFrame">Revisar Asesorias Extras </a>
                                     <a class="dropdown-item" href="listarChecklist" target="myFrame">Revisar Checklist</a>
+                                    <a class="dropdown-item" href="listarVisita" target="myFrame">Revisar Visitas</a>
                                 </div>
                             </li>
                             <!-- Detalle Cliente -->
@@ -85,6 +86,7 @@
                                     <a class="dropdown-item" href="crearReporteAccidente" target="myFrame">Reportar Accidente</a>
                                     <a class="dropdown-item" href="listarFactura" target="myFrame">Facturacion</a>
                                     <a class="dropdown-item" href="crearAsesoriaExtra" target="myFrame">Agregar Asesoria Extra</a>
+                                    <a class="dropdown-item" href="crearVisita" target="myFrame">Agendar Visita</a>
                                 </div>
                             </li>
                         </ul>
