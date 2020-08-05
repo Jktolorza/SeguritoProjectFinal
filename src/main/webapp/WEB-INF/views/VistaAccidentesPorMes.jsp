@@ -12,6 +12,16 @@
 </head>
 <body>
     <div class="container">
+		<h1 class="display-4">Accidentes por mes  </h1>
+
+		<h1 >Grafica de accidentes registrados por empresa </h1>
+		<br>		
+		<div class="col-12">
+			<canvas id="accidentespormes" height="200" width="200"></canvas>
+		</div> 
+		
+      	<hr>
+
 		<h1 class="display-4">Listado de accidentes por mes  </h1>
 		<br>
 		 
@@ -39,26 +49,7 @@
       
     </div>
 
-    <div class="container">
-		<h1 class="display-4">Grafico </h1>
-		<br>
-		 
-        <table class="table">
-            <thead class="thead_dark">
-                <tr>
-              		    <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Accidentes</th>
-                        
-                </tr>
-                  </thead>
-            <tbody>
-				<canvas id="accidentespormes" height="320" width="100%"></canvas>
-            </tbody>
-          
-        </table>
-      
-    </div>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -72,11 +63,11 @@
          data: {
              labels: ${model.empresas},
              datasets: [{
-                 borderColor: 'rgba(0, 75, 160, 0.75)',
-                 backgroundColor: 'rgba(0, 75, 160, 0.5)',
-                 label: 'accidentes por mes',
+                 borderColor: 'rgba(10, 115, 160, 0.75)',
+                 backgroundColor: 'rgba(100, 75, 160, 0.5)',
+                 label: 'Accidentes por mes',
                  data: ${model.accidentes},
-                 borderWidth: 2
+                 borderWidth: 1
              }]
          },
          options: {
