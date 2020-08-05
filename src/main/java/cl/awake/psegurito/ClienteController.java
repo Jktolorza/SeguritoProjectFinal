@@ -24,7 +24,7 @@ import cl.awake.psegurito.services.UsuarioService;
 
 @Controller
 public class ClienteController {
-	static final Logger log =  LogManager.getLogger(ClienteController.class.getName());
+	static final Logger log =  LogManager.getLogger(ClienteController.class);
         @Autowired
         ClienteService cs;
         
