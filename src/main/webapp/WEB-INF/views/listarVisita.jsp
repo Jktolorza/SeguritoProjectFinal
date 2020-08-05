@@ -20,6 +20,7 @@
 				<tr>
 					<th>#</th>
 					<th>Fecha visita</th>
+					<th>Numero de visitas</th>
 					<th>Cliente</th>
 					<th>Profesional</th>
 				</tr>
@@ -31,6 +32,7 @@
 								href="${pageContext.request.contextPath}/mostrarVisita/${vis.getId_visita()}">${vis.getId_visita()}</a>
 						</th>
 						<td>${vis.getFechavisita()}</td>
+						<td>${vis.getNumerovisita()}</td>
 						<td>${vis.getCliente().getNombreEmpresa()}</td>
 						<td>${vis.getProfesional().getNombre()} ${vis.getProfesional().getApellido()}</td>
 						<td><a class="btn btn-primary"

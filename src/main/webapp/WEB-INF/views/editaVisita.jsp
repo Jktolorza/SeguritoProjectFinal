@@ -22,10 +22,20 @@
 		<form:form action="${pageContext.request.contextPath}/guardarEditVisita" method="post">
 			<input type="hidden" name="id_visita" value="${model.vis.getId_visita()}" required>
 			<div class="row">
-				<div class="col-3">Fecha y hora:</div>
+				<div class="col-3">Fecha visita:</div>
 				<div class="col-7">
-					<input class="form-control" type="text" name="fechayhora" id="datetimepicker"
+					<input class="form-control" type="text" name="fechavisita" id="datetimepicker"
 						value="${model.vis.getFechavisita()}" required />
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-3">Numero de visitas:</div>
+				<div class="col-7">
+					<select name="numerovisita" class="form-control form-control">
+							<option value="1">Una visita</option>
+							<option value="2">Dos visitas</option>
+					</select>
 				</div>
 			</div>
 			<hr>

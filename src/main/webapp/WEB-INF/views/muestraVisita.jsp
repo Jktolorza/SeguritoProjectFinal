@@ -22,11 +22,6 @@
 						<h1 class="display-4">${vis.getCliente().getNombreEmpresa()}</h1>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col">
-						<h2>Motivo?</h2>
-					</div>
-				</div>
 				<hr>
 				<div class="row">
 					<div class="col-3">#</div>
@@ -35,6 +30,10 @@
 				<div class="row">
 					<div class="col-3">Fecha visita:</div>
 					<div class="col">${vis.getFechavisita()}</div>
+				</div>
+				<div class="row">
+					<div class="col-3">Numero de visitas:</div>
+					<div class="col">${vis.getNumerovisita()}</div>
 				</div>
 				<hr>
 				<div class="row">
