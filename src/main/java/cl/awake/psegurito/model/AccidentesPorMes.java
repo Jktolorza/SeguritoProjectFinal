@@ -9,13 +9,13 @@ public class AccidentesPorMes {
 	@Id
 	private int id; 
 	private String nombre; 
-	private String accidentes;
+	private int accidentes;
 	
 	public AccidentesPorMes() {
 		
 	}
 	
-	public AccidentesPorMes(int id, String nombre, String accidentes) {
+	public AccidentesPorMes(int id, String nombre, int accidentes) {
 		this.id = id;
 		this.nombre = nombre;
 		this.accidentes = accidentes;
@@ -32,10 +32,10 @@ public class AccidentesPorMes {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getAccidentes() {
+	public int getAccidentes() {
 		return accidentes;
 	}
-	public void setAccidentes(String accidentes) {
+	public void setAccidentes(int accidentes) {
 		this.accidentes = accidentes;
 	}
 
