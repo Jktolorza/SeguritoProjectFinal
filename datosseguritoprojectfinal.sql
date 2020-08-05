@@ -133,6 +133,35 @@ values (TO_DATE('05/08/2020','dd/mm/yyyy'),'La Aduana 1040','Electrocutamiento',
 INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('05/08/2020','dd/mm/yyyy'),'Grecia 7325','Accidente de trayecto','esguince de tobillo','3', '4');
 
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/08/2020','dd/mm/yyyy'),'Mapocho 145','Inhalacion vapor toxico','Derrame de producto toxico','1', '4');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/07/2020','dd/mm/yyyy'),'Macul 200','Lesion traumatica','Objeto pesado cae desde altura','7', '5');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/07/2020','dd/mm/yyyy'),'Providencia 780','Cortes y laceraciones','Corte con equipo e implemento afilado','4', '7');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/09/2020','dd/mm/yyyy'),'San Pablo 5778','Accidente de Trayecto','Caída en trayecto','3', '6');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('12/09/2020','dd/mm/yyyy'),'Santiago 765','Lesiones por el uso de maquinaria y equipos','Fractura de huesos','2', '2');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/07/2020','dd/mm/yyyy'),'Santa Rosa 543','Amago de incendio','Inflamacion productos toxicos','7', '1');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/07/2020','dd/mm/yyyy'),'Independencia 3255','Caída en salida de emergencia','Suelo con rotura','3', '4');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('29/07/2020','dd/mm/yyyy'),'Salesianos 700','Caídas desde la altura','Resbalo de escalera','2', '5');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/09/2020','dd/mm/yyyy'),'Chiloé 9755','Contacto con la instalación eléctrica','Instalacion electrica en mal estado','7', '2');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('07/09/2020','dd/mm/yyyy'),'Piramide 457','Sobresfuerzos y lesiones musculares','Lesion de espalda ','2', '6');
 --ASESORIA
 INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('02/08/2020 13:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Repaso de los temas de seguridad y chequeo de cumplimiento','1','1');
