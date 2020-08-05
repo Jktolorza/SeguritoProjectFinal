@@ -12,9 +12,7 @@ import cl.awake.psegurito.services.MorosoService;
 
 
 @Controller
-public class MorosoClienteController {
-
-	
+public class MorosoClienteController {	
 	
 	@Autowired
 	MorosoService rcr;
