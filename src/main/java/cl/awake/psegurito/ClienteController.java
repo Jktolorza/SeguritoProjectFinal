@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -24,7 +24,7 @@ import cl.awake.psegurito.services.UsuarioService;
 
 @Controller
 public class ClienteController {
-	static final Logger log = (Logger) LogManager.getLogger(ClienteController.class.getName());
+	static final Logger log =  LogManager.getLogger(ClienteController.class.getName());
         @Autowired
         ClienteService cs;
         
@@ -34,7 +34,7 @@ public class ClienteController {
         @RequestMapping("/listarCliente")
         public ModelAndView listarCliente() {
                 List<Cliente> lista = cs.getAll();
-                
+                log.info("holiwi");
                 return new ModelAndView("listaCliente","lista", lista); 
                 
         }
