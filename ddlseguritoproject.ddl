@@ -241,7 +241,7 @@ ALTER TABLE reporteaccidente
         REFERENCES cliente ( id_cliente );
         
 ALTER TABLE reporteaccidente
-    ADD CONSTRAINT reporteaccidente_profesional_fk FOREIGN KEY ( profesional_id_profesional )
+    ADD CONSTRAINT reportaccidente_profesional_fk FOREIGN KEY ( profesional_id_profesional )
         REFERENCES profesional ( id_profesional );
 
 ALTER TABLE reportecliente

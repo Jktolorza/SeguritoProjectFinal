@@ -1,0 +1,19 @@
+package cl.awake.psegurito.test.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class ProfesionalServiceTest {
+
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @Test
+    public void test() {
+        fail("Not yet implemented");
+    }
+
+}

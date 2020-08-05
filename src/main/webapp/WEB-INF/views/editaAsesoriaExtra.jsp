@@ -58,6 +58,20 @@
 			</div>
 			<hr>
 			<div class="row">
+				<div class="col-3">Profesional:</div>
+				<div class="col-7">
+					<select name="profesional.id_profesional" class="form-control form-control">
+						<c:forEach items="${model.listap}" var="profesional">
+							<option value="${profesional.getId_profesional()}"
+								${model.as.getProfesional().getId_profesional()==profesional.getId_profesional()
+								? 'selected' : '' }>${profesional.getNombre()} ${profesional.getApellido()}
+							</option>
+						</c:forEach>
+					</select>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
 				<div class="col-1"><a class="btn btn-secondary"
 						href="${pageContext.request.contextPath}/listarAsesoriaExtra">Volver</a></div>
 				<div class="col-1"><input class="btn btn-success" type="submit" value="Guardar"></div>

@@ -33,6 +33,10 @@ public class ReporteAccidente {
     @ManyToOne
     private Cliente cliente;
     
+	@JoinColumn(name="profesional_id_profesional")
+	@ManyToOne
+	private Profesional profesional;
+    
     
     public ReporteAccidente() {
 		super();
@@ -41,15 +45,16 @@ public class ReporteAccidente {
 		super();
 		this.id_reporteaccidente = id_reporteaccidente;
 	}
-	public ReporteAccidente(Date fecha, String direccion, String labor, String descripcion, Cliente cliente) {
+	public ReporteAccidente(Date fecha, String direccion, String labor, String descripcion,Profesional profesional, Cliente cliente) {
 		super();
 		this.fecha = fecha;
 		this.direccion = direccion;
 		this.labor = labor;
 		this.descripcion = descripcion;
+		this.profesional = profesional;
 		this.cliente = cliente;
 	}
-	public ReporteAccidente(int id_reporteaccidente, Date fecha, String direccion, String labor, String descripcion,
+	public ReporteAccidente(int id_reporteaccidente, Date fecha, String direccion, String labor, String descripcion,Profesional profesional,
 			Cliente cliente) {
 		super();
 		this.id_reporteaccidente = id_reporteaccidente;
@@ -58,6 +63,7 @@ public class ReporteAccidente {
 		this.labor = labor;
 		this.descripcion = descripcion;
 		this.cliente = cliente;
+		this.profesional = profesional;
 	}
 	
 	
@@ -97,6 +103,13 @@ public class ReporteAccidente {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+	public Profesional getProfesional() {
+		return profesional;
+	}
+
+	public void setProfesional(Profesional profesional) {
+		this.profesional = profesional;
+	}
 	@Override
 	public String toString() {
 		return "ReporteAccidente [id_reporteaccidente=" + id_reporteaccidente + ", fecha=" + fecha + ", direccion="

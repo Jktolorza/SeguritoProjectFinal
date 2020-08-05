@@ -16,100 +16,214 @@ INSERT INTO usuario(password,nickname, rol)
 values ('$2a$10$/jUyRyk6clGwagdmm7QMOuMc7esj0FH/pYin3wvf891Q/V.YpkNr.', 'clloncon','ROLE_PROFESIONAL');
 INSERT INTO usuario(password,nickname, rol)
 values ('$2a$10$P1XxIboELkfCBpos.2W.EOaTUe54CPSbY/tq13dmDWpewtpsRObaO', 'abarroso','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$ND3Xk53aPAmArYeq15xtNekIZLvV9yeHrmKz0rKYNNxPv7h6TegDi', 'transportesSA','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$3ozn4qhF2y/bw9NzmaAhp.ye1wtD/FrbsvJcrSNZXBWChLiQbH5kq', 'minerialaplata','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$FnJKJSLgfJ9U/toL1yedVePdgulCY1dRiiR4YYJR2qFTi9UMril/.', 'bodegasplastic','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$esUBxsBJPeYSxhK67vCUn.P5evup6S9B1MTd9ij48W9VZvYrZ/Wbe', 'oyrltda','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$PDcM31sgBkummMKy0P6Tx.dK4iRQ2qT.hhJl0kFX4bMcdAEu1Fk46', 'constructoracentral','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$9HALNCWZxc1fXBEpdLcgP..p.an7NSZ1nb3iFnm7haRDuyXMUyzhm', 'envasadosgonzalez','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$ILIgC1d5EE8xPHEHe3q97O9nyE14EloVLQiMGNdBeGPgnXz/RYm8a', 'baxter','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$JT6WWZL9akiL5GoXfiQ8BevT2CZW2NXpIArDwXNo.1KQfLrWsU/Bu', 'generalmotors','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$L29n5nvcLXjNQSjoehaleeERnk6Dp2i87N.I76piO0Q5JRse1ZQ1q', 'grupoarmour','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$5Pbig0ZHEkZYIX6pGcJPyeEX/RkwLIgtTKiJIW9S3xBHtU.4L5qf2', 'quintinoexpress','ROLE_CLIENTE');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$PuoFpM05Qg7DMORGLQLIXuGilnagCJ1O4MSsptN5ehCKsfvueGXt.', 'josemendoza','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$0wCXwuEioDf2iFvPCZYfHeoF/jWcsxO01fruJ5kPVcKXyn2JBCX/C', 'lorenanunez','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$AI4i7DNosFMm4qG.LAaGU.NoxmNIAmIceMtJJJVCY1izIydha4wke', 'cesararaneda','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$vrkKtmWAR64isP4dvBQcTeJg9UngsI1X6I4U4u.Sa2FMN2e/OqKUS', 'rodrigovasquez','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$y6t3WrHY087m2V1fYQ7pfevJj1o7Bvw3ZYAdyfSoV2vuf6go49lqu', 'aliciamartinez','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$PO72svagFBpxvWbI2uMWbeojxFK.tQ3fMHkXzuQ3eYOLloG.vkFJa', 'catalinarojas','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$/GoA5NG7WUKfjcE80iojremvglqJU0YyxEk.1NdfaJkUCS4f3ldgO', 'danielcarrasco','ROLE_PROFESIONAL');
+INSERT INTO usuario(password,nickname, rol)
+values ('$2a$10$d.C1j7ObguTYejU/Z5JYx.jszP.Vn5dRrmiDqnTIc1gt65/DiiFqK', 'jorgecastillo','ROLE_ADMINISTRADOR');
 
 --CLIENTE
+INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
+values ('Transportes S.A','77888999-9',TO_DATE('20/03/2020','dd/mm/yyyy'), 'transportesSA', 9);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Transportes S.A','77888999-9',TO_DATE('20/03/2020','dd/mm/yyyy'), 'cliente', 3);
+values ('Mineria La Plata','78999000-0',TO_DATE('15/01/2020','dd/mm/yyyy'), 'minerialaplata', 10);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Mineria La Plata','78999000-0',TO_DATE('15/01/2020','dd/mm/yyyy'), 'cliente', 3);
+values ('Bodegas Plastic','88000333-9',TO_DATE('10/05/2019','dd/mm/yyyy'), 'bodegasplastic',11);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Bodegas Plastic','88000333-9',TO_DATE('10/05/2019','dd/mm/yyyy'), 'cliente',3);
+values ('O y R LTDA.','70654389-8',TO_DATE('24/08/2019','dd/mm/yyyy'), 'oyrltda',12);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('O y R LTDA.','70654389-8',TO_DATE('24/08/2019','dd/mm/yyyy'), 'cliente',3);
+values ('Constructora Central','76604493-1',TO_DATE('30/09/2019','dd/mm/yyyy'), 'constructoracentral', 13);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Constructora Central','76604493-1',TO_DATE('30/09/2019','dd/mm/yyyy'), 'cliente', 3);
+values ('Envasados Gonzalez','75600500-2',TO_DATE('03/02/2019','dd/mm/yyyy'), 'envasadosgonzalez', 14);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Envasados Gonzalez','75600500-2',TO_DATE('03/02/2019','dd/mm/yyyy'), 'cliente', 3);
+values ('Baxter','77564321-9',TO_DATE('02/04/2020','dd/mm/yyyy'), 'baxter', 15);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Baxter','77564321-9',TO_DATE('02/04/2020','dd/mm/yyyy'), 'cliente', 3);
+values ('General Motors','79560489-4',TO_DATE('07/05/2020','dd/mm/yyyy'), 'generalmotors', 16);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('General Motors','79560489-4',TO_DATE('07/05/2020','dd/mm/yyyy'), 'cliente', 3);
+values ('Grupo Armour','78005338-1',TO_DATE('19/10/2019','dd/mm/yyyy'), 'grupoarmour', 17);
 
 INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Grupo Armour','78005338-1',TO_DATE('19/10/2019','dd/mm/yyyy'), 'cliente', 3);
-
-INSERT INTO cliente (nombreempresa,rutempresa,fecharegistro, usuario_nickname, usuario_id_usuario)
-values ('Quintino Express','76534765-2',TO_DATE('05/12/2019','dd/mm/yyyy'), 'cliente', 3);
+values ('Quintino Express','76534765-2',TO_DATE('05/12/2019','dd/mm/yyyy'), 'quintinoexpress', 18);
 
 
 --PROFESIONAL
+INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
+values ('Jose','Mendoza','josemendoza@segurito.cl','977512400','Prevencionista de riesgo en terreno', 'josemendoza', 19);
 
 INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Jose','Mendoza','josemendoza@segurito.cl','977512400','Prevencionista de riesgo en terreno', 'profesional', 1);
+values ('Lorena','Nunez','lorenanunez@segurito.cl','988877699','Coordinadora de calidad de vida laboral', 'lorenanunez', 20);
 
 INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Lorena','Nunez','lorenanunez@segurito.cl','988877699','Coordinadora de calidad de vida laboral', 'profesional', 1);
+values ('Cesar','Araneda','cesararaneda@segurito.cl','999800555','Jefe dpto. prevencion de riesgos laborales', 'cesararaneda', 21);
 
 INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Cesar','Araneda','cesararaneda@segurito.cl','999800555','Jefe dpto. prevencion de riesgos laborales', 'profesional', 1);
+values ('Rodrigo','Vasquez','rodrigovasquez@segurito.cl','900033378','Prevencionista de riesgo en terreno', 'rodrigovasquez', 22);
 
 INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Rodrigo','Vasquez','rodrigovasquez@segurito.cl','900033378','Prevencionista de riesgo en terreno', 'profesional', 1);
+values ('Alicia','Martinez','aliciamartinez@segurito.cl','977744455','Asesora en Prevencion de Riesgos', 'aliciamartinez', 23);
 
 INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Alicia','Martinez','aliciamartinez@segurito.cl','977744455','Asesora en Prevencion de Riesgos', 'profesional', 1);
+values ('Catalina','Rojas','catalinarojas@segurito.cl','966644433','Asesora en Prevencion de Riesgos', 'catalinarojas', 24);
 
 INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Catalina','Rojas','catalinarojas@segurito.cl','966644433','Asesora en Prevencion de Riesgos', 'profesional', 1);
-
-INSERT INTO profesional (nombre,apellido,correo,telefono,cargo, usuario_nickname, usuario_id_usuario)
-values ('Daniel','Carrasco','danielcarrasco@segurito.cl','988900043','Prevencionista de riesgo en terreno', 'profesional', 1);
+values ('Daniel','Carrasco','danielcarrasco@segurito.cl','988900043','Prevencionista de riesgo en terreno', 'danielcarrasco', 25);
 
 --ACTIVIDADES MEJORA
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('01/08/2020','dd/mm/yyyy'),TO_DATE('02/08/2020','dd/mm/yyyy'),'Finalizado','Se reparan partes rotas del piso','1','1');
 
 INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
-values ('Accidentes en superficies de trabajo',TO_DATE('01/02/2020','dd/mm/yyyy'),TO_DATE('02/03/2020','dd/mm/yyyy'),'Finalizado','Se reparan partes rotas del piso','4','2');
-
-INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
-values ('Riesgos en operaciones de maquinas',TO_DATE('20/06/2020','dd/mm/yyyy'),TO_DATE('20/07/2020','dd/mm/yyyy'),'Pendiente','Pintar maquinas segun el codigo de colores','1','4');
+values ('Riesgos en operaciones de maquinas',TO_DATE('20/08/2020','dd/mm/yyyy'),TO_DATE('20/08/2020','dd/mm/yyyy'),'Pendiente','Pintar maquinas segun el codigo de colores','1','2');
 
 --REPORTE ACCIDENTE
-
 INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion, profesional_id_profesional, cliente_id_cliente)
-values (TO_DATE('02/05/2020','dd/mm/yyyy'),'Santa Marta 0344','Descarga de camion','Trabajador se dobla tobillo por suelo roto','1', '3');
+values (TO_DATE('02/08/2020','dd/mm/yyyy'),'Santa Marta 0344','Descarga de camion','Trabajador se dobla tobillo por suelo roto','1', '1');
 
 INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('20/06/2020','dd/mm/yyyy'),'Departamental 769','Amago de incendio','Derrame de productos inflamables','2', '6');
+values (TO_DATE('03/08/2020','dd/mm/yyyy'),'Departamental 769','Amago de incendio','Derrame de productos inflamables','1', '2');
 
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/08/2020','dd/mm/yyyy'),'La Aduana 1040','Caida desde escalera','Pierna quebrada','2', '3');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('04/08/2020','dd/mm/yyyy'),'La Aduana 1040','Atropello','Accidente de trayecto','2', '3');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('05/08/2020','dd/mm/yyyy'),'La Aduana 1040','Electrocutamiento','Mala gestion y uso de las herramientas de seguridad','2', '3');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('05/08/2020','dd/mm/yyyy'),'Grecia 7325','Accidente de trayecto','esguince de tobillo','3', '4');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/08/2020','dd/mm/yyyy'),'Mapocho 145','Inhalacion vapor toxico','Derrame de producto toxico','1', '4');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/07/2020','dd/mm/yyyy'),'Macul 200','Lesion traumatica','Objeto pesado cae desde altura','7', '5');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/07/2020','dd/mm/yyyy'),'Providencia 780','Cortes y laceraciones','Corte con equipo e implemento afilado','4', '7');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/09/2020','dd/mm/yyyy'),'San Pablo 5778','Accidente de Trayecto','Caída en trayecto','3', '6');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('12/09/2020','dd/mm/yyyy'),'Santiago 765','Lesiones por el uso de maquinaria y equipos','Fractura de huesos','2', '2');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/07/2020','dd/mm/yyyy'),'Santa Rosa 543','Amago de incendio','Inflamacion productos toxicos','7', '1');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/07/2020','dd/mm/yyyy'),'Independencia 3255','Caída en salida de emergencia','Suelo con rotura','3', '4');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('29/07/2020','dd/mm/yyyy'),'Salesianos 700','Caídas desde la altura','Resbalo de escalera','2', '5');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/09/2020','dd/mm/yyyy'),'Chiloé 9755','Contacto con la instalación eléctrica','Instalacion electrica en mal estado','7', '2');
+
+INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('07/09/2020','dd/mm/yyyy'),'Piramide 457','Sobresfuerzos y lesiones musculares','Lesion de espalda ','2', '6');
 --ASESORIA
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('02/08/2020 13:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Repaso de los temas de seguridad y chequeo de cumplimiento','1','1');
 
 INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('02/05/2020 13:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Repaso de los temas de seguridad y chequeo de cumplimiento','1','3');
-
-INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('01/03/2019 10:00','dd/mm/yyyy HH24:mi'),'Accidente','Revision de compensaciones y multas a las que se puede ver afecta la empresa','2','1');
+values (TO_DATE('01/08/2019 10:00','dd/mm/yyyy HH24:mi'),'Accidente','Revision de compensaciones y multas a las que se puede ver afecta la empresa','1','2');
 
 --CAPACITACION
 INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('05/08/2020 12:00','dd/mm/yyyy HH24:mi'),'Seguridad en la oficina','Buenas practicas de seguridad','2','4');
+values (TO_DATE('05/08/2020 12:00','dd/mm/yyyy HH24:mi'),'Seguridad en la oficina','Buenas practicas de seguridad','1','1');
 
 INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('02/05/2020 11:00','dd/mm/yyyy HH24:mi'),'Seguridad en faena','Buenas practicas de seguridad','4','3');
+values (TO_DATE('02/08/2020 11:00','dd/mm/yyyy HH24:mi'),'Seguridad en faena','Buenas practicas de seguridad','1','2');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/08/2020 11:00','dd/mm/yyyy HH24:mi'),'Seguridad en minas','Buenas practicas de seguridad','2','3');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('04/08/2020 10:00','dd/mm/yyyy HH24:mi'),'Seguridad en faena','Buenas practicas de seguridad','3','4');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('02/07/2020 11:00','dd/mm/yyyy HH24:mi'),'Accidentes de trayecto','Buenas practicas de seguridad','7','5');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('10/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Alarmas de Monóxido de Carbono','Buenas practicas de seguridad','6','6');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('11/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Riesgos Eléctricos','Buenas practicas de seguridad','4','7');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Extintores deIncendios','Buenas practicas de seguridad','5','5');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/07/2020 15:00','dd/mm/yyyy HH24:mi'),'Seguridad en el uso Escaleras','Buenas practicas de seguridad','2','3');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/08/2020 17:00','dd/mm/yyyy HH24:mi'),'Cables de Electricidad Elevados','Buenas practicas de seguridad','5','4');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/08/2020 17:30','dd/mm/yyyy HH24:mi'),'Seguridad en Control de Venenos','Buenas practicas de seguridad','7','4');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('28/07/2020 17:30','dd/mm/yyyy HH24:mi'),'Seguridad conPesticidas','Buenas practicas de seguridad','4','7');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/09/2020 12:30','dd/mm/yyyy HH24:mi'),'Primeros Auxilios en Quemaduras','Buenas practicas de seguridad','3','6');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/09/2020 12:30','dd/mm/yyyy HH24:mi'),'Primeros Auxilios en Envenenamientos','Buenas practicas de seguridad','3','6');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/09/2020 10:30','dd/mm/yyyy HH24:mi'),'Resbalos, Tropezones y Caídas','Buenas practicas de seguridad','4','5');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/09/2020 10:30','dd/mm/yyyy HH24:mi'),'Seguridad en Terremotos en el Lugar de Trabajo','Buenas practicas de seguridad','2','2');
 
 --FACTURA
 INSERT INTO factura(fechacobro,fechavencimiento,extras, impuestos, subtotal, total, cliente_id_cliente)
-values (TO_DATE('04/04/2020','dd/mm/yyyy'), TO_DATE('24/04/2020','dd/mm/yyyy'),300000,475000,2200000,2975000, '1');
+values (TO_DATE('01/08/2020','dd/mm/yyyy'), TO_DATE('24/08/2020','dd/mm/yyyy'),300000,475000,2200000,2975000, '1');
 
 INSERT INTO factura(fechacobro,fechavencimiento,extras, impuestos,subtotal, total, cliente_id_cliente)
-values (TO_DATE('03/03/2020','dd/mm/yyyy'), TO_DATE('23/03/2020','dd/mm/yyyy'),400000,399000,1700000,2499000, '2');
+values (TO_DATE('01/08/2020','dd/mm/yyyy'), TO_DATE('03/08/2020','dd/mm/yyyy'),400000,399000,1700000,2499000, '2');
 
 --DETALLE FACTURA
 INSERT INTO detallefactura(nombre,precio, cantidad, factura_id_factura)
@@ -129,63 +243,41 @@ values ('capacitacion', 400000,2,'2');
 
 --VISITA
 INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('02/05/2020 11:00','dd/mm/yyyy HH24:mi'),1,1,1);
+values(TO_DATE('02/08/2020 11:00','dd/mm/yyyy HH24:mi'),1,1,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('03/08/2020 11:00','dd/mm/yyyy HH24:mi'),1,1,2);
 
 --CHECKLIST
 INSERT INTO checklist(version, visita_id_visita)
 values (1,1);
 
---DETALLE CHECKLIST
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Uso de zapatos de seguridad','No incorporado',1);
-
-
-
---ADMINISTRADOR
-
-INSERT INTO administrador (nombre,usuario_id_usuario,usuario_nickname)
-values ('Jorge Castillo','2','administrador');
-
---ASESORIA EXTRA
-
-INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
-values (TO_DATE('02/05/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','1' ,'2');
-
-INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('05/06/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','2', '4');
-
-INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
-values (TO_DATE('20/07/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','3', '5');
-
---VISITA
-
-INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('05/07/2020 14:00','dd/mm/yyyy HH24:mi'),1,3,4);
-
-INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('03/04/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
-
-INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('15/07/2020 16:00','dd/mm/yyyy HH24:mi'),1,2,3);
-
---CHECKLIST
-
 INSERT INTO checklist(version, visita_id_visita)
 values (1,2);
 
 INSERT INTO checklist(version, visita_id_visita)
-values (1,3);
+values (2,1);
 
 INSERT INTO checklist(version, visita_id_visita)
-values (1,4);
+values (2,2);
+
+
 
 --DETALLE CHECKLIST
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',1);
 
 INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Revision nuevas instalaciones','Resuelto',1);
+values ('Uso de casco de seguridad','Cumplido',1);
 
 INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Mejoras en señalizaciones de seguridad','Resuelto',1);
+values ('Uso de lentes de seguridad','Parcial',1);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',2);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',2);
 
 INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
 values ('Señalizacion de espacios peligrosos','No incorporado',2);
@@ -194,7 +286,7 @@ INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
 values ('Entrega de ropa de seguridad a trabajadores','Resuelto',2);
 
 INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Señalizacion salidas de emergencia','No incorporado',2);
+values ('Señalizacion salidas de emergencia','No incorporado',3);
 
 INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
 values ('Instalaciones electricas en mal estado','No incorporado',3);
@@ -214,8 +306,31 @@ values ('Control de accesos a personal autorizado','No incorporado',4);
 INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
 values ('Mantencion de areas identificadas y ordenadas','Resuelto',4);
 
---REPORTECLIENTE
+--ADMINISTRADOR
+INSERT INTO administrador (nombre,usuario_id_usuario,usuario_nickname)
+values ('Jorge Castillo',26,'jorgecastillo');
 
+--ASESORIA EXTRA
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('02/08/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','1' ,'1');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('05/08/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','1', '2');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/08/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','2', '3');
+
+--VISITA
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/08/2020 14:00','dd/mm/yyyy HH24:mi'),1,1,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('03/08/2020 10:00','dd/mm/yyyy HH24:mi'),1,1,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/08/2020 16:00','dd/mm/yyyy HH24:mi'),1,2,3);
+
+--REPORTECLIENTE
 INSERT INTO reportecliente(periodo,indiceaccidentabilidad,morosidad,cliente_id_cliente,profesional_id_profesional)
 values (TO_DATE('02/05/2020','dd/mm/yyyy'),'1','0','1','1');
 
@@ -247,7 +362,6 @@ INSERT INTO reportecliente(periodo,indiceaccidentabilidad,morosidad,cliente_id_c
 values (TO_DATE('05/07/2020','dd/mm/yyyy'),'0','1','10','1');
 
 --REPORTEGLOBAL
-
 INSERT INTO reporteglobal(periodo,cantidadcapacitacion,cantidadasesorias,cantidadactividades,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('05/07/2020','dd/mm/yyyy'),'1','1','2','1','1');
 
@@ -277,6 +391,8 @@ values (TO_DATE('02/07/2020','dd/mm/yyyy'),'1','1','3','5','9');
 
 INSERT INTO reporteglobal(periodo,cantidadcapacitacion,cantidadasesorias,cantidadactividades,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('02/07/2020','dd/mm/yyyy'),'3','1','3','1','10');
+
+
 
 
 

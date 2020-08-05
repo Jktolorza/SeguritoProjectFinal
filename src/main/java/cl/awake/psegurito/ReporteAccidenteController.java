@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import cl.awake.psegurito.services.ClienteService;
+import cl.awake.psegurito.services.ProfesionalService;
 import cl.awake.psegurito.services.ReporteAccidenteService;
 import cl.awake.psegurito.model.Cliente;
+import cl.awake.psegurito.model.Profesional;
 import cl.awake.psegurito.model.ReporteAccidente;
 
 @Controller
@@ -24,6 +26,9 @@ public class ReporteAccidenteController {
     
     @Autowired
     ReporteAccidenteService reps;
+    
+	 @Autowired
+     ProfesionalService ps;
     
     @RequestMapping("/listarReporteAccidente")
     public ModelAndView listarReporteAccidente() {
@@ -41,8 +46,10 @@ public class ReporteAccidenteController {
     public ModelAndView editarReporteAccidente(@PathVariable int id) {
         ReporteAccidente rep = reps.getById(id);
         List<Cliente> listac = cs.getAll();
+        List<Profesional> listap = ps.getAll();
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("rep", rep);
+        model.put("listap", listap);
         model.put("listac", listac);
         return new ModelAndView("editaReporteAccidente","model", model); 
     }
@@ -63,8 +70,10 @@ public class ReporteAccidenteController {
     public ModelAndView crearReporteAccidente() {
         ReporteAccidente rep = new ReporteAccidente();
         List<Cliente> listac = cs.getAll();
+        List<Profesional> listap = ps.getAll();
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("rep", rep);
+        model.put("listap", listap);
         model.put("listac", listac);
         return new ModelAndView("creaReporteAccidente","model", model); 
         
