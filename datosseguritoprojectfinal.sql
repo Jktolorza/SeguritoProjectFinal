@@ -153,6 +153,41 @@ values (TO_DATE('01/08/2020 11:00','dd/mm/yyyy HH24:mi'),'Seguridad en minas','B
 INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('04/08/2020 10:00','dd/mm/yyyy HH24:mi'),'Seguridad en faena','Buenas practicas de seguridad','3','4');
 
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('02/07/2020 11:00','dd/mm/yyyy HH24:mi'),'Accidentes de trayecto','Buenas practicas de seguridad','7','5');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('10/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Alarmas de Monóxido de Carbono','Buenas practicas de seguridad','6','6');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('11/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Riesgos Eléctricos','Buenas practicas de seguridad','4','7');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Extintores deIncendios','Buenas practicas de seguridad','5','5');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/07/2020 15:00','dd/mm/yyyy HH24:mi'),'Seguridad en el uso Escaleras','Buenas practicas de seguridad','2','3');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/08/2020 17:00','dd/mm/yyyy HH24:mi'),'Cables de Electricidad Elevados','Buenas practicas de seguridad','5','4');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/08/2020 17:30','dd/mm/yyyy HH24:mi'),'Seguridad en Control de Venenos','Buenas practicas de seguridad','7','4');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('28/07/2020 17:30','dd/mm/yyyy HH24:mi'),'Seguridad conPesticidas','Buenas practicas de seguridad','4','7');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/09/2020 12:30','dd/mm/yyyy HH24:mi'),'Primeros Auxilios en Quemaduras','Buenas practicas de seguridad','3','6');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/09/2020 12:30','dd/mm/yyyy HH24:mi'),'Primeros Auxilios en Envenenamientos','Buenas practicas de seguridad','3','6');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/09/2020 10:30','dd/mm/yyyy HH24:mi'),'Resbalos, Tropezones y Caídas','Buenas practicas de seguridad','4','5');
+
+INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/09/2020 10:30','dd/mm/yyyy HH24:mi'),'Seguridad en Terremotos en el Lugar de Trabajo','Buenas practicas de seguridad','2','2');
 
 --FACTURA
 INSERT INTO factura(fechacobro,fechavencimiento,extras, impuestos, subtotal, total, cliente_id_cliente)
@@ -327,6 +362,8 @@ values (TO_DATE('02/07/2020','dd/mm/yyyy'),'1','1','3','5','9');
 
 INSERT INTO reporteglobal(periodo,cantidadcapacitacion,cantidadasesorias,cantidadactividades,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('02/07/2020','dd/mm/yyyy'),'3','1','3','1','10');
+
+
 
 
 
