@@ -17,7 +17,7 @@ public class ChecklistServiceImpl implements ChecklistService {
 	@Override
 	public Checklist getById(int id) {
 		// TODO Auto-generated method stub
-		return chr.findOne(id);
+		return chr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class ChecklistServiceImpl implements ChecklistService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		chr.delete(id);
+		chr.deleteById(id);
 	}
 	
 

@@ -18,7 +18,7 @@ public class VisitaServiceImpl implements VisitaService{
     @Override
     public Visita getById(int id) {
             // TODO Auto-generated method stub
-            return visit.findOne(id);
+            return visit.findById(id).orElse(null);
 }
     @Override
     public List<Visita> getAll() {
@@ -47,7 +47,7 @@ public class VisitaServiceImpl implements VisitaService{
     @Override
     public void delete(int id) {
             // TODO Auto-generated method stub
-            visit.delete(id);
+            visit.deleteById(id);
     }
  
 }

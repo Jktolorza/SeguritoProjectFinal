@@ -17,7 +17,7 @@ public class AdministradorServiceImpl implements AdministradorService {
 	@Override
 	public Administrador getById(int id) {
 		// TODO Auto-generated method stub
-		return ar.findOne(id);
+		return ar.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class AdministradorServiceImpl implements AdministradorService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-        ar.delete(id);
+        ar.deleteById(id);
 	}
 
 }

@@ -19,7 +19,7 @@ public class ReporteAccidenteServiceImpl implements ReporteAccidenteService {
         @Override
         public ReporteAccidente getById(int id) {
                 // TODO Auto-generated method stub
-                return repr.findOne(id);
+                return repr.findById(id).orElse(null);
         }
 
         @Override
@@ -49,7 +49,7 @@ public class ReporteAccidenteServiceImpl implements ReporteAccidenteService {
         @Override
         public void delete(int id) {
                 // TODO Auto-generated method stub
-                repr.delete(id);
+                repr.deleteById(id);
         }
 
 }

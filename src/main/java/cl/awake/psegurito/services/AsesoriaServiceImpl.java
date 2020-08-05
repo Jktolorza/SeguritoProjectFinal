@@ -17,7 +17,7 @@ public class AsesoriaServiceImpl implements AsesoriaService {
 	@Override
 	public Asesoria getById(int id) {
 		// TODO Auto-generated method stub
-		return asr.findOne(id);
+		return asr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class AsesoriaServiceImpl implements AsesoriaService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		asr.delete(id);
+		asr.deleteById(id);
 	}
 
 }

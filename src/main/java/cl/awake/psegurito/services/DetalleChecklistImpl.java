@@ -17,7 +17,7 @@ public class DetalleChecklistImpl implements DetalleChecklistService{
 	@Override
 	public DetalleChecklist getById(int id) {
 		// TODO Auto-generated method stub
-		return dchr.findOne(id);
+		return dchr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class DetalleChecklistImpl implements DetalleChecklistService{
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		dchr.delete(id);
+		dchr.deleteById(id);
 	}
 
 	@Override

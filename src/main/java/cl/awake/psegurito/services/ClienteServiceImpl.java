@@ -17,7 +17,7 @@ public class ClienteServiceImpl implements ClienteService {
 	@Override
 	public Cliente getById(int id) {
 		// TODO Auto-generated method stub
-		return cr.findOne(id);
+		return cr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class ClienteServiceImpl implements ClienteService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-        cr.delete(id);
+        cr.deleteById(id);
 	}
 
 }

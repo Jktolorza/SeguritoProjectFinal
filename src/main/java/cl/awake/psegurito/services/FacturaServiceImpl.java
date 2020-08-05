@@ -16,7 +16,7 @@ public class FacturaServiceImpl implements FacturaService {
 	@Override
 	public Factura getById(int id) {
 		// TODO Auto-generated method stub
-		return fr.findOne(id);
+		return fr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class FacturaServiceImpl implements FacturaService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		fr.delete(id);
+		fr.deleteById(id);
 	}
 
 }

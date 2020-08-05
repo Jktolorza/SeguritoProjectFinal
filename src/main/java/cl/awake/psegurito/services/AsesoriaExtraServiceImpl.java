@@ -21,7 +21,7 @@ public class AsesoriaExtraServiceImpl implements AsesoriaExtraService {
 	@Override
 	public AsesoriaExtra getById(int id) {
 		// TODO Auto-generated method stub
-		return asex.findOne(id);
+		return asex.findById(id).orElse(null);
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class AsesoriaExtraServiceImpl implements AsesoriaExtraService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		asex.delete(id);
+		asex.deleteById(id);
 		
 	}
 

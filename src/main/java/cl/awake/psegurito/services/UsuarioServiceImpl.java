@@ -24,7 +24,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	@Override
 	public Usuario getById(UsuarioId usuarioid) {
 		// TODO Auto-generated method stub
-		return ur.findOne(usuarioid);
+		return ur.findById(usuarioid).orElse(null);
 	}
 
 	@Override

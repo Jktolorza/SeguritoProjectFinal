@@ -17,7 +17,7 @@ public class ProfesionalServiceImpl implements ProfesionalService {
 	@Override
 	public Profesional getById(int id) {
 		// TODO Auto-generated method stub
-		return pr.findOne(id);
+		return pr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class ProfesionalServiceImpl implements ProfesionalService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-        pr.delete(id);
+        pr.deleteById(id);
 	}
 
 }

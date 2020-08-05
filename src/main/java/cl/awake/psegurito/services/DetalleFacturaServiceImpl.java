@@ -17,7 +17,7 @@ public class DetalleFacturaServiceImpl implements DetalleFacturaService {
 	@Override
 	public DetalleFactura getById(int id) {
 		// TODO Auto-generated method stub
-		return dfr.findOne(id);
+		return dfr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class DetalleFacturaServiceImpl implements DetalleFacturaService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		dfr.delete(id);
+		dfr.deleteById(id);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class MorosoServiceImpl implements MorosoService {
 	@Override
 	public Moroso getById(int id) {
 		// TODO Auto-generated method stub
-		return pr.findOne(id);
+		return pr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class MorosoServiceImpl implements MorosoService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-        pr.delete(id);
+        pr.deleteById(id);
 	}
 	@Override
 	public List<Moroso> getmoroso() {

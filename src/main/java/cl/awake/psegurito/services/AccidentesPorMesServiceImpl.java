@@ -18,7 +18,7 @@ public class AccidentesPorMesServiceImpl implements AccidentesPorMesService {
 	@Override
 	public AccidentesPorMes getById(int id) {
 		// TODO Auto-generated method stub
-		return apm.findOne(id);
+		return apm.findById(id).orElse(null);
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class AccidentesPorMesServiceImpl implements AccidentesPorMesService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		apm.delete(id);
+		apm.deleteById(id);
 	}
 	@Override
 	public List<AccidentesPorMes> getAccidentesPorMes() {

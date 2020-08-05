@@ -17,7 +17,7 @@ public class ActividadMejoraServicelmpl implements ActividadMejoraService {
 	@Override
 	public ActividadMejora getById(int id) {
 		// TODO Auto-generated method stub
-		return acr.findOne(id);
+		return acr.findById(id).orElse(null);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class ActividadMejoraServicelmpl implements ActividadMejoraService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		acr.delete(id);
+		acr.deleteById(id);
 	}
 
 }

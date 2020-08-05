@@ -18,7 +18,7 @@ public class CapacitacionServiceImpl implements CapacitacionService {
         @Override
         public Capacitacion getById(int id) {
                 // TODO Auto-generated method stub
-                return capc.findOne(id);
+                return capc.findById(id).orElse(null);
         }
 
         @Override
@@ -48,7 +48,7 @@ public class CapacitacionServiceImpl implements CapacitacionService {
         @Override
         public void delete(int id) {
                 // TODO Auto-generated method stub
-                capc.delete(id);
+                capc.deleteById(id);
         }
 
 }
