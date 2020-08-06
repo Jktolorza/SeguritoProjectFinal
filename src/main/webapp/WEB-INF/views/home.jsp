@@ -132,7 +132,7 @@
                                 Reporte Cliente</a>
                                 <ul>
                                 	<li><a href="accidentespormes" target="myFrame" class="text-muted">Reporte Accidente</a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
+                                	<li><a href="actividadpormesc" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
                                 	<li><a href="capacitacionespromesc" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
                                 </ul> 
