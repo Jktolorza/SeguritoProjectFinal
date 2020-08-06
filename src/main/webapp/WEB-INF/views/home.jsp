@@ -132,7 +132,7 @@
                                 Reporte Cliente</a>
                                 <ul>
                                 	<li><a href="accidentespormes" target="myFrame" class="text-muted">Reporte Accidente</a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
+                                	<li><a href="actividadpormesc" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
                                 	<li><a href="capacitacionespromesc" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
                                 </ul> 
@@ -143,7 +143,8 @@
                                 	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
                                 	<li><a href="capacitacionespromesp" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
+                                	<li><a href="actividadpormesp" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
+
                                 </ul> 
                         </div>
                     </div>
