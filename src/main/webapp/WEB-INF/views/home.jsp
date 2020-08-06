@@ -133,7 +133,7 @@
                                 <ul>
                                 	<li><a href="accidentespormes" target="myFrame" class="text-muted">Reporte Accidente</a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
+                                	<li><a href="capacitacionespromesc" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
                                 </ul> 
                             <a href="#" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
