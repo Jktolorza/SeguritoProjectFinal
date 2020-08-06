@@ -36,8 +36,9 @@ where u.nickname=?" />
 		<logout logout-success-url="/login" />
 		
 		<access-denied-handler error-page="/accesoDenegado"/>
-		<!--  
-		<intercept-url pattern="/" access="permitAll" />
+		  
+		<intercept-url pattern="/" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" />
+		<!--
  		<intercept-url pattern="/crearProfesional" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarProfesional" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarCliente" access="hasRole('ADMINISTRADOR')" />
