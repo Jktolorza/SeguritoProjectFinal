@@ -83,31 +83,20 @@
                                     Datos Cliente
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="listarActividadMejora" target="myFrame">Actividades a mejorar</a>
-                                    <a class="dropdown-item" href="listarAsesoria" target="myFrame">Revisar Asesorias</a>
-                                    <a class="dropdown-item" href="listarCapacitacion" target="myFrame">Revisar	Capacitaciones</a>
-                                    <a class="dropdown-item" href="crearReporteAccidente" target="myFrame">Reportar Accidente</a>
-                                    <a class="dropdown-item" href="listarFactura" target="myFrame">Facturacion</a>
-                                    <a class="dropdown-item" href="crearAsesoriaExtra" target="myFrame">Agregar Asesoria Extra</a>
-                                    <a class="dropdown-item" href="crearVisita" target="myFrame">Agendar Visita</a>
+<!--                                     <a class="dropdown-item" href="listarActividadMejora" target="myFrame">Actividades a mejorar</a> -->
+<!--                                     <a class="dropdown-item" href="listarAsesoria" target="myFrame">Revisar Asesorias</a> -->
+<!--                                     <a class="dropdown-item" href="listarCapacitacion" target="myFrame">Revisar	Capacitaciones</a> -->
+                                         <a class="dropdown-item" href="crearReporteAccidente" target="myFrame">Reportar Accidente</a> 
+<!--                                     <a class="dropdown-item" href="listarFactura" target="myFrame">Facturacion</a> -->
+                                   		 <a class="dropdown-item" href="crearAsesoriaExtra" target="myFrame">Solicitar Asesoria Extra</a> 
+<!--                                     <a class="dropdown-item" href="crearVisita" target="myFrame">Agendar Visita</a> -->
                                 </div>
                             </li>
                         </ul>
                         <!--Boton cerrar sesion  -->
 
-                        <div class="dropdown">
-                            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cerrar Sesion</button>
-                            <div class="dropdown-menu text-center">
-
-
-                                <a class="dropdown-item" href="#">Nombre</a>
-                                <a class="dropdown-item" href="#">Cargo</a>
-                                <div class="dropdown-divider"></div>
-                                <a name="accion" value="Salir" class="dropdown-item" href="logout">
-                                    Salir
-                                </a>
-
-                            </div>
+                        <div class="">
+                            <a class="btn btn-outline-light"  href="logout" >Cerrar Sesion</a>
                         </div>
 
                     </div>
@@ -127,7 +116,7 @@
                             <a href="listarmorosos" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
                                 <i class="icon ion-md-apps lead mr-2"></i>
                                 Listado de Morosos</a>
-                            <a href="accidentespormes" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                            <a class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
                                 <i class="icon ion-md-people lead mr-2"></i>
                                 Reporte Cliente</a>
                                 <ul>
@@ -136,15 +125,15 @@
                                 	<li><a href="capacitacionespromesc" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
                                 	<li><a href="asesoriapormesc" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
                                 </ul> 
-                            <a href="#" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                            <a  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
                                 <i class="icon ion-md-stats lead mr-2"></i>
                                Reporte Global</a>
                                 <ul>
-                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
+                                	
                                 	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
+
                                 	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
+                                	
                                 	<li><a href="capacitacionespromesp" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
                                 	<li><a href="actividadpormesp" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
 
