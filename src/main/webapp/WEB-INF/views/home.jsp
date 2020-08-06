@@ -121,7 +121,7 @@
                     <div id="sidebar-container" class="bg-light border-right">
 
                         <div class="menu list-group-flush">
-                            <a href="#" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                            <a href="listadoaccidentabilidad" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
                                 <i class="icon ion-md-calendar lead mr-2"></i>
                                 Accidentabilidad</a>   
                             <a href="listarmorosos" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">

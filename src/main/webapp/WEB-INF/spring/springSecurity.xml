@@ -37,8 +37,8 @@ where u.nickname=?" />
 		
 		<access-denied-handler error-page="/accesoDenegado"/>
 		  
-		<intercept-url pattern="/" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" />
-		<!--
+		<intercept-url pattern="/" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" /> 
+		<intercept-url pattern="/accidentabilidadpormes" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" /> 
  		<intercept-url pattern="/crearProfesional" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarProfesional" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarCliente" access="hasRole('ADMINISTRADOR')" />
@@ -69,6 +69,6 @@ where u.nickname=?" />
 		<intercept-url pattern="/eliminarFactura/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/editarProfesional/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/eliminarProfesional/*" access="hasRole('ADMINISTRADOR')" />
-		-->
+
 	</http>
 </bean:beans>

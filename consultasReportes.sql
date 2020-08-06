@@ -70,7 +70,7 @@ where fechainicio between (select trunc((sysdate),'month') from dual) and (selec
 group by profesional.id_profesional , profesional.nombre, profesional.apellido;
 
 --accidentabilidad
-select profesional.nombre, profesional.apellido, cliente.nombreempresa, count(reporteaccidente.id_reporteaccidente) as accidentes, count(distinct capacitacion.id_capacitacion) as capacitaciones, count(reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion) as indiceaccidentabilidad 
+select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, count(reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion) as indiceAccidentabilidad 
 from reporteaccidente
 inner join cliente
 on cliente.id_cliente=reporteaccidente.cliente_id_cliente
@@ -80,7 +80,7 @@ inner join capacitacion
 on capacitacion.profesional_id_profesional=profesional.id_profesional and capacitacion.cliente_id_cliente=cliente.id_cliente
 where reporteaccidente.fecha between (select trunc((sysdate),'month') from dual) and (select trim(to_date(last_day(sysdate),'DD/MM/YYYY')) from dual)
 and capacitacion.fechayhora between (select trunc((sysdate),'month') from dual) and (select trim(to_date(last_day(sysdate),'DD/MM/YYYY')) from dual)
-group by profesional.nombre, profesional.apellido, cliente.nombreEmpresa;
+group by  profesional.id_profesional, profesional.nombre || ' ' || profesional.apellido;
 
 
 
