@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface AccidentesPorMesRepository extends CrudRepository<AccidentesPorMes, Integer> {
 
-	@Query(value="select cliente.id_cliente AS id, cliente.nombreEmpresa AS nombre, count(reporteaccidente.cliente_id_cliente) as accidentes\r\n" + 
+	@Query(value="seleect cliente.id_cliente AS id, cliente.nombreEmpresa AS nombre, count(reporteaccidente.cliente_id_cliente) as accidentes\r\n" + 
 			"from reporteaccidente\r\n" + 
 			"inner join cliente\r\n" + 
 			"on cliente.id_cliente=reporteaccidente.cliente_id_cliente\r\n" + 

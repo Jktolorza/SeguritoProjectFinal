@@ -13,13 +13,14 @@
 </head>
 	<body>
 	
-	<div id="notfound">
-		<div class="notfound">
+	<div id="notfound"    >
+		<div class="notfound" >
 			<div class="notfound-403">
 				<h1>Oops!</h1>
 			</div>
-			<h2>PSegurito murio</h2>
-			<p>Estamos trabajando para solucional su error.</p>
+			<h2>Problema</h2>
+			<p>Alto, No tienes permiso para estar aca </p>
+			<img alt="" src="https://image.flaticon.com/icons/png/512/10/10688.png" style="width: 90%">
 			<a href="<c:url value="/" /> ">Vuelva al menu</a>
 		</div>
 	</div>
