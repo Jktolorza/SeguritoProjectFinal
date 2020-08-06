@@ -36,7 +36,7 @@ where u.nickname=?" />
 		<logout logout-success-url="/login" />
 		
 		<access-denied-handler error-page="/accesoDenegado"/>
-		
+		<!--  
 		<intercept-url pattern="/" access="permitAll" />
  		<intercept-url pattern="/crearProfesional" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarProfesional" access="hasRole('ADMINISTRADOR')" />
@@ -68,6 +68,6 @@ where u.nickname=?" />
 		<intercept-url pattern="/eliminarFactura/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/editarProfesional/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/eliminarProfesional/*" access="hasRole('ADMINISTRADOR')" />
-		
+		-->
 	</http>
 </bean:beans>

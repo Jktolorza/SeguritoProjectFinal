@@ -15,6 +15,9 @@
         <!-- Hoja de estilo -->
         <link rel="stylesheet" href="<core:url value="/res/css/style.css" />">
         
+        <!-- Hoja de estilo -->
+        <link rel="stylesheet" href="<core:url value="/res/css/style2.css" />">
+        
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
 
@@ -53,7 +56,7 @@
                                     <a class="dropdown-item" href="crearAdministrador/${message}" target="myFrame">Crear Administrador</a>
                                     <a class="dropdown-item" href="crearFactura" target="myFrame">Facturacion Clientes</a>
                                     <a class="dropdown-item" href="listarUsuario" target="myFrame">Gestion de usuarios</a>
-                                    <a class="dropdown-item" href="listarmorosos" target="myFrame">Listado de morosos </a>
+                       
                                     <a class="dropdown-item" href="accidentespormes" target="myFrame">Listado de Accidentes por mes </a>                                        
                                 </div>
                             </li>
@@ -113,34 +116,35 @@
                 <div
                     class="d-flex" id="content-wrapper">
 
+
                     <!-- Sidebar -->
                     <div id="sidebar-container" class="bg-light border-right">
 
                         <div class="menu list-group-flush">
-                            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-                                <i class="icon ion-md-apps lead mr-2"></i>
-                                Tablero</a>
-                            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-                                <i class="icon ion-md-people lead mr-2"></i>
-                                Usuarios</a>
-                            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-                                <i class="icon ion-md-stats lead mr-2"></i>
-                                Reportes</a>
-                            <a href="http://localhost:8085/psegurito/clilist" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                            <a href="#" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
                                 <i class="icon ion-md-calendar lead mr-2"></i>
-                                Registro de api</a>
-                            <a href="" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-                                <i class="icon ion-md-person lead mr-2"></i>
-                                Perfil</a>
-                            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-                                <i class="icon ion-md-settings lead mr-2"></i>
-                                Configuraci�n</a>
-                            <!-- Cerrar sesion  -->
-                            <a href="logout" value="Salir" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
-                                <i class="icon ion-md-exit lead mr-2"></i>
-                                Cerrar Sesion</a>
-
-
+                                Accidentabilidad</a>   
+                            <a href="listarmorosos" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                                <i class="icon ion-md-apps lead mr-2"></i>
+                                Listado de Morosos</a>
+                            <a href="accidentespormes" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                                <i class="icon ion-md-people lead mr-2"></i>
+                                Reporte Cliente</a>
+                                <ul>
+                                	<li><a href="accidentespormes" target="myFrame" class="text-muted">Reporte Accidente</a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
+                                </ul> 
+                            <a href="#" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+                                <i class="icon ion-md-stats lead mr-2"></i>
+                               Reporte Global</a>
+                                <ul>
+                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
+                                </ul> 
                         </div>
                     </div>
                     <!-- Fin sidebar -->

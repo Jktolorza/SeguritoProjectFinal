@@ -23,9 +23,4 @@
 			<a href="<c:url value="/" /> ">Vuelva al menu</a>
 		</div>
 	</div>
-	
-	
-	
-	
-
 </html>

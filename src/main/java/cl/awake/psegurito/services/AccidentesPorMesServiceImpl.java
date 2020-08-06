@@ -55,4 +55,6 @@ public class AccidentesPorMesServiceImpl implements AccidentesPorMesService {
 		return apm.getAccidentesPorMes();
 	}
 
+
+
 }

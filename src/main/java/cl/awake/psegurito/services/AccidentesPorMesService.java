@@ -17,4 +17,5 @@ public interface AccidentesPorMesService {
     void delete(AccidentesPorMes p);
     void delete(int id);
     List<AccidentesPorMes> getAccidentesPorMes();
+
 }
