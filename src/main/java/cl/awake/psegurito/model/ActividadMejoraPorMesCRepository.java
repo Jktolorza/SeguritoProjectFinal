@@ -13,6 +13,6 @@ public interface ActividadMejoraPorMesCRepository extends CrudRepository<Activid
 			"on cliente.id_cliente=actividadmejora.cliente_id_cliente\r\n" + 
 			"where fechainicio between (select trunc((sysdate),'month') from dual) and (select trim(to_date(last_day(sysdate),'DD/MM/YYYY')) from dual)\r\n" + 
 			"group by cliente.id_cliente, cliente.nombreEmpresa", nativeQuery = true)
-	List<ActividadMejoraPorMesC>getActividadMejoraPorMesC();
+			List<ActividadMejoraPorMesC>getActividadMejoraPorMesC();
 	
 }

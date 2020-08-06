@@ -134,14 +134,14 @@
                                 	<li><a href="accidentespormes" target="myFrame" class="text-muted">Reporte Accidente</a></li>
                                 	<li><a href="actividadpormesc" target="myFrame" class="text-muted">Reporte de Mejoras </a></li>
                                 	<li><a href="capacitacionespromesc" target="myFrame" class="text-muted">Reporte de Capacitaciones </a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
+                                	<li><a href="asesoriapormesc" target="myFrame" class="text-muted">Reporte de Asesoria</a></li>
                                 </ul> 
                             <a href="#" target="myFrame" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
                                 <i class="icon ion-md-stats lead mr-2"></i>
                                Reporte Global</a>
                                 <ul>
                                 	<li><a href="#" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
-                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
+                                	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
                                 	<li><a href="actividadpormesp" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
                                 </ul> 
