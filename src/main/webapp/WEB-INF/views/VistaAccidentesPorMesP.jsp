@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Moroso</title>
+<title>Reporte Accidentes</title>
 <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -14,15 +14,15 @@
     <div class="container">
 		<h1 class="display-4">Accidentes por mes  </h1>
 
-		<h1 >Grafica de accidentes registrados por empresa </h1>
+		<h1 >Grafica de profesionales responsables de accidentes registrados por empresa  </h1>
 		<br>		
 		<div class="col-12">
-			<canvas id="accidentespormes" height="200" width="200"></canvas>
+			<canvas id="accidentespormesp" height="200" width="200"></canvas>
 		</div> 
 		
       	<hr>
 
-		<h1 class="display-4">Listado de accidentes por mes  </h1>
+		<h1 class="display-4">Profesionales responsables   </h1>
 		<br>
 		 
         <table class="table">
@@ -39,7 +39,7 @@
                 <tr>
                     <td>${accxmes.getId()}</td>
                     <td>${accxmes.getNombre()}</td>
-                    <td>${accxmes.getAccidentes()}</td>
+                    <td>Numero de accidentes ${accxmes.getAccidentes()}</td>
             
                
             </c:forEach>
@@ -57,7 +57,7 @@
     var empresas = ${model.empresas};
     var accidentes = ${model.accidentes};
     
-    var ctx = document.getElementById("accidentespormes").getContext("2d"); 
+    var ctx = document.getElementById("accidentespormesp").getContext("2d"); 
     var graficoBarras = new Chart(ctx, {
     	 type: 'bar',
          data: {

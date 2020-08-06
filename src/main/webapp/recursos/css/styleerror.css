@@ -16,7 +16,7 @@ body {
 #notfound .notfound {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 35%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -26,6 +26,10 @@ body {
   max-width: 410px;
   width: 100%;
   text-align: center;
+}
+img{
+	width: 200px;
+	height: 300px;
 }
 
 .notfound .notfound-404 {
