@@ -5,9 +5,6 @@ import java.util.List;
 import cl.awake.psegurito.model.AccidentesPorMes;
 
 
-
-
-
 public interface AccidentesPorMesService {
 
     AccidentesPorMes getById(int id);

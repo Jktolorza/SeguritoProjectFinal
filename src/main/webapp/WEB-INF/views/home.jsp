@@ -143,7 +143,11 @@
                                 	<li><a href="#" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
                                 	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
                                 	<li><a href="#" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
+                                	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
+                                	<li><a href="#" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
+                                	<li><a href="capacitacionespromesp" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
                                 	<li><a href="actividadpormesp" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
+
                                 </ul> 
                         </div>
                     </div>
