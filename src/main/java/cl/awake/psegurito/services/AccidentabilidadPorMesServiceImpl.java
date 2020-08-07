@@ -54,4 +54,9 @@ public class AccidentabilidadPorMesServiceImpl implements AccidentabilidadPorMes
 	public List<AccidentabilidadPorMes> getAccidentabilidadPorMes() {
 		return accpmr.getAccidentabilidadPorMes();
 	}
+	
+	@Override
+	public List<AccidentabilidadPorMes> getAccidentabilidadHistorica() {
+		return accpmr.getAccidentabilidadHistorica();
+	}
 }

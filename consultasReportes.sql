@@ -70,7 +70,7 @@ where fechainicio between (select trunc((sysdate),'month') from dual) and (selec
 group by profesional.id_profesional , profesional.nombre, profesional.apellido;
 
 --accidentabilidad
-select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, COALESCE(NULLIF(count(distinct reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion),0), 0) as indiceAccidentabilidad 
+select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, extract(month from reporteaccidente.fecha) as periodo, COALESCE(NULLIF(count(distinct reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion),0), 0) as indiceAccidentabilidad 
 from reporteaccidente
 inner join cliente
 on cliente.id_cliente=reporteaccidente.cliente_id_cliente
@@ -80,9 +80,22 @@ inner join capacitacion
 on capacitacion.profesional_id_profesional=profesional.id_profesional and capacitacion.cliente_id_cliente=cliente.id_cliente
 where reporteaccidente.fecha between (select trunc((sysdate),'month') from dual) and (select trim(to_date(last_day(sysdate),'DD/MM/YYYY')) from dual)
 and capacitacion.fechayhora between (select trunc((sysdate),'month') from dual) and (select trim(to_date(last_day(sysdate),'DD/MM/YYYY')) from dual)
-group by  profesional.id_profesional, profesional.nombre || ' ' || profesional.apellido;
+group by  profesional.id_profesional, extract(month from reporteaccidente.fecha), profesional.nombre || ' ' || profesional.apellido;
 
-
+--accidentabilidad historico
+select profesional.id_profesional as id, EXTRACT(month FROM capacitacion.fechayhora) as periodo, profesional.nombre || ' ' || profesional.apellido as profesional, COALESCE(NULLIF(count(distinct reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion),0), 0) as indiceAccidentabilidad 
+from reporteaccidente
+inner join cliente
+on cliente.id_cliente=reporteaccidente.cliente_id_cliente
+inner join profesional
+on reporteaccidente.profesional_id_profesional=profesional.id_profesional
+full outer join capacitacion
+on capacitacion.profesional_id_profesional=profesional.id_profesional and capacitacion.cliente_id_cliente=cliente.id_cliente 
+where EXTRACT(year FROM reporteaccidente.fecha) = 2020 
+and EXTRACT(year FROM capacitacion.fechayhora) = 2020 
+and EXTRACT(month FROM capacitacion.fechayhora) in (1)
+--and EXTRACT(month FROM reporteaccidente.fecha) in (1)
+group by  profesional.id_profesional, profesional.nombre || ' ' || profesional.apellido, EXTRACT(month FROM capacitacion.fechayhora);
 
 
 

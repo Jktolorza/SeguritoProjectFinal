@@ -20,6 +20,11 @@ public class AccidentabilidadPorMesController {
 	public List<AccidentabilidadPorMes> entregaraccidentabilidadpormes() {
     	List<AccidentabilidadPorMes> lista = accpms.getAccidentabilidadPorMes();
     	return lista;  
-
+	}
+    
+    @RequestMapping(value = "/accidentabilidadhistorica", method = RequestMethod.GET, headers = "Accept=application/json")
+	public List<AccidentabilidadPorMes> entregaraccidentabilidadhistorica() {
+    	List<AccidentabilidadPorMes> lista = accpms.getAccidentabilidadHistorica();
+    	return lista;  
 	}
 }

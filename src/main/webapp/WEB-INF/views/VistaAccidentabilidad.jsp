@@ -20,8 +20,8 @@
 		</div> 
 		
       	<hr>
-      	
-      	<h1 class="display-4">Listado de accidentes por mes  </h1>
+      		
+      	<h1 class="display-4">Listado de accidentabilidad por mes  </h1>
 		<br>
   <table class="table">
             <thead class="thead_dark">
@@ -92,6 +92,7 @@
              }
          }
      });
+    
     </script>
 
 </body>
