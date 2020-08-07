@@ -10,7 +10,6 @@ Aplicacion de negocios desarrollada para facilitar la gestion y organizacion de 
 
 _Herramientas utilizadas para el desarrollo del proyecto:_
 
-
 * [Eclipse](https://www.eclipse.org/downloads/) - IDE utilizado.
 * [Spring Framework](https://spring.io/projects/spring-framework#overview) - Framework utilizado.
 * [Java Development Kit 8](https://www.oracle.com/cl/java/technologies/javase/javase-jdk8-downloads.html) - JDK utilizado.
@@ -20,15 +19,17 @@ _Herramientas utilizadas para el desarrollo del proyecto:_
 * [Maven](https://maven.apache.org/) - Manejador de dependencias.
 * [Boostrap](https://getbootstrap.com/) - Manejador de diseño.
 * [Datapicker JQuery](https://jqueryui.com/datepicker/) - Manejador de fechas.
+* [Javadoc](https://es.wikipedia.org/wiki/Javadoc#:~:text=Javadoc%20es%20una%20utilidad%20de,los%20IDEs%20los%20generan%20autom%C3%A1ticamente.) - Generador de documentacion.
 * [GitHub](https://github.com/Jktolorza/SeguritoProject) - Manejador de versiones.
 
 ### Pre-requisitos 📋
 _Para poder ejecutar este proyecto en su entorno de desarrollo debemos tener instalado lo siguiente:_
 * Apache Tomcat en su version 9.0.36
-* Tener script SQL para la creacion de la base de datos en Oracle 11g XE, el cual puedes conseguir [en este enlace.](https://github.com/Jktolorza/SeguritoProject/blob/master/ddlproyectosegurito.ddl)
+* Tener DDL para la creacion de la base de datos en Oracle 11g XE, el cual puedes conseguir [en este enlace.](https://github.com/Jktolorza/SeguritoProjectFinal/blob/master/ddlseguritoproject.ddl)
 
 ### Instalación 🔧
 * Correr el DDL para poder ejecutar la base de datos, Instale la base de datos en su propio espacio de trabajo  realizado en Oracle 11g XE.
+* Correr script SQL 'datosseguritoprojectfinal.sql', para poblar bases de datos.
 * Abrir proyecto desde tu IDE de preferencia, en nuestro caso utilizamos Eclipse configurado con su framework Spring Tool Suite 4 con un Add-on de Spring Tool Suite 3. 
 * Modificar el WEB.xml con los datos de conexion que usted a determinado para el proyecto.
 * Montar el archivo WAR en Apache Tomcat.
