@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Lista de Facturas</title>
+<title>Lista de Checklist</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -14,7 +14,8 @@
 	<div class="container">
 		<h1 class="display-4">Listado de Checklist</h1>
 		<br>
-		<p><a class="btn btn-success" href="crearChecklist">Crear Checklist</a></p>
+		<p><a class="btn btn-success" href="../crearChecklist">Crear Checklist</a></p>
+		<p><a class="btn btn-danger" href="../listarVisita">Volver a Visitas</a></p>
 		<table class="table">
 			<thead class="thead_dark">
 				<tr>
@@ -28,7 +29,7 @@
 				</tr>
 							</thead>
 			<tbody>
-			<c:forEach items="${lista}" var="check">
+			<c:forEach items="${model.lista}" var="check">
 				<tr>
 					<th scope="row"><a href="${pageContext.request.contextPath}/mostrarDetalleChecklist/${check.getId_checklist()}">${check.getId_checklist()}</a></th>
 					<td>${check.getVersion()}</td>

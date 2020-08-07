@@ -29,7 +29,7 @@
 				<c:forEach items="${lista}" var="vis">
 					<tr>
 						<th scope="row"><a
-								href="${pageContext.request.contextPath}/mostrarVisita/${vis.getId_visita()}">${vis.getId_visita()}</a>
+								href="${pageContext.request.contextPath}/mostrarChecklist/${vis.getId_visita()}">${vis.getId_visita()}</a>
 						</th>
 						<td>${vis.getFechavisita()}</td>
 						<td>${vis.getNumerovisita()}</td>

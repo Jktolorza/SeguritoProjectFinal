@@ -38,22 +38,24 @@ where u.nickname=?" />
 		<access-denied-handler error-page="/accesoDenegado"/>
 		  
 
-		<intercept-url pattern="/" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" /> 
+		<intercept-url pattern="/" access="authenticated" /> 
 		<intercept-url pattern="/accidentabilidadpormes" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" /> 
- 		<intercept-url pattern="/crearProfesional" access="hasRole('ADMINISTRADOR')" />
+ 		<intercept-url pattern="/crearProfesional/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarProfesional" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/listarCliente" access="hasRole('ADMINISTRADOR')" />
-		<intercept-url pattern="/crearCliente" access="hasRole('ADMINISTRADOR')" />
+		<intercept-url pattern="/crearCliente/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/crearFactura" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/crearActividadesMejora" access="hasRole('PROFESIONAL')" />
 		<intercept-url pattern="/crearAsesoria" access="hasRole('PROFESIONAL')" />
 		<intercept-url pattern="/crearCapacitacion" access="hasRole('PROFESIONAL')" />
 		<intercept-url pattern="/listarReporteAccidente" access="hasAnyRole('PROFESIONAL','CLIENTE')" />
+		<intercept-url pattern="/listarAsesoriaExtra" access="hasAnyRole('PROFESIONAL','CLIENTE')" />
 		<intercept-url pattern="/listarFactura" access="hasAnyRole('CLIENTE', 'ADMINISTRADOR', 'PROFESIONAL')" />
 		<intercept-url pattern="/listarActividadesMejora" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
 		<intercept-url pattern="/listarAsesoria" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
 		<intercept-url pattern="/listarCapacitacion" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
 		<intercept-url pattern="/crearReporteAccidente" access="hasRole('CLIENTE')" />
+		<intercept-url pattern="/crearAsesoriaExtra" access="hasRole('CLIENTE')" />
 		<intercept-url pattern="/editarActividadesMejora/*" access="hasRole('PROFESIONAL')" />
 		<intercept-url pattern="/eliminarActividadesMejora/*" access="hasRole('PROFESIONAL')" />
 		<intercept-url pattern="/editarAsesoria/*" access="hasRole('PROFESIONAL')" />
@@ -62,6 +64,8 @@ where u.nickname=?" />
 		<intercept-url pattern="/eliminarCapacitacion/*" access="hasRole('PROFESIONAL')" />
 		<intercept-url pattern="/editarReporteAccidente/*" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
 		<intercept-url pattern="/eliminarReporteAccidente/*" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
+		<intercept-url pattern="/editarAsesoriaExtra/*" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
+		<intercept-url pattern="/eliminarAsesoriaExtra/*" access="hasAnyRole('PROFESIONAL', 'CLIENTE')" />
 		<intercept-url pattern="/editarCliente/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/eliminarCliente/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/editarDetalleFactura/*" access="hasRole('ADMINISTRADOR')" />
@@ -70,5 +74,6 @@ where u.nickname=?" />
 		<intercept-url pattern="/eliminarFactura/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/editarProfesional/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/eliminarProfesional/*" access="hasRole('ADMINISTRADOR')" />
+		
 	</http>
 </bean:beans>

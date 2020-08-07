@@ -24,6 +24,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class ActividadMejoraController {
+
     @Autowired
     ProfesionalService ps;
 
@@ -58,7 +59,7 @@ public class ActividadMejoraController {
     @RequestMapping("/mostrarActividadMejora/{id}")
     public ModelAndView mostrarActividadMejora(@PathVariable int id) {
         ActividadMejora ac = acs.getById(id);
-        return new ModelAndView("muestraActividadMejora", "ac", ac);
+        return new ModelAndView("muestraActividadesMejora", "ac", ac);
     }
 
     /**
@@ -145,4 +146,6 @@ public class ActividadMejoraController {
         acs.add(ac);
         return new ModelAndView("redirect:/listarActividadMejora");
     }
+
+
 }

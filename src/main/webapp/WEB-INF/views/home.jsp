@@ -42,10 +42,19 @@
                             <!-- Datos Administrador -->
 
                             <li class="nav-item dropdown">
+                                  <!-- se pregunta si la seccion esta en modo administrar si no desabilita el boton -->
+                   			 <c:choose>
+                        <c:when test="${rol == '[ROLE_ADMINISTRADOR]'}">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Datos Administrador
                                 </a>
-
+      						 </c:when>
+                        		 <c:otherwise>
+                             <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Datos Administrador
+                                </a>
+                             	</c:otherwise>
+                   			 </c:choose>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="crearProfesional/${message}" target="myFrame">Crear Profesional</a>
                                     <a class="dropdown-item" href="listarProfesional" target="myFrame">Listar Profesional</a>
@@ -63,9 +72,18 @@
 
                             <!-- Detalle Profesional -->
                             <li class="nav-item dropdown">
+                                 <c:choose>
+                       				 <c:when test="${rol == '[ROLE_PROFESIONAL]'}">	
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Datos Profesional
                                 </a>
+                                 </c:when>
+                        		 <c:otherwise>
+                        		      <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Datos Profesional
+                                </a>
+                                 	</c:otherwise>
+                   			 </c:choose>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="crearActividadMejora" target="myFrame">Ingresar Actividad a mejorar</a>
                                     <a class="dropdown-item" href="crearAsesoria" target="myFrame">Agendar Asesoria</a>
@@ -79,9 +97,18 @@
                             </li>
                             <!-- Detalle Cliente -->
                             <li class="nav-item dropdown">
+                                   <c:choose>
+                       				 <c:when test="${rol == '[ROLE_CLIENTE]'}">	
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Datos Cliente
                                 </a>
+                                 </c:when>
+                        		 <c:otherwise>
+                        		       <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Datos Cliente
+                                </a>
+                                     	</c:otherwise>
+                   			 </c:choose>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 <!--                                     <a class="dropdown-item" href="listarActividadMejora" target="myFrame">Actividades a mejorar</a> -->
 <!--                                     <a class="dropdown-item" href="listarAsesoria" target="myFrame">Revisar Asesorias</a> -->

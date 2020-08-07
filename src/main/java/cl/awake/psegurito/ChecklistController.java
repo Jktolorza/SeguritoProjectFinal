@@ -50,11 +50,14 @@ public class ChecklistController {
         return new ModelAndView("listaChecklist", "lista", lista);
     }
 
-    @RequestMapping("/mostrarChecklist/{id}")
-    public ModelAndView mostrarChecklist(@PathVariable int id) {
-        Checklist ch = chs.getById(id);
-        return new ModelAndView("muestraChecklist", "ch", ch);
-    }
+   @RequestMapping("/mostrarChecklist/{id_visita}")
+	public ModelAndView mostrarChecklist(@PathVariable int id_visita) {
+		List<Checklist> ch = chs.findByIdVisita(id_visita);
+		 Map<String, Object> model = new HashMap<String, Object>();
+	        model.put("lista", ch);
+	        model.put("id_visita", id_visita);
+    return new ModelAndView("muestraChecklist","model", model); 
+	}
 
     /**
      * Muestra el listado de checklist según los permisos del {@link Profesional}
@@ -115,6 +118,7 @@ public class ChecklistController {
         List<Visita> listav = vs.getAll();
 
         Map<String, Object> model = new HashMap<String, Object>();
+
         model.put("ch", ch);
         model.put("listav", listav);
         return new ModelAndView("creaChecklist", "model", model);

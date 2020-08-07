@@ -50,5 +50,9 @@ public class ChecklistServiceImpl implements ChecklistService {
 		chr.delete(id);
 	}
 	
+	@Override
+	public List<Checklist> findByIdVisita(int visita_id_visita) {
+		return chr.findByIdVisita(visita_id_visita);
+	}
 
 }
