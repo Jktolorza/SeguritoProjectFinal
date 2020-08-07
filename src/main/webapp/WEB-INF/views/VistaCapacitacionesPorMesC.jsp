@@ -59,7 +59,7 @@
     
     var ctx = document.getElementById("capacitacionespormesc").getContext("2d"); 
     var graficoBarras = new Chart(ctx, {
-    	 type: 'pie',
+    	 type: 'bar',
          data: {
              labels: ${model.empresas},
              datasets: [{
