@@ -12,4 +12,5 @@ public interface ChecklistService {
 	void edit(Checklist ch);
 	void delete(Checklist ch);
 	void delete(int id);
+	List<Checklist> findByIdVisita(int visita_id_visita);
 }
