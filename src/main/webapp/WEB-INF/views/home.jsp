@@ -134,7 +134,7 @@
 
 
                     <!-- Sidebar -->
-                    <div id="sidebar-container" class="bg-light border-right">
+                    <div id="sidebar-container" class="bg-light border-right" >
 
                         <div class="menu list-group-flush">
                             <a href="listadoaccidentabilidad" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
