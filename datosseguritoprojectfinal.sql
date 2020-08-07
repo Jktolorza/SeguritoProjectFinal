@@ -114,6 +114,165 @@ values ('Accidentes en superficies de trabajo',TO_DATE('01/08/2020','dd/mm/yyyy'
 INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
 values ('Riesgos en operaciones de maquinas',TO_DATE('20/08/2020','dd/mm/yyyy'),TO_DATE('20/08/2020','dd/mm/yyyy'),'Pendiente','Pintar maquinas segun el codigo de colores','1','2');
 
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en operaciones de maquinas',TO_DATE('05/01/2020','dd/mm/yyyy'),TO_DATE('01/02/2020','dd/mm/yyyy'),'Finalizado','Señalizaciones de seguridad','5','3');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('10/01/2020','dd/mm/yyyy'),TO_DATE('10/02/2020','dd/mm/yyyy'),'Finalizado','Señalizar salidas emergencia','2','10');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en instalaciones electricas',TO_DATE('15/01/2020','dd/mm/yyyy'),TO_DATE('15/02/2020','dd/mm/yyyy'),'Finalizado','Reparar instlaciones electricas','6','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('25/01/2020','dd/mm/yyyy'),TO_DATE('25/01/2020','dd/mm/yyyy'),'Finalizado','Reparar instalaciones electricas','7','10');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('30/01/2020','dd/mm/yyyy'),TO_DATE('01/03/2020','dd/mm/yyyy'),'Finalizado','Señalizar salidas de emergencia','5','9');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('15/01/2020','dd/mm/yyyy'),TO_DATE('15/02/2020','dd/mm/yyyy'),'Finalizado','Señalizar salidas de emergencia','2','7');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('25/01/2020','dd/mm/yyyy'),TO_DATE('25/02/2020','dd/mm/yyyy'),'Finalizado','Se reparan partes rotas del piso','6','4');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('14/01/2020','dd/mm/yyyy'),TO_DATE('14/02/2020','dd/mm/yyyy'),'Finalizado','Se reparan partes rotas del piso','3','6');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('12/02/2020','dd/mm/yyyy'),TO_DATE('15/03/2020','dd/mm/yyyy'),'Finalizado','Se reparan partes rotas del piso','7','9');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes de derrame de productos toxicos',TO_DATE('18/02/2020','dd/mm/yyyy'),TO_DATE('18/03/2020','dd/mm/yyyy'),'Finalizado','Organizacion de productos por grado de toxicidad','6','5');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes de derrame de productos toxicos',TO_DATE('25/02/2020','dd/mm/yyyy'),TO_DATE('25/03/2020','dd/mm/yyyy'),'Finalizado','Organizacion de productos por grado de toxicidad','1','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('28/02/2020','dd/mm/yyyy'),TO_DATE('30/03/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','5','4');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('17/02/2020','dd/mm/yyyy'),TO_DATE('17/03/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','4','6');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('05/03/2020','dd/mm/yyyy'),TO_DATE('05/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','3','1');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('10/03/2020','dd/mm/yyyy'),TO_DATE('10/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','5','10');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Señalizar accesos de personal',TO_DATE('13/03/2020','dd/mm/yyyy'),TO_DATE('13/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores de acceso para cada personal','4','9');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Señalizar accesos de personal',TO_DATE('15/03/2020','dd/mm/yyyy'),TO_DATE('15/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores de acceso para cada personal','2','2');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Señalizar accesos de personal',TO_DATE('14/03/2020','dd/mm/yyyy'),TO_DATE('14/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores de acceso para cada personal','5','7');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('02/03/2020','dd/mm/yyyy'),TO_DATE('02/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','5','2');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('26/03/2020','dd/mm/yyyy'),TO_DATE('26/03/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','7','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Accidentes en superficies de trabajo',TO_DATE('27/03/2020','dd/mm/yyyy'),TO_DATE('27/04/2020','dd/mm/yyyy'),'Finalizado','Se señalizan sectores acceso','3','6');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('04/04/2020','dd/mm/yyyy'),TO_DATE('04/05/2020','dd/mm/yyyy'),'Finalizado','Señalizar salidas de emergencia','6','1');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('06/04/2020','dd/mm/yyyy'),TO_DATE('06/05/2020','dd/mm/yyyy'),'Finalizado','Señalizar salidas de emergencia','5','3');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('07/04/2020','dd/mm/yyyy'),TO_DATE('07/05/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','3','1');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('15/04/2020','dd/mm/yyyy'),TO_DATE('15/05/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','7','10');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('25/04/2020','dd/mm/yyyy'),TO_DATE('25/05/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','5','9');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('06/05/2020','dd/mm/yyyy'),TO_DATE('06/06/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','2','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('15/05/2020','dd/mm/yyyy'),TO_DATE('15/06/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','1','2');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('25/05/2020','dd/mm/yyyy'),TO_DATE('25/06/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','4','4');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('20/05/2020','dd/mm/yyyy'),TO_DATE('20/06/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','2','9');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('21/05/2020','dd/mm/yyyy'),TO_DATE('21/06/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','3','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('11/05/2020','dd/mm/yyyy'),TO_DATE('11/06/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','4','7');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('13/05/2020','dd/mm/yyyy'),TO_DATE('13/06/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','1','1');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('14/05/2020','dd/mm/yyyy'),TO_DATE('14/06/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','5','5');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('01/06/2020','dd/mm/yyyy'),TO_DATE('01/07/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','6','2');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('03/06/2020','dd/mm/yyyy'),TO_DATE('03/07/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','7','3');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('05/06/2020','dd/mm/yyyy'),TO_DATE('05/07/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','5','6');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('07/06/2020','dd/mm/yyyy'),TO_DATE('07/07/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','1','4');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Implementos de seguridad',TO_DATE('10/06/2020','dd/mm/yyyy'),TO_DATE('10/07/2020','dd/mm/yyyy'),'Finalizado','Entrega de implementos de seguridad a trabajadores','3','10');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('15/06/2020','dd/mm/yyyy'),TO_DATE('15/07/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','5','6');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('17/06/2020','dd/mm/yyyy'),TO_DATE('17/07/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','1','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('25/06/2020','dd/mm/yyyy'),TO_DATE('25/06/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','2','9');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos de caidas cargas pesadas',TO_DATE('27/06/2020','dd/mm/yyyy'),TO_DATE('27/07/2020','dd/mm/yyyy'),'Finalizado','Descarga en sectores habilitados','6','10');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('05/07/2020','dd/mm/yyyy'),TO_DATE('05/08/2020','dd/mm/yyyy'),'Finalizado','Señalizar salidas de emergencia','2','1');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('08/07/2020','dd/mm/yyyy'),TO_DATE('08/08/2020','dd/mm/yyyy'),'Pendiente','Señalizar salidas de emergencia','3','2');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('14/07/2020','dd/mm/yyyy'),TO_DATE('14/08/2020','dd/mm/yyyy'),'Pendiente','Señalizar salidas de emergencia','6','4');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('20/07/2020','dd/mm/yyyy'),TO_DATE('20/08/2020','dd/mm/yyyy'),'Pendiente','Señalizar salidas de emergencia','4','5');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('25/07/2020','dd/mm/yyyy'),TO_DATE('25/08/2020','dd/mm/yyyy'),'Pendiente','Señalizar salidas de emergencia','4','6');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Riesgos en salidas de emergencia',TO_DATE('25/07/2020','dd/mm/yyyy'),TO_DATE('25/08/2020','dd/mm/yyyy'),'Pendiente','Señalizar salidas de emergencia','6','8');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Escaleras con pasamanos en mal estado',TO_DATE('26/07/2020','dd/mm/yyyy'),TO_DATE('26/08/2020','dd/mm/yyyy'),'Pendiente','Implementar pasamanos nuevos','3','1');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Escaleras con pasamanos en mal estado',TO_DATE('01/08/2020','dd/mm/yyyy'),TO_DATE('01/09/2020','dd/mm/yyyy'),'Pendiente','Implementar pasamanos nuevos','7','3');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Escaleras con pasamanos en mal estado',TO_DATE('05/08/2020','dd/mm/yyyy'),TO_DATE('05/09/2020','dd/mm/yyyy'),'Pendiente','Implementar pasamanos nuevos','5','4');
+
+INSERT INTO actividadmejora (nombre,fechainicio,fechatermino,estado,detalle,profesional_id_profesional,cliente_id_cliente)
+values ('Escaleras con pasamanos en mal estado',TO_DATE('07/08/2020','dd/mm/yyyy'),TO_DATE('07/09/2020','dd/mm/yyyy'),'Pendiente','Implementar pasamanos nuevos','6','6');
+
 --REPORTE ACCIDENTE
 INSERT INTO reporteaccidente(fecha,direccion,labor,descripcion, profesional_id_profesional, cliente_id_cliente)
 values (TO_DATE('02/08/2020','dd/mm/yyyy'),'Santa Marta 0344','Descarga de camion','Trabajador se dobla tobillo por suelo roto','1', '1');
@@ -505,6 +664,152 @@ values (TO_DATE('02/08/2020 13:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Repaso
 INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('01/08/2019 10:00','dd/mm/yyyy HH24:mi'),'Accidente','Revision de compensaciones y multas a las que se puede ver afecta la empresa','1','2');
 
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('21/01/2020 10:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros ','2','1');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/01/2020 10:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros ','3','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/01/2020 15:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','4','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('31/01/2020 14:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','5','4');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('13/01/2020 15:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','6','5');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('03/02/2020 15:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','7','6');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('10/02/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','1','7');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/02/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','4','8');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('25/02/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','6','9');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('14/02/2020 12:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','3','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/02/2020 11:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','5','5');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('10/03/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','7','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/03/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','2','4');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('18/03/2020 12:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','2','6');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('25/03/2020 10:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','5','9');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('16/03/2020 12:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','3','8');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/03/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','4','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('02/04/2020 13:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','7','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('10/04/2020 17:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','3','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('06/04/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','6','9');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('25/04/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','5','5');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('19/04/2020 12:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','3','1');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('25/04/2020 11:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','2','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('05/05/2020 11:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','7','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('06/05/2020 11:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','6','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/05/2020 11:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','4','8');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/05/2020 16:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','7','1');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/05/2020 18:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','3','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('04/06/2020 18:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','5','9');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('14/06/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','4','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('16/06/2020 13:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','2','1');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('17/06/2020 11:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','1','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/06/2020 14:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','3','7');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('04/07/2020 10:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','5','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('05/07/2020 11:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','6','1');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('06/07/2020 09:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','7','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('08/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','5','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('13/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','4','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('25/07/2020 12:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','7','10');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('30/07/2020 14:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','6','9');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('24/07/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','7','5');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('07/08/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','1','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('15/08/2020 15:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','5','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/08/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','3','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('20/08/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','3','3');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('01/09/2020 16:00','dd/mm/yyyy HH24:mi'),'Accidente','Detección de peligros','2','5');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('03/09/2020 16:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','7','1');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('03/09/2020 13:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','4','2');
+
+INSERT INTO asesoria(fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('05/09/2020 12:00','dd/mm/yyyy HH24:mi'),'Fiscalizacion','Medidas correctivas que debe implementar la empresa según infracciones levantadas','3','8');
 --CAPACITACION
 INSERT INTO capacitacion(fechayhora,tema,contenido,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('05/08/2020 12:00','dd/mm/yyyy HH24:mi'),'Seguridad en la oficina','Buenas practicas de seguridad','1','1');
@@ -939,72 +1244,6 @@ values ('capacitacion', 200000,3,'4');
 INSERT INTO detallefactura(nombre,precio, cantidad, factura_id_factura)
 values ('asesoria', 500000,2,'5');
 
-
---VISITA
-INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('02/08/2020 11:00','dd/mm/yyyy HH24:mi'),1,1,1);
-
-INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('03/08/2020 11:00','dd/mm/yyyy HH24:mi'),1,1,2);
-
---CHECKLIST
-INSERT INTO checklist(version, visita_id_visita)
-values (1,1);
-
-INSERT INTO checklist(version, visita_id_visita)
-values (1,2);
-
-INSERT INTO checklist(version, visita_id_visita)
-values (2,1);
-
-INSERT INTO checklist(version, visita_id_visita)
-values (2,2);
-
-
-
---DETALLE CHECKLIST
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Uso de zapatos de seguridad','No incorporado',1);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Uso de casco de seguridad','Cumplido',1);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Uso de lentes de seguridad','Parcial',1);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Revision nuevas instalaciones','Resuelto',2);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Mejoras en señalizaciones de seguridad','Resuelto',2);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Señalizacion de espacios peligrosos','No incorporado',2);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Entrega de ropa de seguridad a trabajadores','Resuelto',2);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Señalizacion salidas de emergencia','No incorporado',3);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Instalaciones electricas en mal estado','No incorporado',3);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Equipos ergonomicos en mobiliario','Resuelto',3);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Entrega de equipo de seguridad a trabajadores','No incorporado',3);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Instalacion sistema de alarmas','No incorporado',4);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Control de accesos a personal autorizado','No incorporado',4);
-
-INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
-values ('Mantencion de areas identificadas y ordenadas','Resuelto',4);
-
 --ADMINISTRADOR
 INSERT INTO administrador (nombre,usuario_id_usuario,usuario_nickname)
 values ('Jorge Castillo',26,'jorgecastillo');
@@ -1019,15 +1258,566 @@ values (TO_DATE('05/08/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalacion
 INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('20/08/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','2', '3');
 
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('25/01/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','2' ,'2');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/01/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','3', '3');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/01/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','3', '1');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('24/02/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','1' ,'10');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/02/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','5', '8');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/02/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','7', '9');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('24/03/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','4' ,'7');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/03/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','6', '6');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/03/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','5', '5');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('24/04/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','3' ,'1');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/04/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','4', '9');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/04/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','4', '6');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('24/05/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','2' ,'10');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/05/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','7', '5');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/05/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','5', '3');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('24/06/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','1' ,'1');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/06/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','2', '2');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/06/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','3', '6');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional, cliente_id_cliente)
+values (TO_DATE('24/07/2020 13:00','dd/mm/yyyy HH24:mi'),'Asesoría autocuidado','Autocuidado laboral de trabajadores','4' ,'1');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('26/07/2020 17:00','dd/mm/yyyy HH24:mi'),'Chequeo de instalaciones','Revision a nuevas instalaciones','2', '10');
+
+INSERT INTO asesoriaextra (fechayhora,motivo,detalle,profesional_id_profesional,cliente_id_cliente)
+values (TO_DATE('27/07/2020 10:00','dd/mm/yyyy HH24:mi'),'Asesoría emergencias','Se solicita asesoría para salidas de emergencia','7', '9');
+
 --VISITA
-INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('05/08/2020 14:00','dd/mm/yyyy HH24:mi'),1,1,1);
+
+--ENERO
 
 INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('03/08/2020 10:00','dd/mm/yyyy HH24:mi'),1,1,2);
+values(TO_DATE('05/01/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
 
 INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
-values(TO_DATE('15/08/2020 16:00','dd/mm/yyyy HH24:mi'),1,2,3);
+values(TO_DATE('06/01/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/01/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/01/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/01/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/01/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/01/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/01/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/01/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/01/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/01/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/01/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/01/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/01/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/01/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/01/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/01/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/01/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/01/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/01/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--FEBRERO
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/02/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/02/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/02/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/02/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/02/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/02/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/02/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/02/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/02/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/02/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/02/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/02/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/02/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/02/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/02/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/02/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/02/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/02/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/02/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/02/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--MARZO
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/03/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/03/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/03/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/03/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/03/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/03/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/03/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/03/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/03/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/03/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/03/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/03/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/03/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/03/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/03/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/03/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/03/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/03/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/03/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/03/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--ABRIL
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/04/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/04/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/04/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/04/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/04/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/04/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/04/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/04/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/04/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/04/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/04/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/04/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/04/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/04/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/04/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/04/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/04/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/04/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/04/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/04/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--MAYO
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/05/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/05/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/05/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/05/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/05/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/05/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/05/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/05/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/05/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/05/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/05/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/05/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/05/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/05/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/05/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/05/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/05/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/05/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/05/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/05/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--JUNIO
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/06/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/06/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/06/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/06/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/06/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/06/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/06/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/06/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/06/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/06/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/06/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/06/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/06/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/06/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/06/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/06/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/06/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/06/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/06/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/06/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--JULIO
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/07/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/07/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/07/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/07/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/07/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/07/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/07/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/07/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/07/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/07/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/07/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/07/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/07/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/07/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/07/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/07/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/07/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/07/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/07/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/07/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
+
+--AGOSTO
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('05/08/2020 12:00','dd/mm/yyyy HH24:mi'),1,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('06/08/2020 10:00','dd/mm/yyyy HH24:mi'),1,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('07/08/2020 16:00','dd/mm/yyyy HH24:mi'),1,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('08/08/2020 11:00','dd/mm/yyyy HH24:mi'),1,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('09/08/2020 10:00','dd/mm/yyyy HH24:mi'),1,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('10/08/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('11/08/2020 14:00','dd/mm/yyyy HH24:mi'),1,7,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('12/08/2020 12:00','dd/mm/yyyy HH24:mi'),1,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('13/08/2020 15:00','dd/mm/yyyy HH24:mi'),1,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('14/08/2020 14:00','dd/mm/yyyy HH24:mi'),1,5,1);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('15/08/2020 12:00','dd/mm/yyyy HH24:mi'),2,1,10);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('16/08/2020 10:00','dd/mm/yyyy HH24:mi'),2,2,9);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('17/08/2020 16:00','dd/mm/yyyy HH24:mi'),2,3,8);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('18/08/2020 11:00','dd/mm/yyyy HH24:mi'),2,4,7);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('19/08/2020 10:00','dd/mm/yyyy HH24:mi'),2,5,6);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('20/08/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,5);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('21/08/2020 14:00','dd/mm/yyyy HH24:mi'),2,2,4);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('22/08/2020 12:00','dd/mm/yyyy HH24:mi'),2,7,3);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('23/08/2020 15:00','dd/mm/yyyy HH24:mi'),2,6,2);
+
+INSERT INTO visita(fechavisita, numerovisita, profesional_id_profesional, cliente_id_cliente)
+values(TO_DATE('24/08/2020 14:00','dd/mm/yyyy HH24:mi'),2,5,1);
 
 --REPORTECLIENTE
 INSERT INTO reportecliente(periodo,indiceaccidentabilidad,morosidad,cliente_id_cliente,profesional_id_profesional)
@@ -1091,8 +1881,533 @@ values (TO_DATE('02/07/2020','dd/mm/yyyy'),'1','1','3','5','9');
 INSERT INTO reporteglobal(periodo,cantidadcapacitacion,cantidadasesorias,cantidadactividades,profesional_id_profesional,cliente_id_cliente)
 values (TO_DATE('02/07/2020','dd/mm/yyyy'),'3','1','3','1','10');
 
+--CHECKLIST
+INSERT INTO checklist(version, visita_id_visita)
+values (1,1);
 
+INSERT INTO checklist(version, visita_id_visita)
+values (1,2);
 
+INSERT INTO checklist(version, visita_id_visita)
+values (1,3);
 
+INSERT INTO checklist(version, visita_id_visita)
+values (1,4);
 
+INSERT INTO checklist(version, visita_id_visita)
+values (1,5);
 
+INSERT INTO checklist(version, visita_id_visita)
+values (1,6);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,7);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,8);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,9);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,10);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,21);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,22);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,23);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,24);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,25);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,26);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,27);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,28);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,29);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,30);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,31);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,41);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,42);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,43);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,44);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,45);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,46);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,47);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,48);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,49);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,50);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,61);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,62);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,63);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,64);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,65);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,66);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,67);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,68);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,69);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,70);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,81);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,82);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,83);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,84);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,85);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,86);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,87);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,88);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,89);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,90);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,101);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,102);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,103);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,104);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,105);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,106);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,107);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,108);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,109);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,110);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,121);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,122);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,123);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,124);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,125);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,126);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,127);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,128);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,129);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,130);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,141);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,142);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,143);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (1,144);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,145);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,146);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,147);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,148);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,149);
+
+INSERT INTO checklist(version, visita_id_visita)
+values (2,150);
+
+--DETALLE CHECKLIST
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',1);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',1);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',1);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',2);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',2);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',2);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',2);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',3);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',3);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',3);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',3);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalacion sistema de alarmas','No incorporado',4);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Control de accesos a personal autorizado','No incorporado',4);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mantencion de areas identificadas y ordenadas','Resuelto',4);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',5);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',5);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',5);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',6);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',6);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',6);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',6);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',7);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',7);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',7);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',7);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalacion sistema de alarmas','No incorporado',8);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Control de accesos a personal autorizado','No incorporado',8);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mantencion de areas identificadas y ordenadas','Resuelto',8);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',9);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',9);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',9);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',10);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',10);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',10);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',21);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',21);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',21);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',21);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',21);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalacion sistema de alarmas','No incorporado',22);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Control de accesos a personal autorizado','No incorporado',22);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mantencion de areas identificadas y ordenadas','Resuelto',22);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',23);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',23);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',23);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',24);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',24);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',24);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',25);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',25);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',25);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',26);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',26);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalacion sistema de alarmas','No incorporado',26);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Control de accesos a personal autorizado','No incorporado',27);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mantencion de areas identificadas y ordenadas','Resuelto',27);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',27);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',28);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',28);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',28);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',29);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',29);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',30);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',30);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',30);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',41);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',41);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalacion sistema de alarmas','No incorporado',41);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Control de accesos a personal autorizado','No incorporado',41);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mantencion de areas identificadas y ordenadas','Resuelto',41);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',42);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',42);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',42);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',43);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',43);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',43);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',44);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',44);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',44);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',45);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',46);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalacion sistema de alarmas','No incorporado',47);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Control de accesos a personal autorizado','No incorporado',47);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mantencion de areas identificadas y ordenadas','Resuelto',47);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de zapatos de seguridad','No incorporado',48);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de casco de seguridad','Cumplido',48);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Uso de lentes de seguridad','Parcial',48);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Revision nuevas instalaciones','Resuelto',49);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Mejoras en señalizaciones de seguridad','Resuelto',49);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion de espacios peligrosos','No incorporado',49);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de ropa de seguridad a trabajadores','Resuelto',49);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Señalizacion salidas de emergencia','No incorporado',50);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Instalaciones electricas en mal estado','No incorporado',50);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Equipos ergonomicos en mobiliario','Resuelto',50);
+
+INSERT INTO detallechecklist(descripcion, estado, checklist_id_checklist)
+values ('Entrega de equipo de seguridad a trabajadores','No incorporado',50);
