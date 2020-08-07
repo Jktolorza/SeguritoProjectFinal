@@ -15,91 +15,131 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import cl.awake.psegurito.model.Administrador;
+
 import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.services.AdministradorService;
 import cl.awake.psegurito.services.UsuarioService;
 
+/**
+ * Controlador Administrador
+ * 
+ * @author Desarrolladores PSegurito
+ */
 @Controller
 public class AdministradorController {
 
-	@Autowired
-	AdministradorService as;
+    @Autowired
+    AdministradorService as;
 
-	@Autowired
-	UsuarioService us;
+    @Autowired
+    UsuarioService us;
 
-	@RequestMapping("/listarAdministrador")
-	public ModelAndView listarAdministrador() {
-		List<Administrador> lista = as.getAll();
-		return new ModelAndView("listaAdministrador", "lista", lista);
-	}
+    /**
+     * Muestra Administrador {@link Administrador}
+     * 
+     * @param as injeccion de administradorService
+     *
+     * @return un objeto {@link ModelAndView} con la respuesta a la solicitud,
+     *         Mostrar administrador
+     * @see List
+     */
 
-	@RequestMapping("/mostrarAdministrador/{id}")
-	public ModelAndView mostrarAdministrador(@PathVariable int id) {
-		Administrador a = as.getById(id);
-		return new ModelAndView("muestraAdministrador", "a", a);
-	}
+    @RequestMapping("/listarAdministrador")
+    public ModelAndView listarAdministrador() {
+        List<Administrador> lista = as.getAll();
+        return new ModelAndView("listaAdministrador", "lista", lista);
+    }
 
-	@RequestMapping("/editarAdministrador/{id}")
-	public ModelAndView editarAdministrador(@PathVariable int id) {
-		Administrador a = as.getById(id);
+    @RequestMapping("/mostrarAdministrador/{id}")
+    public ModelAndView mostrarAdministrador(@PathVariable int id) {
+        Administrador a = as.getById(id);
+        return new ModelAndView("muestraAdministrador", "a", a);
+    }
+
+    /**
+     * Muestra listado de administradores
+     * 
+     * @param id identificador numerico de {@link Administrador}
+     * 
+     * @param a  listado de administrador
+     * 
+     * @see put
+     * @see map
+     * @return un objeto {@link ModelAndView} con la respuesta a la solicitud,
+     *         Editar lista administrador
+     */
+
+    @RequestMapping("/editarAdministrador/{id}")
+    public ModelAndView editarAdministrador(@PathVariable int id) {
+        Administrador a = as.getById(id);
 //    	Usuario u = us.getByNickname(p.getUsuario().getNickname());
-		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("a", a);
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("a", a);
 //        model.put("u", u);
-		return new ModelAndView("editaAdministrador", "model", model);
-	}
+        return new ModelAndView("editaAdministrador", "model", model);
+    }
 
-	@RequestMapping(value = "/guardarEditAdministrador", method = RequestMethod.POST)
-	public ModelAndView guardarEditAdministrador(Administrador a) {
+    @RequestMapping(value = "/guardarEditAdministrador", method = RequestMethod.POST)
+    public ModelAndView guardarEditAdministrador(Administrador a) {
 //    	p.setUsuario(u);
-		as.edit(a);
-		// Usuario u = us.getByNickname(p.getUsuario().getNickname());
+        as.edit(a);
+        // Usuario u = us.getByNickname(p.getUsuario().getNickname());
 
 // 		us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
-		return new ModelAndView("redirect:/listarAdministrador");
-	}
+        return new ModelAndView("redirect:/listarAdministrador");
+    }
 
-	@RequestMapping("/eliminarAdministrador/{id}")
-	public ModelAndView eliminarAdministrador(@PathVariable int id) {
-		Administrador a = as.getById(id);
-		Usuario u = us.getByNickname(a.getUsuario().getNickname());
-		as.delete(id);
-		us.delete(u);
-		return new ModelAndView("redirect:/listarAdministrador");
-	}
+    @RequestMapping("/eliminarAdministrador/{id}")
+    public ModelAndView eliminarAdministrador(@PathVariable int id) {
+        Administrador a = as.getById(id);
+        Usuario u = us.getByNickname(a.getUsuario().getNickname());
+        as.delete(id);
+        us.delete(u);
+        return new ModelAndView("redirect:/listarAdministrador");
+    }
 
-	@RequestMapping("/crearAdministrador/{message}")
-	public ModelAndView crearAdministrador(@PathVariable String message) {
-		Administrador a = new Administrador();
-		Usuario u = new Usuario();
-		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("a", a);
-		model.put("u", u);
-		model.put("message", message);
-		return new ModelAndView("creaAdministrador", "model", model);
-	}
+    /**
+     * Muestra el listado de administrador
+     *
+     * @param a listado de administrador
+     *
+     * @param u Listado de {@link Usuario}
+     *
+     * @return un objeto {@link ModelAndView} con la respuesta a la solicitud, Crear
+     *         administrador
+     */
 
-	@RequestMapping(value = "/guardarAdministrador", method = RequestMethod.POST)
-	public ModelAndView guardarAdministrador(Administrador a, Usuario u, RedirectAttributes redirectAttrs) {
-		// validar si el nuevo nick no esta duplicado
-		if (us.countByNickname(u.getNickname()) == 0) {
+    @RequestMapping("/crearAdministrador/{message}")
+    public ModelAndView crearAdministrador(@PathVariable String message) {
+        Administrador a = new Administrador();
+        Usuario u = new Usuario();
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("a", a);
+        model.put("u", u);
+        model.put("message", message);
+        return new ModelAndView("creaAdministrador", "model", model);
+    }
 
-			// encriptando el nuevo password
-			PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-			String password = u.getPassword();
-			u.setPassword(passwordEncoder.encode(password));
+    @RequestMapping(value = "/guardarAdministrador", method = RequestMethod.POST)
+    public ModelAndView guardarAdministrador(Administrador a, Usuario u, RedirectAttributes redirectAttrs) {
+        // validar si el nuevo nick no esta duplicado
+        if (us.countByNickname(u.getNickname()) == 0) {
 
-			us.add(u);
-			Usuario u1 = us.getByNickname(u.getNickname());
-			a.setUsuario(u1);
-			// System.out.println(p.toString());
-			as.add(a);
-			return new ModelAndView("redirect:/listarAdministrador");
-		} else {
-			String mensaje = "el nickname ya existe en la base de datos";
-			redirectAttrs.addAttribute("message", mensaje);
-			return new ModelAndView("redirect:/crearAdministrador/{message}.do");
-		}
-	}
+            // encriptando el nuevo password
+            PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+            String password = u.getPassword();
+            u.setPassword(passwordEncoder.encode(password));
+
+            us.add(u);
+            Usuario u1 = us.getByNickname(u.getNickname());
+            a.setUsuario(u1);
+            // System.out.println(p.toString());
+            as.add(a);
+            return new ModelAndView("redirect:/listarAdministrador");
+        } else {
+            String mensaje = "el nickname ya existe en la base de datos";
+            redirectAttrs.addAttribute("message", mensaje);
+            return new ModelAndView("redirect:/crearAdministrador/{message}.do");
+        }
+    }
 }
