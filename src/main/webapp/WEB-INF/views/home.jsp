@@ -157,9 +157,9 @@
                                Reporte Global</a>
                                 <ul>
                                 	
-                                	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
+                                	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de Asesorias </a></li>
 
-                                	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
+                                	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de Accidentes</a></li>
                                 	
                                 	<li><a href="capacitacionespromesp" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
                                 	<li><a href="actividadpormesp" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>
