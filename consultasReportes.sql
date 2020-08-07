@@ -70,7 +70,7 @@ where fechainicio between (select trunc((sysdate),'month') from dual) and (selec
 group by profesional.id_profesional , profesional.nombre, profesional.apellido;
 
 --accidentabilidad
-select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, count(reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion) as indiceAccidentabilidad 
+select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, COALESCE(NULLIF(count(distinct reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion),0), 0) as indiceAccidentabilidad 
 from reporteaccidente
 inner join cliente
 on cliente.id_cliente=reporteaccidente.cliente_id_cliente

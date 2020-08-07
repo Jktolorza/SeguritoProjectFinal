@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface AccidentabilidadPorMesRepository extends CrudRepository<AccidentabilidadPorMes, Integer> {
 
-	@Query(value="select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, COALESCE(NULLIF(count(reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion),0), 0) as indiceAccidentabilidad \r\n" + 
+	@Query(value="select profesional.id_profesional as id, profesional.nombre || ' ' || profesional.apellido as profesional, COALESCE(NULLIF(count(distinct reporteaccidente.id_reporteaccidente)/count(distinct capacitacion.id_capacitacion),0), 0) as indiceAccidentabilidad \r\n" + 
 			"from reporteaccidente\r\n" + 
 			"inner join cliente\r\n" + 
 			"on cliente.id_cliente=reporteaccidente.cliente_id_cliente\r\n" + 
