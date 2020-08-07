@@ -19,88 +19,135 @@ import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.services.ProfesionalService;
 import cl.awake.psegurito.services.UsuarioService;
 
+/**
+ * Controlador Profesional
+ * 
+ * @author Desarrolladores PSegurito
+ */
 @Controller
 public class ProfesionalController {
-	
-	@Autowired
-	ProfesionalService ps;
-	
-	@Autowired
-	UsuarioService us;
-	
-	@RequestMapping("/listarProfesional")
-	public ModelAndView listarProfesional() {
-		List<Profesional> lista = ps.getAll();
-		return new ModelAndView("listaProfesional", "lista", lista);
-	}
-	
+
+    @Autowired
+    ProfesionalService ps;
+
+    @Autowired
+    UsuarioService us;
+
+    /**
+     * Muestra el listado de clientes según los permisos del {@link Administrador}
+     * autenticado
+     * 
+     * @param ps injeccion de ProfesionalService
+     *
+     * @return un objeto {@link ModelAndView} con la respuesta a la solicitud,
+     *         Mostrar lista de profesionales
+     * @see List
+     */
+
+    @RequestMapping("/listarProfesional")
+    public ModelAndView listarProfesional() {
+        List<Profesional> lista = ps.getAll();
+        return new ModelAndView("listaProfesional", "lista", lista);
+    }
+
     @RequestMapping("/mostrarProfesional/{id}")
     public ModelAndView mostrarProfesional(@PathVariable int id) {
-    	Profesional p = ps.getById(id);
-    	return new ModelAndView("muestraProfesional", "p", p);
+        Profesional p = ps.getById(id);
+        return new ModelAndView("muestraProfesional", "p", p);
     }
-    
+
+    /**
+     * Muestra el listado de profesionales según los permisos del
+     * {@link Administrador} autenticado
+     * 
+     * @param id     identificador numerico de {@link Profesional}
+     * 
+     * @param p      listado de profesional
+     * 
+     * @param listap Listado de {@link Profesionales}
+     *
+     *
+     * @see List
+     * @see put
+     * @see map
+     * @return un objeto {@link ModelAndView} con la respuesta a la solicitud,
+     *         Editar lista de profesional
+     */
+
     @RequestMapping("/editarProfesional/{id}")
     public ModelAndView editarProfesional(@PathVariable int id) {
-    	Profesional p = ps.getById(id);
+        Profesional p = ps.getById(id);
 //    	Usuario u = us.getByNickname(p.getUsuario().getNickname());
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("p", p);
 //        model.put("u", u);
-        return new ModelAndView("editaProfesional","model", model);
+        return new ModelAndView("editaProfesional", "model", model);
     }
-    
-    @RequestMapping(value="/guardarEditProfesional", method = RequestMethod.POST)
- 	public ModelAndView guardarEditProfesional(Profesional p) {
+
+    @RequestMapping(value = "/guardarEditProfesional", method = RequestMethod.POST)
+    public ModelAndView guardarEditProfesional(Profesional p) {
 //    	p.setUsuario(u);
- 		ps.edit(p);
-     	//Usuario u = us.getByNickname(p.getUsuario().getNickname());
- 		
+        ps.edit(p);
+        // Usuario u = us.getByNickname(p.getUsuario().getNickname());
+
 // 		us.editUserByIdAndNickname(u.getNickname(), u.getPassword(), u.getRol(), u.getId_usuario());
- 		return new ModelAndView("redirect:/listarProfesional");
- 	}
-     
+        return new ModelAndView("redirect:/listarProfesional");
+    }
+
     @RequestMapping("/eliminarProfesional/{id}")
     public ModelAndView eliminarProfesional(@PathVariable int id) {
-    	Profesional p = ps.getById(id);
-    	Usuario u= us.getByNickname(p.getUsuario().getNickname());
-    	ps.delete(id);
-    	us.delete(u);
-    	return new ModelAndView("redirect:/listarProfesional");
+        Profesional p = ps.getById(id);
+        Usuario u = us.getByNickname(p.getUsuario().getNickname());
+        ps.delete(id);
+        us.delete(u);
+        return new ModelAndView("redirect:/listarProfesional");
     }
-    
+
+    /**
+     * Muestra el listado de profesionales según los permisos del
+     * {@link Administrador} autenticado
+     * 
+     * Se crea y se verifica si existe usuario.
+     *
+     * @param p Listado de {@link Profesional}
+     *
+     * @param u Listado de {@link Usuario}
+     *
+     * @return un objeto {@link ModelAndView} con la respuesta a la solicitud, Crear
+     *         profesional
+     */
+
     @RequestMapping("/crearProfesional/{message}")
     public ModelAndView crearProfesional(@PathVariable String message) {
-    	Profesional p = new Profesional();
-    	Usuario u = new Usuario();
+        Profesional p = new Profesional();
+        Usuario u = new Usuario();
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("p", p);
         model.put("u", u);
         model.put("message", message);
-    	return new ModelAndView("creaProfesional","model", model);
+        return new ModelAndView("creaProfesional", "model", model);
     }
-    
-    @RequestMapping(value="/guardarProfesional", method = RequestMethod.POST)
-	public ModelAndView guardarProfesional(Profesional p, Usuario u, RedirectAttributes redirectAttrs) { 
-		// validar si el nuevo nick no esta duplicado
-		if (us.countByNickname(u.getNickname()) == 0) {
-			
 
- 		//encriptando el nuevo password
-    	PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(); 
-    	String password = u.getPassword();
-    	u.setPassword(passwordEncoder.encode(password));
-    	
-    	us.add(u);
-    	Usuario u1 = us.getByNickname(u.getNickname());
-    	p.setUsuario(u1);
-    	//System.out.println(p.toString());
-    	ps.add(p);
-		return new ModelAndView("redirect:/listarProfesional");
-		} else {
-			String mensaje = "el nickname ya existe en la base de datos";
-			redirectAttrs.addAttribute("message", mensaje);
-			return new ModelAndView("redirect:/crearProfesional/{message}.do");
-		}
-	}
+    @RequestMapping(value = "/guardarProfesional", method = RequestMethod.POST)
+    public ModelAndView guardarProfesional(Profesional p, Usuario u, RedirectAttributes redirectAttrs) {
+        // validar si el nuevo nick no esta duplicado
+        if (us.countByNickname(u.getNickname()) == 0) {
+
+            // encriptando el nuevo password
+            PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+            String password = u.getPassword();
+            u.setPassword(passwordEncoder.encode(password));
+
+            us.add(u);
+            Usuario u1 = us.getByNickname(u.getNickname());
+            p.setUsuario(u1);
+            // System.out.println(p.toString());
+            ps.add(p);
+            return new ModelAndView("redirect:/listarProfesional");
+        } else {
+            String mensaje = "el nickname ya existe en la base de datos";
+            redirectAttrs.addAttribute("message", mensaje);
+            return new ModelAndView("redirect:/crearProfesional/{message}.do");
+        }
+    }
 }

@@ -71,8 +71,6 @@ public class ClienteController {
      * @param id     identificador numerico de {@link Cliente}
      * 
      * @param c      listado de cliente
-     * 
-     * @param listap Listado de {@link Profesionales}
      *
      * @param listac Listado de {@link Cliente}
      *
@@ -129,7 +127,6 @@ public class ClienteController {
      * 
      * Se crea y se verifica si existe usuario.
      *
-     * @param ac listado de actividades de mejora
      *
      * @param c  Listado de {@link Cliente}
      *
