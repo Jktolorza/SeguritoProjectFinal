@@ -13,5 +13,5 @@ public interface AccidentabilidadPorMesService {
     void delete(AccidentabilidadPorMes p);
     void delete(int id);
     List<AccidentabilidadPorMes> getAccidentabilidadPorMes();
-
+    List<AccidentabilidadPorMes> getAccidentabilidadHistorica();
 }
