@@ -29,11 +29,11 @@
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-3">Numero de visitas:</div>
+				<div class="col-3">Numero de visita:</div>
 				<div class="col-7">
 					<select name="numerovisita" class="form-control form-control">
-							<option value="1">Una visita</option>
-							<option value="2">Dos visitas</option>
+							<option value="1">visita 1</option>
+							<option value="2">visita 2</option>
 					</select>
 				</div>
 			</div>

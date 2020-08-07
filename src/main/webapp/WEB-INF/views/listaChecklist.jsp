@@ -18,7 +18,7 @@
 		<table class="table">
 			<thead class="thead_dark">
 				<tr>
-					    <th>#</th>
+					    <th>Detalle Checklist</th>
 					    <th>Version</th>
 					    <th>Profesional</th>
 					    <th>Cliente</th>

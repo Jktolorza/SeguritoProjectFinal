@@ -18,7 +18,7 @@
 		<table class="table">
 			<thead class="thead_dark">
 				<tr>
-					    <th>#</th>
+					    <th>Detalle factura</th>
 					    <th>Fecha de Cobro</th>
                         <th>Fecha de Vencimiento</th>
                         <th>Extras</th>

@@ -58,7 +58,7 @@ public class ActividadMejoraController {
 	@RequestMapping("/mostrarActividadMejora/{id}")
 	public ModelAndView mostrarActividadMejora(@PathVariable int id) {
 		ActividadMejora ac = acs.getById(id);
-		return new ModelAndView("muestraActividadMejora", "ac", ac);
+		return new ModelAndView("muestraActividadesMejora", "ac", ac);
 	}
 
 	/**
