@@ -11,13 +11,10 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-		<bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-        <property name="location">
-            <value>/WEB-INF/spring/jdbc.properties</value>
-        </property>
-    </bean>
-<context:property-placeholder properties-ref="configProperties" />
-<!--     <context:property-placeholder location="/WEB-INF/spring/jdbc.properties" /> -->
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="locations" value="jdbc.properties"/>
+</bean>
+    <context:property-placeholder location="classpath:jdbc.properties" />
     
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
         p:driverClassName="oracle.jdbc.driver.OracleDriver" 
