@@ -74,6 +74,14 @@ where u.nickname=?" />
 		<intercept-url pattern="/eliminarFactura/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/editarProfesional/*" access="hasRole('ADMINISTRADOR')" />
 		<intercept-url pattern="/eliminarProfesional/*" access="hasRole('ADMINISTRADOR')" />
+		<intercept-url pattern="/editarChecklist/*" access="hasRole('PROFESIONAL')" />
+		<intercept-url pattern="/eliminarChecklist/*" access="hasRole('PROFESIONAL')" />
+		<intercept-url pattern="/crearChecklist/*" access="hasRole('PROFESIONAL')" />
+		<intercept-url pattern="/listarChecklist/*" access="hasRole('PROFESIONAL')" />
+		<intercept-url pattern="/editarVisita/*" access="hasRole('PROFESIONAL')" />
+        <intercept-url pattern="/eliminarVisita/*" access="hasRole('PROFESIONAL')" />
+        <intercept-url pattern="/crearVisita/*" access="hasRole('PROFESIONAL')" />
+        <intercept-url pattern="/listarVisita/*" access="hasRole('PROFESIONAL')" />
 		
 	</http>
 </bean:beans>
