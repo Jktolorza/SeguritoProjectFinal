@@ -76,7 +76,7 @@
                      'rgba(75, 192, 192, 0.2)',
                      'rgba(153, 102, 255, 0.2)'
                  ],
-                 label: 'Accidentabilidad por mes',
+                 label: 'Accidentes/Capacitaciones',
                  data: ${accidentabilidad},
                  borderWidth: 1
              }]
