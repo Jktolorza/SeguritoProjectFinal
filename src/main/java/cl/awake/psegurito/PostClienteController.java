@@ -16,35 +16,40 @@ import org.springframework.web.client.RestTemplate;
 
 import cl.awake.psegurito.model.PostCliente;
 
+/**
+ * Controlador Post Cliente
+ * 
+ * @author Desarrolladores PSegurito
+ */
 @Controller
 public class PostClienteController {
 
-	@RequestMapping(value = "/listadoclientespost", method = RequestMethod.GET)
-	public String getAllPostJSON(Model model, HttpServletRequest request) {
-		int port = request.getLocalPort();
-		//System.out.println(port);
-		final String uri ="http://localhost:"+port+"/psegurito/clilist";
-		RestTemplate restTemplate = new RestTemplate();
+    @RequestMapping(value = "/listadoclientespost", method = RequestMethod.GET)
+    public String getAllPostJSON(Model model, HttpServletRequest request) {
+        int port = request.getLocalPort();
+        // System.out.println(port);
+        final String uri = "http://localhost:" + port + "/psegurito/clilist";
+        RestTemplate restTemplate = new RestTemplate();
 
-		ResponseEntity<List<PostCliente>> postResponse = restTemplate.exchange(uri, HttpMethod.GET, null,
-				new ParameterizedTypeReference<List<PostCliente>>() {
-				});
-		List<PostCliente> posts = postResponse.getBody();
-		model.addAttribute("listadoposts", posts);
-		System.out.println("Cantidad: " + posts.size());
+        ResponseEntity<List<PostCliente>> postResponse = restTemplate.exchange(uri, HttpMethod.GET, null,
+                new ParameterizedTypeReference<List<PostCliente>>() {
+                });
+        List<PostCliente> posts = postResponse.getBody();
+        model.addAttribute("listadoposts", posts);
+        System.out.println("Cantidad: " + posts.size());
 
-		return "postlclientes";
-	}
+        return "postlclientes";
+    }
 
-	@RequestMapping(value = "/detalleclientepost/{id}", method = RequestMethod.GET)
-	public String getDetallePostJSON(@PathVariable int id, Model model, HttpServletRequest request) {
-		int port = request.getLocalPort();
-		//System.out.println(port);
-		final String uri ="http://localhost:"+port+"/psegurito/clidetalle/" + id;
-		RestTemplate restTemplate = new RestTemplate();
-		PostCliente listaposts = restTemplate.getForObject(uri, PostCliente.class);
-		model.addAttribute("ps", listaposts);
-		return "postver";
-	}
+    @RequestMapping(value = "/detalleclientepost/{id}", method = RequestMethod.GET)
+    public String getDetallePostJSON(@PathVariable int id, Model model, HttpServletRequest request) {
+        int port = request.getLocalPort();
+        // System.out.println(port);
+        final String uri = "http://localhost:" + port + "/psegurito/clidetalle/" + id;
+        RestTemplate restTemplate = new RestTemplate();
+        PostCliente listaposts = restTemplate.getForObject(uri, PostCliente.class);
+        model.addAttribute("ps", listaposts);
+        return "postver";
+    }
 
 }

@@ -59,14 +59,12 @@
                                     <a class="dropdown-item" href="crearProfesional/${message}" target="myFrame">Crear Profesional</a>
                                     <a class="dropdown-item" href="listarProfesional" target="myFrame">Listar Profesional</a>
                                     <a class="dropdown-item" href="listarCliente" target="myFrame">Listar Cliente</a>
-                                    <a class="dropdown-item" href="listadoclientespost" target="myFrame">Listar Cliente API REST</a>
+<!--                                     <a class="dropdown-item" href="listadoclientespost" target="myFrame">Listar Cliente API REST</a> -->
                                     <a class="dropdown-item" href="crearCliente/${message}" target="myFrame">Crear Cliente</a>
                                     <a class="dropdown-item" href="listarAdministrador" target="myFrame">Listar Administrador</a>
                                     <a class="dropdown-item" href="crearAdministrador/${message}" target="myFrame">Crear Administrador</a>
                                     <a class="dropdown-item" href="crearFactura" target="myFrame">Facturacion Clientes</a>
-                                    <a class="dropdown-item" href="listarUsuario" target="myFrame">Gestion de usuarios</a>
-                       
-                                    <a class="dropdown-item" href="accidentespormes" target="myFrame">Listado de Accidentes por mes </a>                                        
+                                    <a class="dropdown-item" href="listarUsuario" target="myFrame">Gestion de usuarios</a>                                       
                                 </div>
                             </li>
 
@@ -134,7 +132,7 @@
 
 
                     <!-- Sidebar -->
-                    <div id="sidebar-container" class="bg-light border-right">
+                    <div id="sidebar-container" class="bg-light border-right" >
 
                         <div class="menu list-group-flush">
                             <a href="listadoaccidentabilidad" target="myFrame"  class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
@@ -157,9 +155,9 @@
                                Reporte Global</a>
                                 <ul>
                                 	
-                                	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de asesorias </a></li>
+                                	<li><a href="asesoriapormesp" target="myFrame" class="text-muted">Responsables de Asesorias </a></li>
 
-                                	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de accidentes</a></li>
+                                	<li><a href="accidentespormesp" target="myFrame" class="text-muted">Responsables de Accidentes</a></li>
                                 	
                                 	<li><a href="capacitacionespromesp" target="myFrame" class="text-muted">Responsables de Capacitaciones</a></li>
                                 	<li><a href="actividadpormesp" target="myFrame" class="text-muted">Responsables de Mejoras</a></li>

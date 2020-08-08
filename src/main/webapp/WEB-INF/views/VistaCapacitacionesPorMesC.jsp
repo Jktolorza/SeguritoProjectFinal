@@ -12,9 +12,9 @@
 </head>
 <body>
     <div class="container">
-		<h1 class="display-4">Accidentes por mes  </h1>
+		<h1 class="display-4">Capacitaciones por mes  </h1>
 
-		<h1 >Grafica de accidentes registrados por empresa </h1>
+		<h1 >Grafica de capacitaciones registradas por empresa </h1>
 		<br>		
 		<div class="col-12">
 			<canvas id="capacitacionespormesc" height="200" width="200"></canvas>
@@ -22,7 +22,7 @@
 		
       	<hr>
 
-		<h1 class="display-4">Listado de accidentes por mes  </h1>
+		<h1 class="display-4">Listado de capacitaciones por mes  </h1>
 		<br>
 		 
         <table class="table">
@@ -59,7 +59,7 @@
     
     var ctx = document.getElementById("capacitacionespormesc").getContext("2d"); 
     var graficoBarras = new Chart(ctx, {
-    	 type: 'pie',
+    	 type: 'bar',
          data: {
              labels: ${model.empresas},
              datasets: [{

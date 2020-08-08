@@ -10,19 +10,29 @@ import org.springframework.web.servlet.ModelAndView;
 import cl.awake.psegurito.model.Moroso;
 import cl.awake.psegurito.services.MorosoService;
 
+/**
+ * Controlador Moroso
+ * 
+ * @author Desarrolladores PSegurito
+ */
 
 @Controller
-public class MorosoClienteController {	
-	
-	@Autowired
-	MorosoService rcr;
-	
+public class MorosoClienteController {
+
+    @Autowired
+    MorosoService rcr;
+
+    /**
+     * Muestra el listado de morosos
+     * 
+     */
+
     @RequestMapping("/listarmorosos")
-	public ModelAndView entregarmoroso() {
-		
-	   	List<Moroso> lista = rcr.getmoroso();
-    	return new ModelAndView("VistaMoroso","lista", lista);  
-		
-	}
+    public ModelAndView entregarmoroso() {
+
+        List<Moroso> lista = rcr.getmoroso();
+        return new ModelAndView("VistaMoroso", "lista", lista);
+
+    }
 
 }

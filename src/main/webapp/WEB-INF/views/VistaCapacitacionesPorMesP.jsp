@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-		<h1 class="display-4">Capaciaciones por mes  </h1>
+		<h1 class="display-4">Capacitaciones por mes  </h1>
 
 		<h1 >Grafica de profesionales responsables de capacitaciones registrados por empresa </h1>
 		<br>		

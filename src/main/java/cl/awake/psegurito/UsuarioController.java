@@ -19,53 +19,81 @@ import cl.awake.psegurito.model.Usuario;
 import cl.awake.psegurito.model.UsuarioId;
 import cl.awake.psegurito.services.UsuarioService;
 
+/**
+ * Controlador Usuario
+ * 
+ * @author Desarrolladores PSegurito
+ */
 @Controller
 public class UsuarioController {
 
-	@Autowired
-	UsuarioService us;
+    @Autowired
+    UsuarioService us;
 
-	@RequestMapping("/listarUsuario")
-	public ModelAndView listarUsuario() {
-		List<Usuario> lista = us.getAll();
-		return new ModelAndView("listaUsuario", "lista", lista);
-	}
+    /**
+     * Muestra el listado de usuarios según los permisos del {@link Administrador}
+     * autenticado
+     * 
+     * @param us injeccion de UsuarioService
+     *
+     * @see List
+     */
 
-	@RequestMapping("/editarUsuario/{id}/{nickname}/{message}")
-	public ModelAndView editarUsuario(@PathVariable int id, @PathVariable String nickname,
-			@PathVariable String message) {
-		UsuarioId uid = new UsuarioId(id, nickname);
-		Usuario u = us.getById(uid);
-		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("u", u);
-		model.put("message", message);
-		return new ModelAndView("cambiaClave", "model", model);
-	}
+    @RequestMapping("/listarUsuario")
+    public ModelAndView listarUsuario() {
+        List<Usuario> lista = us.getAll();
+        return new ModelAndView("listaUsuario", "lista", lista);
+    }
 
-	@RequestMapping(value = "/guardarEditUsuario", method = RequestMethod.POST)
-	public ModelAndView guardarEditUsuario(Usuario u, @RequestParam String oldPassword,
-			RedirectAttributes redirectAttrs) {
+    /**
+     * 
+     * 
+     * @param id identificador numerico de {@link Usuario}
+     * 
+     * @param u  listado de usuarios
+     * 
+     * @see List
+     * @see put
+     * @see map
+     */
 
+    @RequestMapping("/editarUsuario/{id}/{nickname}/{message}")
+    public ModelAndView editarUsuario(@PathVariable int id, @PathVariable String nickname,
+            @PathVariable String message) {
+        UsuarioId uid = new UsuarioId(id, nickname);
+        Usuario u = us.getById(uid);
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("u", u);
+        model.put("message", message);
+        return new ModelAndView("cambiaClave", "model", model);
+    }
 
-			// validar password viejo
-			Usuario u1 = new Usuario();
-			u1 = us.getByNickname(u.getNickname());
-			PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-			if (passwordEncoder.matches(oldPassword, u1.getPassword())) {
-				// encriptando nueva password
-				String password = u.getPassword();
-				u.setPassword(passwordEncoder.encode(password));
-				// editando la bbdd
-				us.edit(u);
-				return new ModelAndView("redirect:/listarUsuario");
-			} else {
-				String mensaje = "la password ingresada es erronea";
-				redirectAttrs.addAttribute("id", u.getId_usuario());
-				redirectAttrs.addAttribute("nickname", u.getNickname());
-				redirectAttrs.addAttribute("message", mensaje);
-				return new ModelAndView("redirect:/editarUsuario/{id}/{nickname}/{message}.do");
-			}
+    @RequestMapping(value = "/guardarEditUsuario", method = RequestMethod.POST)
+    public ModelAndView guardarEditUsuario(Usuario u, @RequestParam String oldPassword,
+            RedirectAttributes redirectAttrs) {
 
+        /**
+         * Validacion password
+         */
 
-	}
+        // validar password viejo
+        Usuario u1 = new Usuario();
+        u1 = us.getByNickname(u.getNickname());
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        if (passwordEncoder.matches(oldPassword, u1.getPassword())) {
+            // encriptando nueva password
+            String password = u.getPassword();
+            u.setPassword(passwordEncoder.encode(password));
+            // editando la bbdd
+            us.edit(u);
+            return new ModelAndView("redirect:/listarUsuario");
+        } else {
+            String mensaje = "la password ingresada es erronea";
+            redirectAttrs.addAttribute("id", u.getId_usuario());
+            redirectAttrs.addAttribute("nickname", u.getNickname());
+            redirectAttrs.addAttribute("message", mensaje);
+            return new ModelAndView("redirect:/editarUsuario/{id}/{nickname}/{message}.do");
+        }
+
+    }
 }

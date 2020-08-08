@@ -35,8 +35,8 @@ public class ActividadMejoraController {
     ActividadMejoraService acs;
 
     /**
-     * Muestra el listado de actividades según los permisos del {@link Profesional}
-     * autenticado
+     * Muestra el listado de actividades según los permisos del
+     * {@link Administrador} autenticado
      * 
      * @param acs injeccion de actividadMejoraService
      *
@@ -115,7 +115,7 @@ public class ActividadMejoraController {
      * Muestra el listado de actividades según los permisos del {@link Profesional}
      * autenticado
      *
-     * @param ac  listado de actividades de mejora
+     * @param ac     listado de actividades de mejora
      *
      * @param listap Listado de {@link Profesionales}
      *
@@ -146,6 +146,5 @@ public class ActividadMejoraController {
         acs.add(ac);
         return new ModelAndView("redirect:/listarActividadMejora");
     }
-
 
 }
