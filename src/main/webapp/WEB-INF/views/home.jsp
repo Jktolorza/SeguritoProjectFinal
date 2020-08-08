@@ -59,14 +59,12 @@
                                     <a class="dropdown-item" href="crearProfesional/${message}" target="myFrame">Crear Profesional</a>
                                     <a class="dropdown-item" href="listarProfesional" target="myFrame">Listar Profesional</a>
                                     <a class="dropdown-item" href="listarCliente" target="myFrame">Listar Cliente</a>
-                                    <a class="dropdown-item" href="listadoclientespost" target="myFrame">Listar Cliente API REST</a>
+<!--                                     <a class="dropdown-item" href="listadoclientespost" target="myFrame">Listar Cliente API REST</a> -->
                                     <a class="dropdown-item" href="crearCliente/${message}" target="myFrame">Crear Cliente</a>
                                     <a class="dropdown-item" href="listarAdministrador" target="myFrame">Listar Administrador</a>
                                     <a class="dropdown-item" href="crearAdministrador/${message}" target="myFrame">Crear Administrador</a>
                                     <a class="dropdown-item" href="crearFactura" target="myFrame">Facturacion Clientes</a>
-                                    <a class="dropdown-item" href="listarUsuario" target="myFrame">Gestion de usuarios</a>
-                       
-                                    <a class="dropdown-item" href="accidentespormes" target="myFrame">Listado de Accidentes por mes </a>                                        
+                                    <a class="dropdown-item" href="listarUsuario" target="myFrame">Gestion de usuarios</a>                                       
                                 </div>
                             </li>
 
