@@ -8,7 +8,8 @@ import org.json.JSONArray;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.client.support.BasicAuthorizationInterceptor;
+import org.springframework.http.client.support.BasicAuthenticationInterceptor;
+//import org.springframework.http.client.support.BasicAuthorizationInterceptor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +24,7 @@ import cl.awake.psegurito.model.AccidentabilidadPorMes;
  * 
  * @author Desarrolladores PSegurito
  */
-@SuppressWarnings("deprecation")
+//@SuppressWarnings("deprecation")
 @Controller
 public class AccidentabilidadController {
 
@@ -45,7 +46,7 @@ public class AccidentabilidadController {
         // System.out.println(port);
         final String uri = "http://localhost:" + port + "/psegurito/accidentabilidadpormes";
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.getInterceptors().add(new BasicAuthorizationInterceptor("cliente", "cliente"));
+        restTemplate.getInterceptors().add(new BasicAuthenticationInterceptor("cliente", "cliente"));
         ResponseEntity<List<AccidentabilidadPorMes>> postResponse = restTemplate.exchange(uri, HttpMethod.GET, null,
                 new ParameterizedTypeReference<List<AccidentabilidadPorMes>>() {
                 });
@@ -73,7 +74,7 @@ public class AccidentabilidadController {
         // System.out.println(port);
         final String uri = "http://localhost:" + port + "/psegurito/accidentabilidadhistorica";
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.getInterceptors().add(new BasicAuthorizationInterceptor("cliente", "cliente"));
+        restTemplate.getInterceptors().add(new BasicAuthenticationInterceptor("cliente", "cliente"));
         ResponseEntity<List<AccidentabilidadPorMes>> postResponse = restTemplate.exchange(uri, HttpMethod.GET, null,
                 new ParameterizedTypeReference<List<AccidentabilidadPorMes>>() {
                 });
